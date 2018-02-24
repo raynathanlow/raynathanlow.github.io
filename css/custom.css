@@ -10,6 +10,7 @@ html, body {
   height: 100%;
   font-family: 'Rubik', sans-serif;
   color: #606060;
+  overflow: auto;
 }
 
 a {
@@ -69,7 +70,6 @@ article {
 #homepage {
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -185,16 +185,54 @@ article {
     position: relative;
     top: 3rem;
   }
+  #intro {
+    margin-bottom: 6rem;
+  }
 }
 
-@media (max-width: 436px) {
+@media (max-width: 1043px) {
+  .other-projects {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 901px) {
+  .other-projects .project {
+    flex: 0 1 33.3%;
+  }
+}
+
+@media (max-width: 798px) {
+  article {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 674px) {
+  #homepage {
+    padding: 0 1.5rem;
+  }
   #homepage .project {
     flex: 0 1 50%;
   }
 }
 
-@media (max-width: 291px) {
+@media (max-width: 589px) {
+  .other-projects .project {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 497px) {
   #homepage .project {
     flex: 0 1 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 408px) {
+  .other-projects .project {
+    flex: 0 1 100%;
+    padding: 0;
   }
 }
