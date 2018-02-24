@@ -1,5 +1,9 @@
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > $("header").outerHeight()) {
-//     console.log("Hello");
-//   }
-// });
+$("body").scroll(function() {
+  if ($("body").scrollTop() >= $("nav").outerHeight()) {
+    $("nav").addClass("fixed");
+    $("nav a").addClass("invert");
+  } else {
+    $("nav").removeClass("fixed");
+    $("nav a").removeClass("invert");
+  }
+});

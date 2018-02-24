@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 nav ul {
@@ -104,6 +108,11 @@ article {
   flex-direction: column;
   flex: 0 1 33.3%;
   padding: 0.75rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
 }
 
 .project img {
@@ -202,7 +211,7 @@ article {
   }
 }
 
-@media (max-width: 798px) {
+@media (max-width: 847px) {
   article {
     padding: 0 1.5rem;
   }
