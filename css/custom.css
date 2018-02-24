@@ -223,6 +223,12 @@ article {
   }
 }
 
+@media (max-width: 545px) {
+  .smaller {
+    width: 70%;
+  }
+}
+
 @media (max-width: 497px) {
   #homepage .project {
     flex: 0 1 100%;
@@ -234,5 +240,8 @@ article {
   .other-projects .project {
     flex: 0 1 100%;
     padding: 0;
+  }
+  .smaller {
+    width: 85%;
   }
 }
