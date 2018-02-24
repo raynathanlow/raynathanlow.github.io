@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posting - Post Info - H101</title>
+	<link rel="stylesheet" href="css/postinfo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<!--favicon made by Zack Ng-->
+</head>
+
+<body>
+	<nav class="return">
+		<a href="../housing-101">Return to Project Overview</a>
+	</nav>
+	<header>
+		<nav>
+			<ul id="breadcrumb">
+				<li>
+					<a href="index.html"><img src="img/postingLogo.png" alt="H101 logo"></a>
+					<!-- logo button made by Zack Ng -->
+				</li>
+				<li>
+					<a href="categories.html">Choose Category</a>
+				</li>
+				<li>
+					<a href="contactinfo.html">Contact Info</a>
+				</li>
+				<li>Post Info</li>
+			</ul>
+			<ul id="account">
+				<li>
+					<a href="index.html">account</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Enter Post Info</h1>
+		<form>
+			<label><span class="required">*posting title</span></label>
+			<input id="title" type="text" />
+		</form>
+		<label><span class="required">*posting description</span></label>
+		<textarea rows="8"></textarea>
+		<div id="locationPrice">
+			<form>
+				<label><span class="required">*specific location</span></label>
+				<input id="location" type="text" />
+			</form>
+
+			<form>
+				<label><span class="required">*postal code</span></label>
+				<input type="text" />
+			</form>
+		</div>
+
+		<div id="postalSize">
+			<form>
+				<label><span class="required">*price</span></label>
+				<input type="text" />
+			</form>
+
+			<form>
+				<label><span class="required">*ft&sup2;</span></label>
+				<input type="text" />
+			</form>
+		</div>
+
+		<form>
+			<label>upload image:</label>
+			<input type="file" />
+		</form>
+
+		<div id="dropdowns">
+			<!-- <form>
+			<label>sale/lease</label>
+			<select>
+			<option>sale/lease</option>
+			<option>sale</option>
+			<option>lease</option>
+		</select>
+	</form> -->
+
+			<form>
+				<label>laundry</label>
+				<select>
+			<option>laundry</option>
+			<option>w/d in unit</option>
+			<option>laundry in bldg</option>
+			<option>laundry on site</option>
+			<option>w/d hookups</option>
+			<option>no laundry on site</option>
+		</select>
+			</form>
+
+			<form>
+				<label>parking</label>
+				<select>
+			<option>parking</option>
+			<option>carport</option>
+			<option>attached garage</option>
+			<option>detached garage</option>
+			<option>off-street parking</option>
+			<option>street parking</option>
+			<option>valet parking</option>
+			<option>no parking</option>
+		</select>
+			</form>
+		</div>
+
+		<!-- <form class="walking">
+<input class="inline" type="text"/>
+<label class="inline">minutes to nearest bus stop by walking</label>
+</form>
+
+<form class="walking">
+<input class="inline" type="text"/>
+<label class="inline">minutes to nearest train station by walking</label>
+</form> -->
+
+		<div id="checkbox">
+			<form>
+				<div>
+					<label class="inline">cats ok</label>
+					<input class="inline" type="checkbox" />
+				</div>
+				<div>
+					<label id="inline">dogs ok</label>
+					<input class="inline" type="checkbox" />
+				</div>
+			</form>
+
+			<form>
+				<div>
+					<label class="inline">no smoking</label>
+					<input class="inline" type="checkbox" />
+				</div>
+				<div>
+					<label class="inline">wheelchair access</label>
+					<input class="inline" type="checkbox" />
+				</div>
+				<div>
+					<label class="inline">furnished</label>
+					<input class="inline" type="checkbox" />
+				</div>
+				<div>
+					<label class="inline">exercise facilities</label>
+					<input class="inline" type="checkbox" />
+				</div>
+			</form>
+		</div>
+		<div id="continue">
+			<a href="postreview.html">Continue</a>
+		</div>
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">about</a>
+				</li>
+				<li>
+					<a href="index.html">help</a>
+				</li>
+				<li>
+					<a href="index.html">mobile</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

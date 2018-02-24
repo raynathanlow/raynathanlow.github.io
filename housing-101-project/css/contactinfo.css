@@ -1,0 +1,100 @@
+@import "headerfooter.css";
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  font-weight: lighter;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+
+h1 {
+  text-align: center;
+  color: #B22222;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+#container {
+  width: 20em;
+  margin: auto;
+}
+
+#emailOptions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#emailOptions li {
+  display: flex;
+}
+
+#byPhoneText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.option {
+  width: 50%;
+}
+
+#continue {
+  display: flex;
+  justify-content: center;
+}
+
+#continue a {
+  margin-top: 5%;
+  background-color: #B22222;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+}
+
+#continue a:hover {
+  color: #B22222;
+  background-color: white;
+  border: #B22222 solid 1px;
+}
+
+/*media queries*/
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 710px) {
+h1{
+  font-size: 23px;
+  }
+}
+
+@media (max-width: 630px) {
+  #name, .email, .phone {
+    width: 100%;
+  }
+}

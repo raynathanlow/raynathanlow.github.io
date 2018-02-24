@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage - H101</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<!--favicon made by Zack Ng-->
+</head>
+
+<body>
+	<nav class="return">
+		<a href="../housing-101">Return to Project Overview</a>
+	</nav>
+	<header>
+		<nav>
+			<img src="img/housing101.png" alt="title" />
+			<!-- Housing101 title icon made by Zack Ng -->
+			<div class="searchbar">
+
+				<ul class="input-list style-1 clearfix">
+					<li>
+						<input type="text" placeholder="Search" />
+						<a href="searchresult.html">
+							<img src="img/search.png" alt="search icon" />
+							<!-- search icon made by Zack Ng -->
+						</a>
+					</li>
+
+				</ul>
+
+				<div id="searchcates">
+
+					<form id="searchcate">
+						<label>categories</label>
+						<select>
+									<option>all</option>
+									<option>apartments</option>
+									<option>rooms</option>
+									<option>sublets</option>
+									<option>housing swap</option>
+									<option>housing share</option>
+									<option>real estate</option>
+									<option>office/commercial</option>
+									<option>parking</option>
+									<option>storage</option>
+									<option>vacation rentals</option>
+								</select>
+					</form>
+
+					<form id="searchlocation">
+						<label>location</label>
+						<select>
+									<option>all</option>
+									<option>vancouver</option>
+									<option>north shore</option>
+									<option>burnaby</option>
+									<option>new westminster</option>
+									<option>delta</option>
+									<option>surrey</option>
+									<option>langley</option>
+									<option>tricities</option>
+									<option>pitt/maple</option>
+									<option>richmond</option>
+								</select>
+					</form>
+
+				</div>
+			</div>
+			<ul id="accountpost">
+				<li>
+					<a href="index.html">account</a>
+				</li>
+
+				<li class="postbutton">
+					<a href="categories.html">Post</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="recommendations">
+			<div class="recommendedpost">
+				<a href="itemdetailpage.html">
+					<img src="img/top1.jpg" alt="house1" />
+					<!-- http://images.craigslist.org/00o0o_3dzRS2D9ZBP_600x450.jpg -->
+				</a>
+				<div class="info">
+					<ul>
+						<li>
+							<a href="itemdetailpage.html">Olympic Village, South False Creek</a>
+						</li>
+						<li>
+							<span class="infodetail">PRICE</span>: $549800
+						</li>
+						<li>
+							<span class="infodetail">LOCATION</span>: 1661 Ontario Street
+						</li>
+						<li>
+							<span class="infodetail">SIZE</span>: 698 ft&sup2;
+						</li>
+						<li>
+							<span class="infodetail">BEDROOMS:</span>: 1
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommendedpost">
+				<a href="itemdetailpage.html">
+					<img src="img/top2.jpg" alt="house2" />
+					<!-- http://images.craigslist.org/00g0g_eMCm3ejWO7p_600x450.jpg -->
+				</a>
+				<div class="info">
+					<ul>
+						<li>
+							<a href="itemdetailpage.html">1 Bedroom Rental, Modern Highrise</a>
+						</li>
+						<li>
+							<span class="infodetail">PRICE</span>: $1770 per month
+						</li>
+						<li>
+							<span class="infodetail">LOCATION</span>: 750 Jervis Street
+						</li>
+						<li>
+							<span class="infodetail">SIZE</span>: 602 ft&sup2;
+						</li>
+						<li>
+							<span class="infodetail">BEDROOMS:</span>: 1
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommendedpost">
+				<a href="itemdetailpage.html">
+					<img src="img/top3.jpg" alt="house3" />
+					<!-- http://images.craigslist.org/00M0M_7wezJyu0rXm_600x450.jpg -->
+				</a>
+				<div class="info">
+					<ul>
+						<li>
+							<a href="itemdetailpage.html">2 bath Townhouse - Immacualte</a>
+						</li>
+						<li>
+							<span class="infodetail">PRICE</span>: $139900
+						</li>
+						<li>
+							<span class="infodetail">LOCATION</span>: 46294 First Ave
+						</li>
+						<li>
+							<span class="infodetail">SIZE</span>: 830 ft&sup2;
+						</li>
+						<li>
+							<span class="infodetail">BEDROOMS:</span>: 2
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h2>Top Posts</h2>
+
+		<div id="catedropdown">
+			<div id="catedrowdown1">
+				<label>categories</label>
+				<select>
+							<option>all</option>
+							<option>apartments</option>
+							<option>rooms</option>
+							<option>sublets</option>
+							<option>housing swap</option>
+							<option>housing share</option>
+							<option>real estate</option>
+							<option>office/commercial</option>
+							<option>parking</option>
+							<option>storage</option>
+							<option>vacation rentals</option>
+						</select>
+			</div>
+			<div id="catedropdown2">
+				<label>type of posting</label>
+				<select>
+							<option>all</option>
+							<option>offered</option>
+							<option>wanted</option>
+						</select>
+			</div>
+		</div>
+
+		<div id="topposts">
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/1.jpg" alt="image1" />
+					<!-- http://i.ebayimg.com/00/s/NTMzWDgwMA==/z/QdIAAOSwMmBVlJoU/$_27.JPG -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Bedroom for rent beside Oakridge Ctr &amp;Canada Line (Canada)</a>
+					<p class="toppostinfo">July 25th - $620, 1 bedrooms, Near Cambie + 41st Ave, 2000ft&sup2;</p>
+					<p class="toppostdescription">Beautiful neighbourhood, close to UBC/Langara, downtown Vancouver & Richmond.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/2.jpg" alt="image1" />
+					<!-- http://s3.amazonaws.com/mrp-listings/3/8/4/46824483/bab0695f198e5bd871ed0eb3e5664da1.jpeg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Newly Floor 1 BR &amp; large Patio Apt - Royal City Mall</a>
+					<p class="toppostinfo">July 22nd - $850, 1 bedrooms, 727 - 5th Ave at Ash St, 620ft&sup2;</p>
+					<p class="toppostdescription">Convenient location-Just one block from Royal City Mall and three blocks from Douglas College.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/3.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00p0p_hjgtrXme0gr_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Brand New One Bedroom Condo (Metrotown, Burnaby)</a>
+					<p class="toppostinfo">July 5th - $1795, 1 bedrooms, Silver in Metrotown, 700ft&sup2;</p>
+					<p class="toppostdescription">Very convenient location. Just across Metrotown mall and next to skytrain station.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/4.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00j0j_i2EVQH84yD9_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Investor Alert, 1 Bedroom + Den Condo (Stadium Skytrain area)</a>
+					<p class="toppostinfo">July 20th - $418000, 1 bedrooms, keefer place at abbott st, 642ft&sup2;</p>
+					<p class="toppostdescription">Great Investment opportunity in downtown Vancouver.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/5.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00N0N_cmW4fTy3Vt4_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Spacious Room for Rent ( all included ) (Surrey)</a>
+					<p class="toppostinfo">July 13rd - $370, 1 bedroom, 121 st Surry, 1600ft&sup2;</p>
+					<p class="toppostdescription">We are currently looking for girl to share our beautiful brand new town house 3 bedroom 3 bathroom.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/6.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00V0V_5mhTeefLeb3_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Beautiful Olde Caulfeild Home On 35,000 Sqft Lot (Olde Caulfield)</a>
+					<p class="toppostinfo">June 29th - $20000, 5 bedrooms, 4831 Water Lane, 6551ft&sup2;</p>
+					<p class="toppostdescription">A gorgeous 6551 sqft craftsman style home facing South in Olde Caulfeild built on a 35,000 sqft lot.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/7.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00303_7WVdAxW8JB_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Short Term OK: Luxury Hotel Suite (Richmond Centre)</a>
+					<p class="toppostinfo">June 24th - $1990, 1 bedroom, 5911 Alderbridge Way, 700ft&sup2;</p>
+					<p class="toppostdescription">Free shuttle to YVR airport and secure covered overnight parking facilities.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/8.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00q0q_iXlc8DOPIfT_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Charming 3 Bedroom Character Home</a>
+					<p class="toppostinfo">June 21st - $2450, 3 bedrooms, 39th Ave near Ontario St, 1350ft&sup2;</p>
+					<p class="toppostdescription">Newly renovated central 3 bedroom house, re-conditioned oak hardwood floors throughout, all new appliances.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/9.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00q0q_lrmSha6l91G_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">Downtown 1 bedroom suite (Vancouver)</a>
+					<p class="toppostinfo">June 19th - $1700, 1 bedroom, 1500 Howe Street, 1700ft&sup2;</p>
+					<p class="toppostdescription">18th floor, 1 bedroom suite, balcony, carpeted, 2 secured parking stalls, 1 locker, gym, hot tub, sauna...
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="toppost">
+				<a href="itemdetailpage.html">
+					<img src="img/10.jpg" alt="image1" />
+					<!-- http://images.craigslist.org/00L0L_k2CIpmHpxf0_600x450.jpg -->
+				</a>
+				<div class="postinfo">
+					<a href="itemdetailpage.html">1 Bedroom suite on West Broadway (Vancouver)</a>
+					<p class="toppostinfo">June 20th - $1650, 1 bedroom, 1068 West Broadway, 553ft&sup2;</p>
+					<p class="toppostdescription">1 bedroom + den suite with view, laminate hardwood floor, laundry, gym, 1secured parking, storage locker.
+						<a href="itemdetailpage.html">
+							<span class="readmore">Read More &gt;</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<ul id="pages">
+				<li>
+					<a href="searchresult.html">1</a>
+				</li>
+				<li>
+					<a href="searchresult.html">2</a>
+				</li>
+				<li>
+					<a href="searchresult.html">3</a>
+				</li>
+				<li>
+					<a href="searchresult.html">4</a>
+				</li>
+				<li>
+					<a href="searchresult.html">5</a>
+				</li>
+				<li>
+					<a href="searchresult.html">6</a>
+				</li>
+				<li>
+					<a href="searchresult.html">7</a>
+				</li>
+				<li>
+					<a href="searchresult.html">8</a>
+				</li>
+				<li>
+					<a href="searchresult.html">9</a>
+				</li>
+				<li>
+					<a href="searchresult.html">10</a>
+				</li>
+				<li>
+					<a href="searchresult.html">next</a>
+				</li>
+			</ul>
+		</nav>
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li class="footers">
+					<a href="index.html">about</a>
+				</li>
+				<li class="footers">
+					<a href="index.html">help</a>
+				</li>
+				<li>
+					<a href="index.html">mobile</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</body>
+
+</html>

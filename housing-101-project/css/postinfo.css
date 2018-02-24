@@ -1,0 +1,158 @@
+@import "headerfooter.css";
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 1%;
+}
+
+h1 {
+  text-align: center;
+  color: #B22222;
+  font-weight: normal;
+}
+
+#title {
+  width: 100%;
+}
+
+#location {
+  width: 80%;
+}
+
+#dropdowns form {
+  display: flex;
+  flex-direction: column;
+}
+
+#dropdowns select {
+  width: 50%;
+}
+
+#continue {
+  display: flex;
+  justify-content: center;
+}
+
+#continue a {
+  margin-top: 5%;
+  background-color: #B22222;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+}
+
+#continue a:hover {
+  color: #B22222;
+  background-color: white;
+  border: #B22222 solid 1px;
+}
+
+.walking input {
+  width: 15px;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+input, label {
+  display: block;
+}
+
+.required {
+  color: #B22222;
+}
+
+#locationPrice, #postalSize, #dropdowns {
+  display: flex;
+  flex-direction: row;
+}
+
+.inline {
+  display: inline;
+}
+
+#checkbox{
+margin-top: 2%;
+}
+
+  #checkbox form{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  }
+  
+  #checkbox form div{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2%;
+  
+  }
+
+form {
+  width: 100%;
+  margin: 1% 0;
+}
+
+/*media queries*/
+@media (max-width: 710px) {
+
+  h1{
+  font-size: 23px;
+  }
+
+  #locationPrice, #postalSize, #dropdowns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #checkbox{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 60%;
+  }
+  
+  #checkbox form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  #checkbox form div{
+  display: flex;
+  flex-direction: row-reverse;
+  
+  }
+  
+  form {
+    margin-bottom: 5%;
+  }
+
+  label {
+    margin-bottom: 1%;
+  }
+
+  main {
+    width: 95%;
+  }
+  #dropdowns form {
+    width: 50%;
+  }
+}

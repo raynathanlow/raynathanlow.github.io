@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Eat Ups - Ray Nathan Low</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../">Ray Nathan Low</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <section>
+      <h1>Eat Ups</h1>
+
+      <p>Eat Ups is a HTML5 game where the player’s goal is to do as many chin-ups as possible. It was built in 48 hours from February 9th to 11th for <a href="http://bcgamejam.com/">BC Game Jam 2018</a> in a team of five. Eat Ups was made with just HTML5 and JavaScript, which included some use of the JQuery JavaScript library. It is capable of being played on desktop and mobile. My teammates were Eric Cheng, Henry Ho, Peter Luk, and Steve Cho.</p>
+
+      <ul class="links">
+        <li><a href="">Play Eat Ups</a></li>
+        <li><a href="https://github.com/hchho/bcgamejam">Github Repository</a></li>
+      </ul>
+
+      <div class="caption">
+        <img src="../images/eat-ups/gameplay.gif" alt="Eat ups gameplay" class="smaller">
+      </div>
+      <div class="caption">
+        Gameplay
+      </div>
+
+      <h2>Overview</h2>
+      <p>Eat Ups was created in response to the main theme of BC Game Jam 2018, which was “resolution”. The main avatar had to be someone who would be doing chin-ups to fulfill their New Year’s resolution of getting fitter. To add some challenge, we added
+        an energy bar that the player must keep filled up. Each chin-up will reduce the amount of energy in the bar. The player can keep it filled up with the healthy food that passes by.</p>
+
+    </section>
+
+    <section>
+      <h2>Contributions</h2>
+      <p>I helped in the ideation of Eat Ups where we discussed simple games that we could complete within the 48 hours. I programmed the energy bar, user interface, game states, and all images except the food. I made use of the native shape drawing functions
+        for the health bar and images within canvas. For the buttons and other images, I took advantage of creating HTML5 block elements and CSS’s layering functionality with the z-index. I also made the game responsive by resizing all HTML5 elements
+        according to the display width, so it can be played on both desktop and mobile.</p>
+    </section>
+
+    <section>
+      <h2>Challenge</h2>
+
+      <p>One challenge I encountered was programming animations with frames created by Eric and Peter. I looked up solutions online that would simply cycle through the frames with JavaScript. I tried a few and ended up with one that worked, but it was not ideal. For some reason, the animation would randomly lag</p>
+
+        <div class="caption">
+          <img src="../images/eat-ups/animation-lag.gif" alt="Animation lag" class="smaller">
+        </div>
+        <div class="caption">
+          Animation with JavaScript lagging
+        </div>
+
+      <p>The animation we wanted to include would loop, so I suggested that we convert that into a GIF and I would position it with CSS accordingly. It ended up working out better than the other solution as it would not slow down. </p>
+
+      <div class="caption">
+        <img src="../images/eat-ups/final-animation.gif" alt="Animation in GIF format" class="smaller">
+      </div>
+      <div class="caption">
+        Animation in GIF format
+      </div>
+    </section>
+    <section>
+      <h2>Reflection</h2>
+      <p>In the end, Eat Ups was successful. We were able to implement all the necessary game elements we planned to implement. It was a game that players can play through and keep replaying. </p>
+
+      <p>If I could do this differently, I would want to make the desktop look better. Currently, the game takes up a 9:16 aspect ratio, which creates two large white bars on the sides. I would add a background image spanning the entire width of the window
+        that changes according to what state the game is in. </p>
+
+      <p>I learned how to use JavaScript to create a simple HTML5 game using the canvas element that can be playable on both desktop and mobile. I also gained more experience with Git, which we used to manage all the files. </p>
+    </section>
+  </article>
+
+  <section class="other-projects">
+    <h3>Other Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <a href="../bubbly"><img src="../images/thumbnails/bubbly.png" alt="Bubbly thumbnail"></a>
+        <a href="../bubbly">Bubbly</a>
+        <p class="type">Project Management Web App</p>
+      </div>
+      <div class="project">
+        <a href="../doot"><img src="../images/thumbnails/doot.png" alt="Doot"></a>
+        <a href="../doot">Doot</a>
+        <p class="type">Web App</p>
+      </div>
+      <div class="project">
+        <a href="../housing-101"><img src="../images/thumbnails/housing-101.png" alt="Housing 101 thumbnail"></a>
+        <a href="../housing-101">Housing 101</a>
+        <p class="type">Mock Website Redesign</p>
+      </div>
+      <div class="project">
+        <a href="../pharmaquest"><img src="../images/thumbnails/pharmaquest.png" alt="PharmaQuest thumbnail"></a>
+        <a href="../pharmaquest">PharmaQuest</a>
+        <p class="type">Unity Game</p>
+      </div>
+      <div class="project">
+        <a href="../flare"><img src="../images/thumbnails/flare.png" alt="Flare thumbnail"></a>
+        <a href="../flare">Flare</a>
+        <p class="type">Android App</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
