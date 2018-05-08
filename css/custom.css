@@ -89,14 +89,18 @@ article {
   color: #0047AB;
 }
 
-#about-link {
+#about {
   position: relative;
   top: 10rem;
 }
 
-#about-link ul {
+#about ul {
   padding: 0;
   list-style-type: none;
+}
+
+#email {
+  font-weight: bold;
 }
 
 .projects {
