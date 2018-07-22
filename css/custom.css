@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0047AB;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -44,13 +44,13 @@ nav {
   filter: alpha(opacity=90);
 }
 
-nav ul {
+header nav ul {
   display: flex;
   padding: 0;
   list-style-type: none;
 }
 
-nav li {
+header nav li {
   margin: 0 1.5rem;
 }
 
@@ -63,15 +63,29 @@ p, li {
   margin-bottom: 1.3rem;
 }
 
-article {
+article, main {
   max-width: 50rem;
   margin: 0 auto;
   overflow: auto;
 }
 
+pre {
+  display: block;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  display: block;
+  background-color: #F4F4F4;
+  padding: 0 2em;
+}
+
 /* specific */
 
 #homepage {
+  max-width: none;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -112,7 +126,7 @@ article {
   flex: 0 1 40%;
 }
 
-#homepage .project {
+.project {
   display: flex;
   flex-direction: column;
   flex: 0 1 33.3%;
@@ -161,6 +175,19 @@ article {
   flex-direction: column;
   flex: 0 1 20%;
   padding: 0.75rem;
+}
+
+.empty {
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.cobalt-blue {
+  background-color: #0047AB;
+}
+
+.gray {
+  background-color: #606060;
 }
 
 /*media queries*/
