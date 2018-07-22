@@ -6,11 +6,15 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+body {
+  min-height: 100%;
   font-family: 'Rubik', sans-serif;
   color: #606060;
   overflow: auto;
+}
+
+html {
+  height: 100%;
 }
 
 a {
@@ -86,7 +90,6 @@ code {
 
 #homepage {
   max-width: none;
-  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -225,13 +228,17 @@ code {
 @media (max-width: 1124px) {
   #homepage {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  #about {
+    top: auto;
   }
   #about-link {
     position: relative;
     top: 3rem;
   }
   #intro {
-    margin-bottom: 6rem;
+    margin-left: 15%;
   }
 }
 
@@ -256,9 +263,13 @@ code {
 @media (max-width: 674px) {
   #homepage {
     padding: 0 1.5rem;
+    align-items: center;
   }
   #homepage .project {
     flex: 0 1 50%;
+  }
+  #intro {
+    margin-left: 0;
   }
 }
 
@@ -274,7 +285,7 @@ code {
   }
 }
 
-@media (max-width: 497px) {
+@media (max-width: 430px) {
   #homepage .project {
     flex: 0 1 100%;
     padding: 0;
