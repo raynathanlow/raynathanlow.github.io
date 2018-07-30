@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Portfolio Style Guide</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../dist/css/normalize.css">
+  <link rel="stylesheet" href="../dist/css/custom.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -196,17 +196,17 @@
             <code>
 &lt;div class="projects"&gt;
   &lt;div class="project"&gt;
-    &lt;a href="eat-ups"&gt;&lt;img src="images/thumbnails/eat-ups.png" alt="Eat Ups thumbnail"&gt;&lt;/a&gt;
+    &lt;a href="eat-ups"&gt;&lt;img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail"&gt;&lt;/a&gt;
     &lt;a href="eat-ups"&gt;Eat Ups&lt;/a&gt;
     &lt;p class="type"&gt;HTML5 Game&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="project"&gt;
-    &lt;a href="bubbly"&gt;&lt;img src="images/thumbnails/bubbly.png" alt="Bubbly thumbnail"&gt;&lt;/a&gt;
+    &lt;a href="bubbly"&gt;&lt;img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"&gt;&lt;/a&gt;
     &lt;a href="bubbly"&gt;Bubbly&lt;/a&gt;
     &lt;p class="type"&gt;Project Management Web App&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="project"&gt;
-    &lt;a href="doot"&gt;&lt;img src="images/thumbnails/doot.png" alt="Doot"&gt;&lt;/a&gt;
+    &lt;a href="doot"&gt;&lt;img src="../dist/images/doot-thumbnail.png" alt="Doot"&gt;&lt;/a&gt;
     &lt;a href="doot"&gt;Doot&lt;/a&gt;
     &lt;p class="type"&gt;Web App&lt;/p&gt;
   &lt;/div&gt;
@@ -217,17 +217,17 @@
           <h4>Rendered element:</h4>
           <div class="projects">
             <div class="project">
-              <a href="eat-ups"><img src="../images/thumbnails/eat-ups.png" alt="Eat Ups thumbnail"></a>
+              <a href="eat-ups"><img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail"></a>
               <a href="eat-ups">Eat Ups</a>
               <p class="type">HTML5 Game</p>
             </div>
             <div class="project">
-              <a href="bubbly"><img src="../images/thumbnails/bubbly.png" alt="Bubbly thumbnail"></a>
+              <a href="bubbly"><img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"></a>
               <a href="bubbly">Bubbly</a>
               <p class="type">Project Management Web App</p>
             </div>
             <div class="project">
-              <a href="doot"><img src="../images/thumbnails/doot.png" alt="Doot"></a>
+              <a href="doot"><img src="../dist/images/doot-thumbnail.png" alt="Doot"></a>
               <a href="doot">Doot</a>
               <p class="type">Web App</p>
             </div>
@@ -235,6 +235,50 @@
         </div>
       </section>
 
+      <section>
+        <h3>Project overview</h3>
+        <div class="item-details">
+          <h4>CSS Selector:</h4>
+          <p>.overview</p>
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+&lt;div class="overview"&gt;
+  &lt;div class="info"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+      &lt;li&gt;CSS&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start: January 2015&lt;/li&gt;
+      &lt;li&gt;End: August 2015&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="../housing-101-project"&gt;View Website&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <div class="overview">
+            <div class="info">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <ul>
+                <li>Start: January 2015</li>
+                <li>End: August 2015</li>
+              </ul>
+              <ul>
+                <li><a href="../housing-101-project">View Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <h3>Image with caption</h3>
         <div class="item-details">
@@ -244,7 +288,7 @@
           <pre>
             <code>
 &lt;div class="caption"&gt;
-  &lt;img src="../images/bubbly/design-focus.png" alt="Design focus"&gt;
+  &lt;img src="../dist/images/bubbly-design-focus.png" alt="Design focus"&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;
   Poster illustrating design focus
@@ -254,7 +298,7 @@
 
           <h4>Rendered element:</h4>
           <div class="caption">
-            <img src="../images/bubbly/design-focus.png" alt="Design focus">
+            <img src="../dist/images/bubbly-design-focus.png" alt="Design focus">
           </div>
           <div class="caption">
             Poster illustrating design focus
