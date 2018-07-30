@@ -50,13 +50,18 @@ header nav {
   filter: alpha(opacity=90);
 }
 
-header nav ul {
+header nav ul, footer nav ul {
   display: flex;
   padding: 0;
   list-style-type: none;
 }
 
-header nav li {
+footer nav ul {
+  font-size: 0.8em;
+  justify-content: flex-end;
+}
+
+header nav li, footer nav li {
   margin: 0 1.5rem;
 }
 
@@ -109,6 +114,7 @@ code {
 }
 
 #about {
+  flex: 0 0 60%;
   position: relative;
   top: 10rem;
 }
