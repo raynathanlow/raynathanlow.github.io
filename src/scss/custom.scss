@@ -1,3 +1,7 @@
+// Colours
+
+$cobaltBlue: #0047AB;
+
 /* General */
 
 * {
@@ -16,7 +20,7 @@ html {
 }
 
 a {
-  color: #0047AB;
+  color: $cobaltBlue;
   text-decoration: none;
 }
 
@@ -34,7 +38,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #0047AB;
+  color: $cobaltBlue;
 }
 
 header nav {
@@ -101,7 +105,7 @@ code {
   font-size: 3.25rem;
   line-height: 4.5rem;
   margin: 1rem 0;
-  color: #0047AB;
+  color: $cobaltBlue;
 }
 
 #about {
@@ -185,8 +189,14 @@ code {
   margin: 0 auto;
 }
 
-.caption {
-  color: #949494;
+figure {
+  padding: 0.75em;
+  background-color: $cobaltBlue;
+  border-radius: 5px;
+}
+
+figcaption, .caption {
+  color: white;
   margin: 2rem 0;
   text-align: center;
   font-size: 0.9rem;
@@ -210,7 +220,7 @@ code {
 }
 
 .cobalt-blue {
-  background-color: #0047AB;
+  background-color: $cobaltBlue;
 }
 
 .gray {
