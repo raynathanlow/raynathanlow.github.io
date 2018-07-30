@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "imagemin": "imagemin src/images/* --out-dir=dist/images/"
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "lint": "eslint src/js",
+    "uglify": "uglifyjs src/js/*.js -m -o dist/js/main.js",
+    "imagemin": "imagemin src/images/* --out-dir=dist/images/",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run lint && npm run uglify",
+    "build:images": "npm run imagemin",
+    "build:all": "npm run build:css && npm run build:js && npm run build:images"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
+    "browser-sync": "^2.24.6",
     "eslint": "^5.2.0",
     "imagemin-cli": "^3.0.0",
     "postcss-cli": "^6.0.0",
