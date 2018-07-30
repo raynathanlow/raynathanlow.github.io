@@ -1,6 +1,6 @@
-// Colours
-
 $cobaltBlue: #0047AB;
+$cobaltBlueLight: #0047ab9e;
+$boxShadow: #00357F;
 
 /* General */
 
@@ -191,20 +191,26 @@ code {
 .smaller {
   display: block;
   width: 55%;
-  padding: 0.5rem;
-  margin: 0 auto;
+  // padding: 0.5rem;
+  margin: 2em auto;
 }
 
 figure {
+  display: block;
   padding: 0.75em;
-  background-color: $cobaltBlue;
+  background-color: white;
   border-radius: 5px;
+  box-shadow: 1px 1px 8px 0px $boxShadow;
+}
+
+figure img {
+  border: solid 1px black;
 }
 
 figcaption, .caption {
-  color: white;
-  margin: 2rem 0;
-  text-align: center;
+  color: black;
+  padding: 0.5em;
+  // text-align: center;
   font-size: 0.9rem;
 }
 
