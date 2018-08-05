@@ -1,0 +1,101 @@
+@media (max-width: 1050px) {
+  .projects {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project, .background, .project-info {
+    display: flex;
+  }
+  .project-img {
+    display: flex;
+    flex: 0 0 40%;
+    margin-right: 1em;
+    flex-direction: column;
+  }
+  .project-img img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  #homepage-main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  #intro {
+    width: 100%;
+    padding: 6%;
+  }
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  .project, .background, .project-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    flex: 0 1 50%;
+    margin: 0;
+  }
+  .project:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .project-img {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 847px) {
+  article {
+    padding: 0 1.5rem;
+  }
+}
+
+
+@media (max-width: 545px) {
+  .smaller {
+    width: 70%;
+  }
+}
+
+@media (max-width: 470px) {
+  main {
+    margin-bottom: 6em;
+  }
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .project:not(:last-of-type) {
+    margin-right: 0px;
+  }
+  .project {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  footer {
+    left: 0;
+  }
+  footer nav ul {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 408px) {
+  .smaller {
+    width: 85%;
+  }
+}
+
+@media (max-width: 300px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
