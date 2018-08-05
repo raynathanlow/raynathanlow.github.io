@@ -7,6 +7,8 @@
         "ecmaVersion": 5
     },
     "rules": {
+      "no-console": 1,
+      "no-unused-vars": 1,
         "indent": [
             "error",
             2

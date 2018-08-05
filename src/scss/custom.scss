@@ -1,6 +1,6 @@
 $cobaltBlue: #0047AB;
-$cobaltBlueLight: #0047ab9e;
 $boxShadow: #00357F;
+$bgTransitionSpeed: 0.3s;
 
 /* General */
 
@@ -9,10 +9,13 @@ $boxShadow: #00357F;
 }
 
 body {
+  position: relative;
   min-height: 100%;
   font-family: 'Rubik', sans-serif;
   color: #606060;
-  overflow: auto;
+  // overflow: auto;
+  background: center url(../../src/images/diamond.svg);
+  background-size: 51%;
 }
 
 html {
@@ -22,18 +25,21 @@ html {
 a {
   color: $cobaltBlue;
   text-decoration: none;
+  border-bottom: solid 1px $cobaltBlue;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
 }
 
-a img:hover {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+.link-underline-hide {
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
 }
 
 img {
+  display: block;
   width: 100%;
 }
 
@@ -56,6 +62,13 @@ header nav ul, footer nav ul {
   list-style-type: none;
 }
 
+footer {
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+  font-size: 0.8rem;
+}
+
 footer nav ul {
   font-size: 0.8em;
   justify-content: flex-end;
@@ -74,10 +87,13 @@ p, li {
   margin-bottom: 1.3rem;
 }
 
-article, main {
+article, main:not(#homepage-main) {
   max-width: 50rem;
   margin: 0 auto;
-  overflow: auto;
+}
+
+main {
+  margin-bottom: 4em;
 }
 
 pre {
@@ -95,33 +111,45 @@ code {
 
 /* specific */
 
-#homepage {
-  max-width: none;
+#homepage-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#homepage-body a {
+  font-size: 1.2rem;
+}
+
+#homepage-main {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#homepage a {
-  font-size: 1.2rem;
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: white;
+  padding: 3em;
+  box-shadow: -10px 10px 0px 0px $cobaltBlue;
+  // TODO: Use JS to make the same height as projects
 }
 
 #name {
   font-size: 3.25rem;
   line-height: 4.5rem;
-  margin: 1rem 0;
   color: $cobaltBlue;
+  margin-bottom: 0.5em;
 }
 
 #about {
-  flex: 0 0 60%;
-  position: relative;
-  top: 10rem;
+  // margin-top: 5em;
 }
 
-#about ul {
-  padding: 0;
-  list-style-type: none;
+#about div {
+ margin-top: 1.7em;
 }
 
 #email {
@@ -132,16 +160,55 @@ code {
   display: flex;
 }
 
-#homepage .projects {
-  flex: 0 0 40%;
-  flex-wrap: wrap;
+#homepage-main .projects {
+  flex: 0 1 40%;
+  // flex-wrap: wrap;
 }
 
 .project {
-  // display: flex;
+  position: relative;
   flex-direction: column;
-  flex: 0 1 45%;
-  padding: 2%;
+  flex: 0 1 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.div-link {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $cobaltBlue;
+  top: 0;
+  left: 0;
+  transition: all $bgTransitionSpeed ease;
+}
+
+.project-info {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: solid 1em white;
+  background-color: white;
+}
+
+#homepage-main .project .project-name {
+  font-size: 1.5rem;
+}
+
+.project-hover {
+  top: 5px;
+  left: 5px;
+  transition: all $bgTransitionSpeed ease;
 }
 
 .fixed {
@@ -176,7 +243,8 @@ code {
 }
 
 .project img {
-  margin-bottom: 0.45em;
+  margin-bottom: 1.5em;
+  box-shadow: 2px 2px 5px 0px $boxShadow;
 }
 
 .type {
@@ -245,15 +313,55 @@ figcaption, .caption {
 
 /*media queries*/
 
-@media (max-width: 1043px) {
-  .other-projects {
-    padding: 0 1.5rem;
+@media (max-width: 1050px) {
+  .projects {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project, .background, .project-info {
+    display: flex;
+  }
+  .project-img {
+    display: flex;
+    flex: 0 0 40%;
+    margin-right: 1em;
+    flex-direction: column;
+  }
+  .project-img img {
+    margin: 0;
   }
 }
 
-@media (max-width: 901px) {
-  .other-projects .project {
-    flex: 0 1 33.3%;
+@media (max-width: 880px) {
+  #homepage-main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  #intro {
+    width: 100%;
+    padding: 6%;
+  }
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  .project, .background, .project-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    flex: 0 1 50%;
+    margin: 0;
+  }
+  .project:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .project-img {
+    display: block;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -261,41 +369,8 @@ figcaption, .caption {
   article {
     padding: 0 1.5rem;
   }
-  #homepage {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #about {
-    top: auto;
-  }
-  #about-link {
-    position: relative;
-    top: 3rem;
-  }
-  #intro {
-    margin-bottom: 1em;
-    margin-left: 15%;
-  }
 }
 
-@media (max-width: 674px) {
-  #homepage {
-    padding: 0 1.5rem;
-    align-items: center;
-  }
-  #homepage .project {
-    flex: 0 1 50%;
-  }
-  #intro {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 589px) {
-  .other-projects .project {
-    flex: 0 1 50%;
-  }
-}
 
 @media (max-width: 545px) {
   .smaller {
@@ -303,18 +378,32 @@ figcaption, .caption {
   }
 }
 
-@media (max-width: 430px) {
-  #homepage .project {
-    flex: 0 1 100%;
-    padding: 0;
+@media (max-width: 470px) {
+  main {
+    margin-bottom: 5em;
+  }
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .project:not(:last-of-type) {
+    margin-right: 0px;
+  }
+  .project {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  footer {
+    left: 0;
+  }
+  footer nav ul {
+    flex-direction: column;
   }
 }
 
+
 @media (max-width: 408px) {
-  .other-projects .project {
-    flex: 0 1 100%;
-    padding: 0;
-  }
   .smaller {
     width: 85%;
   }
