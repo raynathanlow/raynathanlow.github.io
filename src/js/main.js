@@ -1,12 +1,15 @@
-// $('body').scroll(function() {
-//   if ($('body').scrollTop() >= $('nav').outerHeight()) {
-//     $('nav').addClass('fixed');
-//     $('nav a').addClass('invert');
-//   } else {
-//     $('nav').removeClass('fixed');
-//     $('nav a').removeClass('invert');
-//   }
-// });
+var header = document.querySelector('header nav');
+var backToTop = document.querySelector('.back-to-top');
+
+document.body.onscroll = function() {
+  if (window.pageYOffset >= header.offsetHeight) {
+    header.classList.add('fixed');
+    backToTop.classList.remove('hidden');
+  } else {
+    header.classList.remove('fixed');
+    backToTop.classList.add('hidden');
+  }
+};
 
 function addBackgroundEffect() {
   var background = event.target.closest('.project').querySelector('.background');
