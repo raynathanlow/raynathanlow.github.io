@@ -1,18 +1,18 @@
 @media (max-width: 1050px) {
-  .projects {
+  #homepage-main .projects {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .project, .background, .project-info {
+  #homepage-main .project, #homepage-main .background, #homepage-main .project-info {
     display: flex;
   }
-  .project-img {
+  #homepage-main .project-img {
     display: flex;
     flex: 0 0 40%;
     margin-right: 1em;
     flex-direction: column;
   }
-  .project-img img {
+  #homepage-main .project-img img {
     margin: 0;
   }
 }
@@ -27,35 +27,46 @@
     width: 100%;
     padding: 6%;
   }
-  .projects {
+  #homepage-main .projects {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2em;
   }
-  .project, .background, .project-info {
+  #homepage-main .project, #homepage-main .background, #homepage-main .project-info {
     display: flex;
     flex-direction: column;
   }
-  .project {
+  #homepage-main .project {
     flex: 0 1 50%;
     margin: 0;
   }
-  .project:not(:last-of-type) {
+  #homepage-main .project:not(:last-of-type) {
     margin-right: 10px;
   }
-  .project-img {
+  #homepage-main .project-img {
     display: block;
     margin-bottom: 1.5em;
   }
 }
 
-@media (max-width: 847px) {
+@media (max-width: 850px) {
   article {
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
+  }
+  section {
+    margin-bottom: 2em;
   }
 }
 
+@media (max-width: 650px) {
+  section {
+    padding: 1em;
+  }
+  .other-projects .project {
+    flex: 0 0 100%;
+  }
+}
 
 @media (max-width: 545px) {
   .smaller {
@@ -63,34 +74,62 @@
   }
 }
 
+@media (max-width: 500px) {
+  .overview section {
+    flex: 0 0 100%;
+    border: none;
+  }
+  .overview section:not(:last-child) {
+    border-bottom: solid 1px $cobaltBlue;
+  }
+}
+
 @media (max-width: 470px) {
   main {
     margin-bottom: 6em;
   }
-  .projects {
+  #homepage-main .projects, .other-projects .projects {
     flex-wrap: nowrap;
     flex-direction: column;
     margin-top: 2em;
   }
-  .project:not(:last-of-type) {
+  #homepage-main .project:not(:last-of-type), .other-projects .projects {
     margin-right: 0px;
   }
-  .project {
+  #homepage-main .project, .other-projects .project {
     margin: 0;
     margin-bottom: 2em;
   }
-  footer {
-    left: 0;
+  .other-projects .project-img {
+    display: block;
+    margin-bottom: 1.5em;
   }
-  footer nav ul {
+  .homepage-footer ul {
+    left: 0;
     flex-direction: column;
   }
 }
 
-
 @media (max-width: 408px) {
   .smaller {
     width: 85%;
+  }
+  .other-projects .project, .other-projects .background, .other-projects .project-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 370px) {
+  .other-projects {
+    margin-bottom: 9em;
+  }
+  .project-footer {
+    left: 0;
+    bottom: -9em;
+  }
+  .project-footer ul {
+    flex-direction: column;
   }
 }
 
