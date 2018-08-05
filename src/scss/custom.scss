@@ -1,49 +1,43 @@
-$baseFontColour: #606060;
 $cobaltBlue: #0047AB;
+$cobaltBlueLight: #0047ab9e;
 $boxShadow: #00357F;
+
 /* General */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  // min-height: 100%;
+  min-height: 100%;
   font-family: 'Rubik', sans-serif;
-  color: $baseFontColour;
-  // overflow: auto;
+  color: #606060;
+  overflow: auto;
 }
 
 html {
-  // height: 100%;
+  height: 100%;
 }
 
 a {
   color: $cobaltBlue;
   text-decoration: none;
-  border-bottom: solid 1px $cobaltBlue;
 }
 
 a:hover {
-  text-decoration: none;
-  border-bottom: none;
+  text-decoration: underline;
 }
 
 a img:hover {
   opacity: 0.9;
-  transition: opacity 1s ease 0s;
+  filter: alpha(opacity=90);
 }
 
 img {
-  display: block;
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: $cobaltBlue;
 }
 
@@ -56,24 +50,18 @@ header nav {
   filter: alpha(opacity=90);
 }
 
-footer {
-  margin-top: 5em;
-  margin-bottom: 2em;
-}
-
-footer nav ul,
-header nav ul {
+header nav ul, footer nav ul {
   display: flex;
   padding: 0;
   list-style-type: none;
 }
 
 footer nav ul {
-  justify-content: center;
+  font-size: 0.8em;
+  justify-content: flex-end;
 }
 
-footer nav li,
-header nav li {
+header nav li, footer nav li {
   margin: 0 1.5rem;
 }
 
@@ -81,14 +69,12 @@ section {
   margin-bottom: 3.7rem;
 }
 
-li,
-p {
+p, li {
   line-height: 1.7rem;
   margin-bottom: 1.3rem;
 }
 
-article,
-main:not(#homepage) {
+article, main {
   max-width: 50rem;
   margin: 0 auto;
   overflow: auto;
@@ -106,97 +92,61 @@ code {
   background-color: #F4F4F4;
   padding: 0 2em;
 }
-/* specific */
-// #homepage {
-//   max-width: none;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-// }
-//
-// #homepage a {
-//   font-size: 1.2rem;
-// }
-//
 
-#intro {
-  max-width: 35rem;
-  margin: 0 auto 5em;
+/* specific */
+
+#homepage {
+  max-width: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#intro div {
-  margin: 1.5rem 0;
+#homepage a {
+  font-size: 1.2rem;
 }
 
 #name {
   font-size: 3.25rem;
   line-height: 4.5rem;
+  margin: 1rem 0;
   color: $cobaltBlue;
 }
 
-#intro #name-role {
-  margin-bottom: 3em;
+#about {
+  flex: 0 0 60%;
+  position: relative;
+  top: 10rem;
 }
 
-.bold {
+#about ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#email {
   font-weight: bold;
 }
 
 .projects {
-  max-width: 60rem;
-  margin: 0 auto;
+  display: flex;
+}
+
+#homepage .projects {
+  flex: 0 0 40%;
+  flex-wrap: wrap;
 }
 
 .project {
-  display: flex;
-  margin: 1.5em 0;
-  width: 100%;
-}
-
-.project:hover {
-  background-color: rgba($baseFontColour, .2);
-  transition: background-color 1s ease 0s;
-}
-
-.project .img {
-  flex: 0 0 30%;
-}
-
-.project .info {
-  position: relative;
-  flex: 0 0 70%;
-  border: 3px solid $cobaltBlue;
-  border-left: 0;
-  padding: 2em;
-}
-
-.project-name {
-  font-size: 1.5rem;
-  color: $cobaltBlue;
-}
-
-.project-type {
-  font-size: 1.05rem;
-}
-
-.name-type,
-.tools-duration {
-  margin-bottom: 2em;
-}
-
-.name-type div:not(:first-of-type),
-.tools-duration div {
-  margin-top: 1rem;
-}
-
-.view-project {
-  position: relative;
-  bottom: 0;
+  // display: flex;
+  flex-direction: column;
+  flex: 0 1 45%;
+  padding: 2%;
 }
 
 .fixed {
   position: fixed;
-  top: 0;
+  top: 0px;
 }
 
 .overview {
@@ -216,7 +166,9 @@ code {
 }
 
 .overview ul {
-  margin: 1.3em 5% 0 0;
+  margin: 0;
+  margin-top: 1.3em;
+  margin-right: 5%;
   list-style-type: none;
   padding-left: 1em;
   color: #414141;
@@ -224,7 +176,7 @@ code {
 }
 
 .project img {
-  // margin-bottom: 0.45em;
+  margin-bottom: 0.45em;
 }
 
 .type {
@@ -248,7 +200,7 @@ figure {
   padding: 0.75em;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 1px 1px 8px 0 $boxShadow;
+  box-shadow: 1px 1px 8px 0px $boxShadow;
 }
 
 figure img {
@@ -259,13 +211,13 @@ figure img {
   border: none;
 }
 
-.caption,
-figcaption {
+figcaption, .caption {
   color: black;
   padding: 0.5em;
   // text-align: center;
   font-size: 0.9rem;
 }
+
 .other-projects {
   max-width: 65rem;
   margin: 0 auto;
@@ -290,74 +242,84 @@ figcaption {
 .gray {
   background-color: #606060;
 }
+
 /*media queries*/
+
 @media (max-width: 1043px) {
-  // .other-projects {
-  //   padding: 0 1.5rem;
-  // }
+  .other-projects {
+    padding: 0 1.5rem;
+  }
 }
+
 @media (max-width: 901px) {
-  // .other-projects .project {
-  //   flex: 0 1 33.3%;
-  // }
+  .other-projects .project {
+    flex: 0 1 33.3%;
+  }
 }
+
 @media (max-width: 847px) {
   article {
     padding: 0 1.5rem;
   }
-  // #homepage {
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-  // #about {
-  //   top: auto;
-  // }
-  // #about-link {
-  //   position: relative;
-  //   top: 3rem;
-  // }
-  // #intro {
-  //   margin-bottom: 1em;
-  //   margin-left: 15%;
-  // }
+  #homepage {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #about {
+    top: auto;
+  }
+  #about-link {
+    position: relative;
+    top: 3rem;
+  }
+  #intro {
+    margin-bottom: 1em;
+    margin-left: 15%;
+  }
 }
+
 @media (max-width: 674px) {
-  // #homepage {
-  //   padding: 0 1.5rem;
-  //   align-items: center;
-  // }
-  // #homepage .project {
-  //   flex: 0 1 50%;
-  // }
-  // #intro {
-  //   margin-left: 0;
-  // }
+  #homepage {
+    padding: 0 1.5rem;
+    align-items: center;
+  }
+  #homepage .project {
+    flex: 0 1 50%;
+  }
+  #intro {
+    margin-left: 0;
+  }
 }
+
 @media (max-width: 589px) {
-  // .other-projects .project {
-  //   flex: 0 1 50%;
-  // }
+  .other-projects .project {
+    flex: 0 1 50%;
+  }
 }
+
 @media (max-width: 545px) {
   .smaller {
     width: 70%;
   }
 }
+
 @media (max-width: 430px) {
-  // #homepage .project {
-  //   flex: 0 1 100%;
-  //   padding: 0;
-  // }
+  #homepage .project {
+    flex: 0 1 100%;
+    padding: 0;
+  }
 }
+
 @media (max-width: 408px) {
-  // .other-projects .project {
-  //   flex: 0 1 100%;
-  //   padding: 0;
-  // }
+  .other-projects .project {
+    flex: 0 1 100%;
+    padding: 0;
+  }
   .smaller {
     width: 85%;
   }
 }
+
 @media (max-width: 300px) {
   header nav ul {
     flex-direction: column;
