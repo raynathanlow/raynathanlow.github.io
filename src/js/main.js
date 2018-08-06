@@ -13,16 +13,16 @@
 // };
 
 function addBackgroundEffect() {
-  var background = event.target.closest('.project').querySelector('.background');
+  // var background = event.target.closest('.project').querySelector('.background');
   var name = event.target.closest('.project').querySelector('.project-name');
-  background.classList.add('project-hover');
+  // background.classList.add('project-hover');
   name.classList.add('link-underline-hide');
 }
 
 function removeBackgroundEffect() {
-  var background = event.target.closest('.project').querySelector('.background');
+  // var background = event.target.closest('.project').querySelector('.background');
   var name = event.target.closest('.project').querySelector('.project-name');
-  background.classList.remove('project-hover');
+  // background.classList.remove('project-hover');
   name.classList.remove('link-underline-hide');
 }
 

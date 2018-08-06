@@ -1,7 +1,7 @@
 $cobaltBlue: #0047AB;
 $boxShadow: #00357F;
 $bgTransitionSpeed: 0.3s;
-$whiteSmoke: #F8F9F7;
+$background: #cecece;
 
 /* General */
 
@@ -15,9 +15,9 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #606060;
   // overflow: auto;
-  background: center url(../../src/images/diamond.svg);
-  background-size: 51%;
-  background-color: $whiteSmoke;
+  // background: center url(../../src/images/diamond.svg);
+  // background-size: 51%;
+  background-color: $background;
 }
 
 html {
@@ -326,6 +326,7 @@ article h1 {
 
 article .type {
   font-style: italic;
+  color: black;
 }
 
 figure {
@@ -393,7 +394,7 @@ figcaption, .caption {
 }
 
 .white-smoke {
-  background-color: $whiteSmoke;
+  background-color: $background;
 }
 
 @import 'responsiveness';
