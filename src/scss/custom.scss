@@ -49,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $cobaltBlue;
 }
 
+header .name {
+  font-size: 1.6rem;
+  color: $cobaltBlue;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -58,19 +63,30 @@ header nav {
   filter: alpha(opacity=90);
   box-shadow: 2px 2px 5px 0px $boxShadow;
   align-items: center;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
+  z-index: 3;
 }
 
-header nav ul, footer nav ul {
+footer nav ul {
   display: flex;
   padding: 0;
   list-style-type: none;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left div {
+  margin-right: 2em;
 }
 
 footer {
   position: absolute;
   width: 100%;
   background-color: white;
+  bottom: 0;
 }
 
 .homepage-footer {
@@ -105,6 +121,7 @@ p, li {
 article, main:not(#homepage-main) {
   max-width: 50rem;
   margin: 0 auto;
+  padding: 1em 0;
 }
 
 main {
@@ -317,7 +334,7 @@ figure {
   border-radius: 5px;
   box-shadow: 1px 1px 8px 0px $boxShadow;
   // width: 100%;
-  margin: 3em 0;
+  margin: 2.5em 0;
 }
 
 figure img {

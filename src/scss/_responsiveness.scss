@@ -82,6 +82,13 @@
   .overview section:not(:last-child) {
     border-bottom: solid 1px $cobaltBlue;
   }
+  figure {
+    overflow-x: scroll;
+  }
+  figure img {
+    width: 250%;
+    height: auto;
+  }
 }
 
 @media (max-width: 470px) {
@@ -104,9 +111,28 @@
     display: block;
     margin-bottom: 1.5em;
   }
+  .homepage-footer {
+    left: 0;
+    bottom: -3em;
+  }
+
+  .homepage-footer, .project-footer {
+    padding: 0.5em 2em;
+  }
   .homepage-footer ul {
     left: 0;
     flex-direction: column;
+  }
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-left div {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  footer nav li {
+    margin-bottom: 0.5em;
   }
 }
 
@@ -126,7 +152,7 @@
   }
   .project-footer {
     left: 0;
-    bottom: -9em;
+    bottom: -12em;
   }
   .project-footer ul {
     flex-direction: column;
@@ -134,7 +160,7 @@
 }
 
 @media (max-width: 300px) {
-  header nav ul {
+  .header-left {
     flex-direction: column;
   }
 }
