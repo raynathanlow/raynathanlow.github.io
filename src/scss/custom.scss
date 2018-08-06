@@ -138,7 +138,7 @@ pre {
 code {
   display: block;
   background-color: #F4F4F4;
-  padding: 0 2em;
+  padding: 2em;
 }
 
 /* specific */
@@ -389,6 +389,10 @@ figcaption, .caption {
 
 .gray {
   background-color: #606060;
+}
+
+.white-smoke {
+  background-color: $whiteSmoke;
 }
 
 @import 'responsiveness';

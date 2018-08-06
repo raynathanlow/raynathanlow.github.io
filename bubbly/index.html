@@ -67,8 +67,10 @@
       </div>
 
       <figure>
-        <img src="../dist/images/bubbly-initial-concept.png" alt="Bubbly initial concept" class="no-border">
-        <figcaption>Bubbly initial concept</figcaption>
+        <div class="figure-img">
+          <img src="../dist/images/bubbly-dashboard.png" alt="Prototype dashboard">
+        </div>
+        <figcaption>A couple of Team bubbles and an Announcement bubble</figcaption>
       </figure>
 
       <section>
@@ -90,17 +92,14 @@
           the content for the posters that presented our findings in those weeks. After that, there were two major sets of activities that I helped plan for employees to complete, which helped us discover any design opportunities.</p>
 
         <figure>
-          <img src="../dist/images/bubbly-employee-activity.jpg" alt="Employee activity result">
+          <div class="figure-img">
+            <img src="../dist/images/bubbly-employee-activity.jpg" alt="Employee activity result">
+          </div>
           <figcaption>Results of one of the activities I helped plan</figcaption>
         </figure>
 
         <p>One of the design opportunities allowed for Bubbly, which I helped ideate the concept of Bubbly to make it more suitable for Procurify’s situation. Once we had a concept, I also helped build the prototype using HTML, CSS, and JavaScript within
           a flat-file content management system (CMS) known as <a href="https://getgrav.org/">Grav</a>. A flat-file CMS manages text files used to display webpages and the data used is also stored onto text files instead of a database.</p>
-
-        <figure>
-          <img src="../dist/images/bubbly-dashboard.png" alt="Prototype dashboard">
-          <figcaption>Dashboard of prototype</figcaption>
-        </figure>
 
       </section>
 
@@ -112,12 +111,55 @@
           frontmatter, which is also known as headers, is the block of code that is processed by Grav to configure the page. This code must be correctly configured the page for the iterator to find the appropriate pages to display on the homepage.</p>
 
         <figure>
-          <img src="../dist/images/bubbly-frontmatter.png" alt="YAML frontmatter for adding project bubble">
-          <figcaption>YAML frontmatter for adding project bubble</figcaption>
+          <pre>
+            <code>title: 'Add Announcement'
+template: form
+pageconfig:
+    parent: page.parent
+    include_username: true
+    overwrite_mode: true
+pagefrontmatter:
+    visible: true
+    template: announcement
+    title: 'Create New Announcement'
+    taxonomy:
+        type: announcement
+form:
+    name: addpage.announcement
+    fields:
+        -
+            name: 'title'
+            type: text
+            id: title
+            placeholder: 'Enter announcement here. (50 character limit)'
+            validate:
+                min: 1
+                max: 50
+    buttons:
+        -
+            type: submit
+            value: Add
+    process:
+        -
+            addpage: null
+        -
+            redirect: /
+</code>
+</pre>
+          <figcaption>The YAML frontmatter used to customize the form to create a new Announcement bubble</figcaption>
         </figure>
 
-        <p>I was able to get through this problem by analyzing how the examples in the Grav documentation and playing around with the variables to understand how they worked. In the end, I was able to configure the form’s frontmatter so that it was created
-          in the appropriate folder and it had the appropriate attributes for the iterator to find either the announcements or the projects.</p>
+
+        <p>I was able to get through this problem by analyzing how the frontmatter worked in the <a href="https://learn.getgrav.org/content/headers">Grav documentation</a> and playing around with the variables to understand how they worked. In the end, I
+          was able to configure the form’s frontmatter so that it was created in the appropriate folder and it had the appropriate attributes for the iterator to find either the announcements or the projects.</p>
+
+        <figure>
+            <div class="figure-img">
+              <img src="../dist/images/bubbly-new-announcement.png" alt="interface used to create a new Announcement bubble">
+            </div>
+            <figcaption>interface used to create a new Announcement bubble</figcaption>
+          </figure>
+
       </section>
 
       <section>
@@ -125,12 +167,7 @@
         <p>Bubbly was successful in that the research we gathered in those four months supported the final design. It addressed the problems we discovered regarding their frequent inefficient meetings and where different departments did not know what each
           other was working on. </p>
 
-        <p>If I had a chance to do this again, I would like to code the prototype using PHP and MySQL. This is so the data would be stored in an actual database instead of the YAML frontmatter, which is typically used to store metadata. It also allows for
-          comments to be easily created, organized, and stored unlike Grav. </p>
-
-        <p>I learned more about how a flat-file CMS like Grav worked, especially the YAML frontmatter that is used to configure pages. I also learned about different methods of research and what a designer should consider and empathize when designing for
-          someone else.
-        </p>
+        <p>As for the YAML frontmatter problem, it has really reinforced the importance and usefulness of documentation. I should continue to keep reading it to solve any future problems that I have. It has also demonstrated me how useful YAML can be to create templates that can be helpful to reduce the amount of work necessary.</p>
       </section>
     </article>
   </main>
@@ -156,8 +193,8 @@
   <footer class="project-footer">
     <nav>
       <ul>
-        <li> <a href="style-guide">Style Guide</a> </li>
-        <li> <a href="citations">Citations</a> </li>
+        <li> <a href="../style-guide">Style Guide</a> </li>
+        <li> <a href="../citations">Citations</a> </li>
         <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
       </ul>
     </nav>

@@ -18,6 +18,20 @@
 </head>
 
 <body>
+
+  <header>
+    <nav>
+      <div class="header-left">
+        <div><span class="name">Ray Nathan Low</span></div>
+        <div><a href="../">Home</a></div>
+        <div><a href="../about">About</a></div>
+      </div>
+      <div class="back-to-top hidden">
+        <a href="#top">Back to top</a>
+      </div>
+    </nav>
+  </header>
+
   <main>
     <h1>Portfolio Style Guide</h1>
 
@@ -27,11 +41,6 @@
         <li><a href="#interactive_elements">Interactive Elements</a></li>
         <li><a href="#text_elements">Text Elements</a></li>
         <li><a href="#combined_elements">Combined Elements</a></li>
-      </ul>
-      <h2>Other pages:</h2>
-      <ul>
-        <li><a href="axure/index.html">User-flows</a></li>
-        <li><a href="citations.html">Citations</a></li>
       </ul>
     </nav>
 
@@ -43,13 +52,11 @@
         <h3>In-text link</h3>
         <div class="item-details">
           <h4>CSS selector:</h4>
-          <p>.in-text-link</p>
+          <p>a</p>
 
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;
-            </code>
+            <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
@@ -70,11 +77,9 @@
         <div class="item-details">
           <h4>Sample code:</h4>
           <pre>
-          <code>
-&lt;h1&gt;Heading 1&lt;/h1&gt;
+          <code>&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-         </code>
+&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
        </pre>
           <h4>Rendered element:</h4>
           <h1>Heading 1</h1>
@@ -88,9 +93,7 @@
         <div class="item-details">
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros sapien, faucibus ut rhoncus vel, porta quis leo. Suspendisse potenti. Sed maximus tristique ex, a semper tortor euismod quis. Duis sed risus dapibus, convallis magna sed, euismod dui. Maecenas non egestas mi, ac placerat tortor. Sed in purus luctus, imperdiet massa eget, facilisis quam. Sed et fringilla est, non pellentesque augue. Morbi bibendum turpis quam, semper commodo tortor facilisis quis. Duis efficitur urna urna, ut congue sem venenatis et. Vivamus dictum vehicula urna nec varius. Nunc dignissim, magna vitae hendrerit sagittis, magna ipsum venenatis mi, vitae semper dui mi id mauris.&lt;/p&gt;
-            </code>
+            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros sapien, faucibus ut rhoncus vel, porta quis leo. Suspendisse potenti. Sed maximus tristique ex, a semper tortor euismod quis. Duis sed risus dapibus, convallis magna sed, euismod dui. Maecenas non egestas mi, ac placerat tortor. Sed in purus luctus, imperdiet massa eget, facilisis quam. Sed et fringilla est, non pellentesque augue. Morbi bibendum turpis quam, semper commodo tortor facilisis quis. Duis efficitur urna urna, ut congue sem venenatis et. Vivamus dictum vehicula urna nec varius. Nunc dignissim, magna vitae hendrerit sagittis, magna ipsum venenatis mi, vitae semper dui mi id mauris.&lt;/p&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
@@ -105,13 +108,11 @@
         <div class="item-details">
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;ul&gt;
+            <code>&lt;ul&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
   &lt;li&gt;List item 3&lt;/li&gt;
-&lt;/ul&gt;
-            </code>
+&lt;/ul&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
@@ -128,13 +129,11 @@
         <div class="item-details">
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;ol&gt;
+            <code>&lt;ol&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
   &lt;li&gt;List item 3&lt;/li&gt;
-&lt;/ol&gt;
-            </code>
+&lt;/ol&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
@@ -158,29 +157,33 @@
         <h3>Main Navigation</h3>
         <div class="item-details">
           <h4>CSS selector:</h4>
-          <p>.main-nav</p>
+          <p>header</p>
           <h4>Sample code:</h4>
           <pre>
-          <code>
-&lt;header&gt;
+          <code>&lt;header&gt;
   &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="../"&gt;Ray Nathan Low&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="../"&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="../about"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;div class="header-left"&gt;
+      &lt;div&gt;&lt;span class="name"&gt;Ray Nathan Low&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;a href="../"&gt;Home&lt;/a&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;a href="../about"&gt;About&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="back-to-top hidden"&gt;
+      &lt;a href="#top"&gt;Back to top&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/nav&gt;
-&lt;/header&gt;
-          </code>
+&lt;/header&gt;</code>
           </pre>
           <h4>Rendered element:</h4>
           <header>
             <nav>
-              <ul>
-                <li><a href="../">Ray Nathan Low</a></li>
-                <li><a href="../">Home</a></li>
-                <li><a href="../about">About</a></li>
-              </ul>
+              <div class="header-left">
+                <div><span class="name">Ray Nathan Low</span></div>
+                <div><a href="../">Home</a></div>
+                <div><a href="../about">About</a></div>
+              </div>
+              <div class="back-to-top hidden">
+                <a href="#top">Back to top</a>
+              </div>
             </nav>
           </header>
         </div>
@@ -190,46 +193,36 @@
         <h3>Project Listing</h3>
         <div class="item-details">
           <h4>CSS Selector:</h4>
-          <p>.service-info</p>
+          <p>.project</p>
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;div class="projects"&gt;
-  &lt;div class="project"&gt;
-    &lt;a href="eat-ups"&gt;&lt;img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail"&gt;&lt;/a&gt;
-    &lt;a href="eat-ups"&gt;Eat Ups&lt;/a&gt;
-    &lt;p class="type"&gt;HTML5 Game&lt;/p&gt;
+            <code>&lt;div class="project"&gt;
+  &lt;a href="bubbly"&gt;&lt;span class="div-link"&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;div class="background"&gt;&lt;/div&gt;
+  &lt;div class="project-info"&gt;
+    &lt;div class="project-img"&gt;
+      &lt;img src="dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"&gt;
+    &lt;/div&gt;
+    &lt;div class="project-text"&gt;
+      &lt;a href="bubbly" class="project-name" tabindex="-1"&gt;Bubbly&lt;/a&gt;
+      &lt;p class="type"&gt;Project Management Web App&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="project"&gt;
-    &lt;a href="bubbly"&gt;&lt;img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"&gt;&lt;/a&gt;
-    &lt;a href="bubbly"&gt;Bubbly&lt;/a&gt;
-    &lt;p class="type"&gt;Project Management Web App&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="project"&gt;
-    &lt;a href="doot"&gt;&lt;img src="../dist/images/doot-thumbnail.png" alt="Doot"&gt;&lt;/a&gt;
-    &lt;a href="doot"&gt;Doot&lt;/a&gt;
-    &lt;p class="type"&gt;Web App&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code>
+&lt;/div&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
-          <div class="projects">
-            <div class="project">
-              <a href="eat-ups"><img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail"></a>
-              <a href="eat-ups">Eat Ups</a>
-              <p class="type">HTML5 Game</p>
-            </div>
-            <div class="project">
-              <a href="bubbly"><img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"></a>
-              <a href="bubbly">Bubbly</a>
-              <p class="type">Project Management Web App</p>
-            </div>
-            <div class="project">
-              <a href="doot"><img src="../dist/images/doot-thumbnail.png" alt="Doot"></a>
-              <a href="doot">Doot</a>
-              <p class="type">Web App</p>
+          <div class="project">
+            <a href="bubbly"><span class="div-link"></span></a>
+            <div class="background"></div>
+            <div class="project-info">
+              <div class="project-img">
+                <img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
+              </div>
+              <div class="project-text">
+                <a href="bubbly" class="project-name" tabindex="-1">Bubbly</a>
+                <p class="type">Project Management Web App</p>
+              </div>
             </div>
           </div>
         </div>
@@ -242,40 +235,62 @@
           <p>.overview</p>
           <h4>Sample code:</h4>
           <pre>
-            <code>
-&lt;div class="overview"&gt;
-  &lt;div class="info"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;HTML&lt;/li&gt;
-      &lt;li&gt;CSS&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Start: January 2015&lt;/li&gt;
-      &lt;li&gt;End: August 2015&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="../housing-101-project"&gt;View Website&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code>
+            <code>&lt;div class="overview"&gt;
+&lt;section&gt;
+  &lt;h2&gt;Languages and Tools&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;HTML5&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;Grav&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Teammates&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Eric Cheng&lt;/li&gt;
+    &lt;li&gt;Job Lee&lt;/li&gt;
+    &lt;li&gt;Gordon Huang&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Duration&lt;/h2&gt;
+  &lt;div&gt;September - December 2017&lt;/div&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Live Demo&lt;/h2&gt;
+  &lt;a href="http://galaxy.joblee.ca/" target="_blank"&gt;View Bubbly prototype&lt;/a&gt;
+&lt;/section&gt;
+&lt;/div&gt;</code>
           </pre>
 
           <h4>Rendered element:</h4>
           <div class="overview">
-            <div class="info">
+            <section>
+              <h2>Languages and Tools</h2>
               <ul>
-                <li>HTML</li>
+                <li>HTML5</li>
                 <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Grav</li>
               </ul>
+            </section>
+            <section>
+              <h2>Teammates</h2>
               <ul>
-                <li>Start: January 2015</li>
-                <li>End: August 2015</li>
+                <li>Eric Cheng</li>
+                <li>Job Lee</li>
+                <li>Gordon Huang</li>
               </ul>
-              <ul>
-                <li><a href="../housing-101-project">View Website</a></li>
-              </ul>
-            </div>
+            </section>
+            <section>
+              <h2>Duration</h2>
+              <div>September - December 2017</div>
+            </section>
+            <section>
+              <h2>Live Demo</h2>
+              <a href="http://galaxy.joblee.ca/" target="_blank">View Bubbly prototype</a>
+            </section>
           </div>
         </div>
       </section>
@@ -305,12 +320,13 @@
       <section>
         <h3>Colour</h3>
         <h4>CSS selector:</h4>
-        <p>.cobalt-blue, .gray</p>
+        <p>.cobalt-blue, .gray, .white-smoke</p>
         <h4>Sample code:</h4>
         <pre>
           <code>
 &lt;div class="grid-12 cobalt-blue"&gt;&lt;/div&gt;
 &lt;div class="grid-12 gray"&gt;&lt;/div&gt;
+&lt;div class="grid-12 white-smoke"&gt;&lt;/div&gt;
           </code>
         </pre>
         <h4>Rendered element:</h4>
@@ -320,11 +336,25 @@
         <p>#606060</p>
         <div class="grid-12 gray empty"></div>
 
+        <p>#F8F9F7</p>
+        <div class="grid-12 white-smoke empty"></div>
+
       </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
   </main>
+
+  <footer class="project-footer">
+    <nav>
+      <ul>
+        <li> <a href="../style-guide">Style Guide</a> </li>
+        <li> <a href="../citations">Citations</a> </li>
+        <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../dist/js/main.js"></script>
 </body>
 
 </html>
