@@ -21,143 +21,124 @@
 
   <header>
     <nav>
-      <ul>
-        <li><a href="../">Ray Nathan Low</a></li>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about">About</a></li>
-      </ul>
+      <div class="header-left">
+        <div><span class="name">Ray Nathan Low</span></div>
+        <div><a href="../">Home</a></div>
+        <div><a href="../about">About</a></div>
+      </div>
+      <div class="back-to-top hidden">
+        <a href="#top">Back to top</a>
+      </div>
     </nav>
   </header>
 
-  <article>
-    <h1>Eat Ups</h1>
-    <section>
+  <main id="top">
+    <article>
+      <h1>Bubbly</h1>
+      <div class="type">
+        Project Management Web App
+      </div>
       <div class="overview">
-        <div class="info">
+        <section>
+          <h2>Languages and Tools</h2>
           <ul>
             <li>HTML5</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
+        </section>
+        <section>
+          <h2>Teammates</h2>
           <ul>
             <li>Eric Cheng</li>
             <li>Henry Ho</li>
             <li>Peter Luk</li>
             <li>Steve Cho</li>
           </ul>
-          <ul>
-            <li>Start: February 9, 2018</li>
-            <li>End: February 11, 2018</li>
-          </ul>
-          <ul>
-            <li><a href="https://github.com/hchho/bcgamejam">Github Repository</a></li>
-          </ul>
+        </section>
+        <section>
+          <h2>Duration</h2>
+          <div>February 9 - February 11, 2018</div>
+        </section>
+        <!-- <section>
+          <h2>Live Demo</h2>
+          <a href="http://galaxy.joblee.ca/" target="_blank">View Bubbly prototype</a>
+        </section> -->
+      </div>
+
+      <figure>
+        <div class="figure-img smaller">
+          <img src="../dist/images/eat-ups-gameplay.gif" alt="Eat Ups gameplay">
         </div>
-      </div>
-      <!-- <p>Eat Ups is an HTML5 game where the player’s goal is to do as many chin-ups as possible. It was built in 48 hours from February 9th to 11th for <a href="http://bcgamejam.com/">BC Game Jam 2018</a> in a team of five. Eat Ups was made with just HTML5
-        and JavaScript, which included some use of the JQuery JavaScript library. It is capable of being played on desktop and mobile. My teammates were Eric Cheng, Henry Ho, Peter Luk, and Steve Cho.</p> -->
-
-
-
-      <!-- <div class="caption">
-        <img src="../dist/images/eat-ups-gameplay.gif" alt="Eat ups gameplay" class="smaller">
-      </div>
-      <div class="caption">
-        Gameplay
-      </div> -->
-
-      <figure class="smaller">
-        <img src="../dist/images/eat-ups-gameplay.gif" alt="Eat ups gameplay" />
-        <figcaption>Gameplay</figcaption>
+        <figcaption>Player performing as many chin-ups as possible before energy depletes</figcaption>
       </figure>
 
-      <h2>Overview</h2>
-      <p>Eat Ups was created in response to the main theme of BC Game Jam 2018, which was “resolution”. The main avatar had to be someone who would be doing chin-ups to fulfill their New Year’s resolution of getting fitter. To add some challenge, we added
-        an energy bar that the player must keep filled up. Each chin-up will reduce the amount of energy in the bar. The player can keep it filled up with the healthy food that passes by.</p>
+      <section>
+        <h2>Overview</h2>
+        <p>In this game, the player is in control of the avatar and their goal is do as many chin-ups as they can so they can fulfill their New Year’s resolution of getting fitter. </p>
 
-    </section>
+        <p>My contributions include the ideation and programming. I programmed the energy bar, user interface, game states, and all images except the food. I also made the HTML5 responsive so it could be played on any device.
+        </p>
+      </section>
 
-    <section>
-      <h2>Contributions</h2>
-      <p>I helped in the ideation of Eat Ups where we discussed simple games that we could complete within the 48 hours. I programmed the energy bar, user interface, game states, and all images except the food. I made use of the native shape drawing functions
-        for the health bar and images within canvas. For the buttons and other images, I took advantage of creating HTML5 block elements and CSS’s layering functionality with the z-index. I also made the game responsive by resizing all HTML5 elements
-        according to the width of the window, so it can be played on both desktop and mobile.</p>
-    </section>
+      <section>
+        <h2>Challenge</h2>
 
-    <section>
-      <h2>Challenge</h2>
+        <p>A problem that I faced was with the programming of the animations. Eric and Peter had created a short animation of a chicken leg swinging for the background of the main menu, which only consisted of a few images. My initial implementation was placing one image element that periodically switched the source with JavaScript like I had done similarly for other games with animations. I experimented with a few solutions I found online to do this, but ended up with this stuttering animation.</p>
 
-      <p>One challenge I encountered was programming animations with frames created by Eric and Peter. I looked up solutions online that would simply cycle through the frames with JavaScript. I tried a few and ended up with one that worked, but it was not
-        ideal. For some reason, the animation would randomly lag.</p>
+        <figure>
+          <div class="figure-img side-by-side">
+            <img src="../dist/images/eat-ups-animation-lag-cropped.gif" alt="Eat Ups gameplay with animation lag">
+            <img src="../src/images/eat-ups-final-animation-cropped.gif" alt="Eat Ups gameplay with no animation lag">
+          </div>
+          <figcaption>Player performing as many chin-ups as possible before energy depletes</figcaption>
+        </figure>
 
-      <!-- <div class="caption">
-        <img src="../dist/images/eat-ups-animation-lag.gif" alt="Animation lag" class="smaller">
-      </div>
-      <div class="caption">
-        Animation with JavaScript lagging
-      </div> -->
+        <p>After working on other tasks for a bit, I revisited the problem and tried to improve it with other JavaScript solutions. Fortunately, I failed and I thought of using a GIF to show the animation instead. The animation consisted of only a few frames and the game was in HTML5, so a GIF seemed appropriate. The GIF was much more smoother and should display more consistently on multiple devices, than using JavaScript.</p>
 
-      <figure class="smaller">
-        <img src="../dist/images/eat-ups-animation-lag.gif" alt="Animation lag"/>
-        <figcaption>Animation stutters using JavaScript</figcaption>
-      </figure>
+      </section>
 
-      <p>The animation we wanted to include would loop, so I suggested that we convert that into a GIF and I would position it with CSS accordingly. It ended up working out better than the other solution as it would not slow down. </p>
-
-      <!-- <div class="caption">
-        <img src="../dist/images/eat-ups-final-animation.gif" alt="Animation in GIF format" class="smaller">
-      </div>
-      <div class="caption">
-        Animation in GIF format
-      </div> -->
-
-      <figure class="smaller">
-        <img src="../dist/images/eat-ups-final-animation.gif" alt="Animation in GIF format" />
-        <figcaption>Animation is smooth using GIF</figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2>Reflection</h2>
-      <p>In the end, Eat Ups was successful. We were able to implement all the necessary game elements we planned to implement. It was a game that players can play through and keep replaying. </p>
-
-      <p>If I could do this differently, I would want to make the desktop look better. Currently, the game takes up a 9:16 aspect ratio, which creates two large white bars on the sides. I would add a background image spanning the entire width of the window
-        that changes according to what state the game is in. </p>
-
-      <p>I learned how to use JavaScript to create a simple HTML5 game using the canvas element that can be playable on both desktop and mobile. I also gained more experience with Git, which we used to manage all the files. </p>
-    </section>
-  </article>
-
+      <section>
+        <h2>Reflection</h2>
+        <p>In the end, Eat Ups was successful in that the game was complete enough for players to play through it repeatedly. I was able to learn more JavaScript too. To improve Eat Ups, I would want to make it look better on a desktop device, add a bit more complexity, and balance it. </p>
+      </section>
+    </article>
+  </main>
   <section class="other-projects">
     <h3>Other Projects</h3>
     <div class="projects">
       <div class="project">
-        <a href="../bubbly"><img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail"></a>
-        <a href="../bubbly">Bubbly</a>
-        <p class="type">Project Management Web App</p>
+        <a href="../doot"><span class="div-link">Doot</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/doot-thumbnail.png" alt="Doot thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../doot" class="project-name" tabindex="-1">Doot</a>
+            <p class="type">Web App</p>
+          </div>
+
+        </div>
       </div>
+
       <div class="project">
-        <a href="../doot"><img src="../dist/images/doot-thumbnail.png" alt="Doot"></a>
-        <a href="../doot">Doot</a>
-        <p class="type">Web App</p>
+        <a href="../bubbly"><span class="div-link">Bubbly</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../bubbly" class="project-name" tabindex="-1">Bubbly</a>
+            <p class="type">Project Management Web App</p>
+          </div>
+
+        </div>
       </div>
-      <div class="project">
-        <a href="../housing-101"><img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail"></a>
-        <a href="../housing-101">Housing 101</a>
-        <p class="type">Mock Website Redesign</p>
-      </div>
-      <!-- <div class="project">
-        <a href="../pharmaquest"><img src="../dist/images/pharmaquest-thumbnail.png" alt="PharmaQuest thumbnail"></a>
-        <a href="../pharmaquest">PharmaQuest</a>
-        <p class="type">Unity Game</p>
-      </div>
-      <div class="project">
-        <a href="../flare"><img src="../dist/images/flare-thumbnail.png" alt="Flare thumbnail"></a>
-        <a href="../flare">Flare</a>
-        <p class="type">Android App</p>
-      </div> -->
     </div>
   </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
   <script src="../dist/js/main.js"></script>
 </body>
 

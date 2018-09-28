@@ -397,4 +397,9 @@ figcaption, .caption {
   background-color: $background;
 }
 
+.side-by-side img {
+  float: left;
+  width: 50%;
+}
+
 @import 'responsiveness';
