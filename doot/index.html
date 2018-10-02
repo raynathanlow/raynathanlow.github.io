@@ -65,24 +65,36 @@
 
       <section>
         <h2>Overview</h2>
-        <p>Doot is a web app that presents music releases and its details such as who the artist is, which album it was a part of, and its year of release. Doot was created by myself January to April 2017 to practice how PHP and MySQL worked together, and
+        <p>Doot is a web app that presents music releases and its details such as who the artist is, which album it was
+          a part of, and its year of release. Doot was created by myself January to April 2017 to practice how PHP and
+          MySQL worked together, and
           how AJAX could be applied to update content without refreshing the page.</p>
-        <p>Users on Doot may also register to become members so they can discuss and personalize their homepage. Although, the idea of a website allowing users to discuss is not that special, it was enough to learn how PHP, MySQL, and AJAX worked.</p>
+        <p>Users on Doot may also register to become members so they can discuss and personalize their homepage.
+          Although, the idea of a website allowing users to discuss is not that special, it was enough to learn how
+          PHP, MySQL, and AJAX worked.</p>
       </section>
 
       <section>
         <h2>Contributions</h2>
-        <p>I designed the frontend’s user interface and experience, but also had to design the MySQL database, in the backend. I used PHP to programmatically output the site’s content, which was mostly drawn from the database I designed. I styled output
+        <p>I designed the frontend’s user interface and experience, but also had to design the MySQL database, in the
+          backend. I used PHP to programmatically output the site’s content, which was mostly drawn from the database I
+          designed. I styled output
           with CSS to achieve my frontend interface design.</p>
       </section>
 
       <section>
         <h2>Designing Frontend/Backend</h2>
-        <p>I chose to design the frontend to be similar music streaming services and online stores because it would be familiar to most users. Each music release has information such as album cover and artist name, which was repeated in a simple grid structure.
-          I took advantage of PHP’s for-loop functionality to write the structure once, and insert content coming from the database.</p>
+        <p>I chose to design the frontend to be similar music streaming services and online stores because it would be
+          familiar to most users. Each music release has information such as album cover and artist name, which was
+          repeated in a simple grid structure.
+          I took advantage of PHP’s for-loop functionality to write the structure once, and insert content coming from
+          the database.</p>
 
-        <p>For the backend, I used a small subset of the <a href="https://labrosa.ee.columbia.edu/millionsong/" target="_blank">Million Song Dataset</a>, consisting of around fifty songs. I only transferred the song’s title, artist name, song duration, album
-          name, and year of its release. Unfortunately, some problems came up when importing the dataset. It was due to a difference in file formats.</p>
+        <p>For the backend, I used a small subset of the <a href="https://labrosa.ee.columbia.edu/millionsong/" target="_blank">Million
+            Song Dataset</a>, consisting of around fifty songs. I only transferred the song’s title, artist name, song
+          duration, album
+          name, and year of its release. Unfortunately, some problems came up when importing the dataset. It was due to
+          a difference in file formats.</p>
 
         <figure>
           <div class="figure-img">
@@ -97,8 +109,12 @@
         <h2>Challenge</h2>
         <h3>Wrong File Format</h3>
 
-        <p>A challenge I encountered was with the different format of the dataset. The Million Song Dataset was SQLite, but I planned to use MySQL. At first, I thought that I was not able to use this database, but I searched and tried multiple programs to
-          convert the database to the desired format. In the end, I was able to convert it with a Mozilla Firefox Add-on called <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/" target="_blank">SQLite Manager</a> to do so. Consequently,
+        <p>A challenge I encountered was with the different format of the dataset. The Million Song Dataset was SQLite,
+          but I planned to use MySQL. At first, I thought that I was not able to use this database, but I searched and
+          tried multiple programs to
+          convert the database to the desired format. In the end, I was able to convert it with a Mozilla Firefox
+          Add-on called <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/" target="_blank">SQLite
+            Manager</a> to do so. Consequently,
           I was able to use a database that had the information necessary for this web app.</p>
 
 
@@ -112,9 +128,14 @@
       </section>
       <section>
         <h2>Reflection</h2>
-        <p>Doot ended up being mostly what I had planned, so it was quite successful. It was able to present music releases, while members could rate music, participate in discussions, and personalize their homepage.</p>
+        <p>Doot ended up being mostly what I had planned, so it was quite successful. It was able to present music
+          releases, while members could rate music, participate in discussions, and personalize their homepage.</p>
 
-        <p>There no major problems other than the incompatible file format I had with the database. Fortunately, I was able to find a tool to help me convert it. In the future, I may not be so lucky. In this case, I probably could have used the SQLite file format, but I chose not to so that I could follow along with the course where only MySQL is taught. I plan to explore more about databases and learn more about how different types of databases communicate with languages like PHP.</p>
+        <p>There no major problems other than the incompatible file format I had with the database. Fortunately, I was
+          able to find a tool to help me convert it. In the future, I may not be so lucky. In this case, I probably
+          could have used the SQLite file format, but I chose not to so that I could follow along with the course where
+          only MySQL is taught. I plan to explore more about databases and learn more about how different types of
+          databases communicate with languages like PHP.</p>
 
       </section>
     </article>
@@ -152,6 +173,21 @@
 
         </div>
       </div>
+
+      <div class="project">
+          <a href="../housing-101"><span class="div-link">Housing 101</span></a>
+          <div class="background"></div>
+          <div class="project-info">
+            <div class="project-img">
+              <img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail">
+            </div>
+            <div class="project-text">
+              <a href="../housing-101" class="project-name" tabindex="-1">Housing 101</a>
+              <p class="type">Mock Website Redesign</p>
+            </div>
+  
+          </div>
+        </div>
     </div>
   </section>
   <footer class="project-footer">

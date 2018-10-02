@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-  #homepage-main .project, #homepage-main .background, #homepage-main .project-info {
+  #homepage-main .project,
+  #homepage-main .background,
+  #homepage-main .project-info {
     display: flex;
   }
   #homepage-main .project-img {
@@ -33,7 +35,9 @@
     justify-content: space-between;
     margin-top: 2em;
   }
-  #homepage-main .project, #homepage-main .background, #homepage-main .project-info {
+  #homepage-main .project,
+  #homepage-main .background,
+  #homepage-main .project-info {
     display: flex;
     flex-direction: column;
   }
@@ -66,6 +70,52 @@
   .other-projects .project {
     flex: 0 0 100%;
   }
+  main {
+    margin-bottom: 6em;
+  }
+  #homepage-main .projects,
+  .other-projects .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  #homepage-main .project:not(:last-of-type),
+  .other-projects .projects {
+    margin-right: 0px;
+  }
+  #homepage-main .project,
+  .other-projects .project {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .other-projects .project-img {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+  .homepage-footer {
+    left: 0;
+    bottom: -3em;
+  }
+
+  .homepage-footer,
+  .project-footer {
+    padding: 0.5em 2em;
+  }
+  .homepage-footer ul {
+    left: 0;
+    flex-direction: column;
+  }
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-left div {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  footer nav li {
+    margin-bottom: 0.5em;
+  }
 }
 
 @media (max-width: 545px) {
@@ -91,56 +141,13 @@
   }
 }
 
-@media (max-width: 470px) {
-  main {
-    margin-bottom: 6em;
-  }
-  #homepage-main .projects, .other-projects .projects {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin-top: 2em;
-  }
-  #homepage-main .project:not(:last-of-type), .other-projects .projects {
-    margin-right: 0px;
-  }
-  #homepage-main .project, .other-projects .project {
-    margin: 0;
-    margin-bottom: 2em;
-  }
-  .other-projects .project-img {
-    display: block;
-    margin-bottom: 1.5em;
-  }
-  .homepage-footer {
-    left: 0;
-    bottom: -3em;
-  }
-
-  .homepage-footer, .project-footer {
-    padding: 0.5em 2em;
-  }
-  .homepage-footer ul {
-    left: 0;
-    flex-direction: column;
-  }
-  .header-left {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .header-left div {
-    margin: 0;
-    margin-bottom: 1em;
-  }
-  footer nav li {
-    margin-bottom: 0.5em;
-  }
-}
-
 @media (max-width: 408px) {
   .smaller {
     width: 85%;
   }
-  .other-projects .project, .other-projects .background, .other-projects .project-info {
+  .other-projects .project,
+  .other-projects .background,
+  .other-projects .project-info {
     display: flex;
     flex-direction: column;
   }

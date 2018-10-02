@@ -202,16 +202,17 @@ code {
 }
 
 #homepage-main .projects {
-  flex: 0 1 40%;
-  // flex-wrap: wrap;
+  flex: 0 1 30%;
+  flex-wrap: wrap;
+  margin: 0 1em;
 }
 
 .project {
   position: relative;
   flex-direction: column;
-  flex: 0 1 50%;
+  flex: 0 1 40%;
   padding: 5px;
-  margin: 5px;
+  // margin: 5px;
 }
 
 .project .type {
