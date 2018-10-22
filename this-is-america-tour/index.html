@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>This Is America Tour Website Redesign - Ray Nathan Low</title>
+    <link rel="stylesheet" href="../dist/css/normalize.css">
+    <link rel="stylesheet" href="../dist/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="header-left">
+                <div><span class="name">Ray Nathan Low</span></div>
+                <div><a href="../">Home</a></div>
+                <div><a href="../about">About</a></div>
+                <div><a href="../resume.pdf">Resume</a></div>
+            </div>
+            <div class="back-to-top hidden">
+                <a href="#top">Back to top</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <article>
+            <h1>This Is America Tour Website Redesign</h1>
+            <div class="type">
+                React Website Redesign
+            </div>
+            <div class="overview">
+                <section>
+                    <h2>Languages and Tools</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>AJAX</li>
+                        <li>React</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Duration</h2>
+                    <div>September 28 - October 7, 2018</div>
+                </section>
+                <section>
+                    <h2>Live Demo</h2>
+                    <a href="https://raynathanlow.com/this-is-america-tour-website-redesign/" target="_blank">View
+                        Website</a>
+                </section>
+            </div>
+
+            <figure>
+                <div class="figure-img">
+                    <img src="../src/images/this-is-america-get-tickets.png" alt="Get tickets section">
+                </div>
+                <figcaption>Get Tickets section with information about Vancouver show revealed</figcaption>
+            </figure>
+
+            <section>
+                <h2>Overview</h2>
+                <p>This is a redesign for Childish Gambino’s This is America Tour website. The goal of the redesign was
+                    make the site more accessible to people with disabilities because I noticed that the page lacked
+                    alt tags to describe the images. One of the images depicted all the shows for this tour, but there
+                    was nothing to allow users who may have trouble seeing to understand what was there. The only way
+                    to get information about those shows was to visit the link at the bottom of the page. </p>
+
+                <figure>
+                    <pre>
+                          <code>
+&lt;img id="dates" src="http://pharos.earth/zh2vS78NDr/dates.png" style="margin: 0 auto"&gt;
+              </code>
+              </pre>
+                    <figcaption>Snippet of code from original site where no alt tag used to describe the image with all
+                        of the tour dates</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Preparation</h2>
+                <p>In preparation for the redesign, I sliced out all the dates from the poster depicting the tour dates
+                    using Photoshop. This was done to maintain the original aesthetic, but also allow me more easily
+                    add accessibility tags to tell visually impaired users what the date and city the show would take
+                    place in, since it is an image.</p>
+                    <figure>
+                            <div class="figure-img">
+                                <img src="../src/images/this-is-america-tour-slice.png" alt="Sliced out all show dates">
+                            </div>
+                            <figcaption>Sliced out all show dates using Photoshop</figcaption>
+                        </figure>
+                    
+
+                <p>I sketched out a design that would show information about each tour date that I thought could help
+                    the user understand more about the show. Initially, I chose to display the date, city, venue, and a
+                    link to get tickets.</p>
+
+                <figure>
+                    <div class="figure-img">
+                        <img src="../src/images/this-is-america-sketch.png" alt="Initial sketch of a show">
+                    </div>
+                    <figcaption>Initial sketch of a show</figcaption>
+                </figure>
+
+            </section>
+
+            <section>
+                <h2>Challenges</h2>
+
+                <h3>Keeping All Show Information Together</h3>
+
+                <p>A major concept of React is splitting the user interface into separate usable components. One
+                    component can have multiple components within
+                    it. Each component can store data in
+                    a React concept called “props”, which can pass data down from component to component. I utilized
+                    this when I separated each show into several components so that they have access to the same data.
+                    For example, one component displays the link to get tickets while one component displays the date,
+                    city, venue, and special guest. </p>
+
+                <p>
+                    It was relatively easy to acquire the information I needed from the JSON file that was received
+                    from my
+                    API calls to Ticketmaster, but I had a challenging time keeping the information together per show.
+                    This
+                    is because the storing of information and the displaying of the information is done at separate
+                    times.
+                    I needed to keep information about each show separately because I would be displaying it all
+                    separately.
+                </p>
+
+                <p>
+                    I was able to do so by storing the information about each show in an object, which the show is then
+                    stored in an array. This results in an array of show objects. I stored this array of objects in a
+                    React
+                    concept called “state”, which allows components to be dynamic and updated at any time. This allows
+                    me
+                    to use the information I just stored as props to pass down to other components.
+                </p>
+
+                <h3>Order of Shows</h3>
+
+                <p>Another challenge I ran into was with the order of the shows. Childish Gambino suffered a leg injury
+                    midway through the tour, so the remaining dates were either rescheduled or cancelled. The shows in
+                    the JSON file were neither ordered by the original schedule nor the new schedule. This was a
+                    problem because I wanted to order the shows by the original schedule.</p>
+
+                <p>Fortunately, all the rescheduled dates were in December, so I could use the dates to display the
+                    shows in the original order. I used the JavaScript sort function with the optional <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters"
+                        target="_blank">compareFunction</a> to sort it by an array that had the rescheduled dates in
+                    the original order.</p>
+
+            </section>
+
+            <section>
+                <h2>Reflection</h2>
+                <p>Overall, this website redesign was successful in that I was able to complete a project utilizing the
+                    React library and AJAX to get data from the Ticketmaster API. I was also able to make it more
+                    accessible than the original website by adding title and alt tags to every link and image, but also
+                    allowing users to interact with the site with a keyboard. Title and alt tags are probably not
+                    enough, so I plan to add more to make the site accessible to a wider audience. </p>
+                <p>I was able to
+                    receive some feedback on the redesign and I will use it to improve the site. For example, the shows
+                    are way too big when viewing on a mobile device, so it may require many swipes to access the
+                    desired show. I may make it so that the image of the date is replaced with text, which will reduce
+                    the height of each show thus reducing the amount of swipes needed.</p>
+            </section>
+        </article>
+    </main>
+    <section class="other-projects">
+        <h3>Other Projects</h3>
+        <div class="projects">
+                <div class="project">
+                        <a href="../bubbly"><span class="div-link">Bubbly</span></a>
+                        <div class="background"></div>
+                        <div class="project-info">
+                          <div class="project-img">
+                            <img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
+                          </div>
+                          <div class="project-text">
+                            <a href="../bubbly" class="project-name" tabindex="-1">Bubbly</a>
+                            <p class="type">Project Management Web App</p>
+                          </div>
+                
+                        </div>
+                      </div>
+            <div class="project">
+                <a href="../doot"><span class="div-link">Doot</span></a>
+                <div class="background"></div>
+                <div class="project-info">
+                    <div class="project-img">
+                        <img src="../dist/images/doot-thumbnail.png" alt="Doot thumbnail">
+                    </div>
+                    <div class="project-text">
+                        <a href="../doot" class="project-name" tabindex="-1">Doot</a>
+                        <p class="type">Web App</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="../eat-ups"><span class="div-link">Eat Ups</span></a>
+                <div class="background"></div>
+                <div class="project-info">
+                    <div class="project-img">
+                        <img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail">
+                    </div>
+                    <div class="project-text">
+                        <a href="../eat-ups" class="project-name" tabindex="-1">Eat Ups</a>
+                        <p class="type">HTML5 Game</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="project">
+                <a href="../housing-101"><span class="div-link">Housing 101</span></a>
+                <div class="background"></div>
+                <div class="project-info">
+                    <div class="project-img">
+                        <img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail">
+                    </div>
+                    <div class="project-text">
+                        <a href="../housing-101" class="project-name" tabindex="-1">Housing 101</a>
+                        <p class="type">Mock Website Redesign</p>
+                    </div>
+
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <footer class="project-footer">
+        <nav>
+            <ul>
+                <li> <a href="../style-guide">Style Guide</a> </li>
+                <li> <a href="../citations">Citations</a> </li>
+                <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../dist/js/main.js"></script>
+</body>
+
+</html>
