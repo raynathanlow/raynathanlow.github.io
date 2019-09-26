@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Citi Bike - Ray Nathan Low</title>
+  <link rel="stylesheet" href="../dist/css/normalize.css">
+  <link rel="stylesheet" href="../dist/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="header-left">
+        <div><span class="name">Ray Nathan Low</span></div>
+        <div><a href="../">Home</a></div>
+        <div><a href="../about">About</a></div>
+        <div><a href="../resume.pdf">Resume</a></div>
+      </div>
+      <div class="back-to-top hidden">
+        <a href="#top">Back to top</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <article>
+      <h1>Citi Bike</h1>
+      <div class="type">
+        Data Visualization
+      </div>
+      <div class="overview">
+        <section>
+          <h2>Languages and Tools</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>Vega</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Teammate</h2>
+          <ul>
+            <li>Job Lee</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Duration</h2>
+          <div>January - April 2019</div>
+        </section>
+        <section>
+          <h2>Live Demo</h2>
+          <a href="https://observablehq.com/@yoshijl/final-project/4" target="_blank">View Data Visualization Set</a> 
+        </section>
+      </div>
+
+      <figure>
+        <div class="figure-img">
+          <img src="../dist/images/cb-overall.png" alt="Final set of linked and interactive data visualizations">
+        </div>
+        <figcaption>Final set of linked and interactive data visualizations</figcaption>
+      </figure>
+
+      <section>
+        <h2>Overview</h2>
+	<p>My teammate, Job Lee, and I were assigned to design a set of linked and interactive data visualizations. Its goal is to encourage domain experts to ask questions to help them solve their problems. Data visualization is simply a graphical representation of data, such as a bar chart or pie chart. We were intrigued by New York City's Citi Bike dataset, so we decided to design these visualizations to support city planners whose problems involve a bicycle sharing service.</p>
+
+      </section>
+
+      <section>
+        <h2>Contributions</h2>
+	<p>I was responsible for exploring datasets related to a bicycle sharing service, formulating questions, and creating visualizations using JavaScript and Vega, a visualization grammar in JSON format.</p>
+      </section>
+
+      <section>
+        <h2>Challenge</h2>
+
+	<h3>Research Questions</h3>
+	<p>Before we could create any visualizations, we needed to have a general idea of the types of questions they would address. The reason is because the visualizations should not answer any specific questions themselves, but allow city planners to ask questions, which may help them to solve their problems.</p>
+
+	<p>For example, these are the some of the questions we thought our visualizations would address:</p>
+	<ul>
+		<li>How does weather affect where Citi Bike users travel in New York City?</li>
+		<li>Which days have more ridership? Why?</li>
+	</ul>
+
+	<p>To formulate these questions, I explored the Citi Bike dataset by creating both static and interactive visualizations that answer some questions that I had. This involved any other compatible and useful data sets. For example, one of my questions was "How do events (sporting, concert, and special events contribute to bike usage?" I found out that events that take place in New York City did not contribute to bike usage because it was roughly the same amount when comparing two days that have five events and two events, respectively. The size of the events could have been an important factor, but it was not available. My exploration helped us understand that some questions were harder get a clear answer because the lack of data available. </p>
+
+      <figure>
+        <div class="figure-img">
+          <img src="../dist/images/cb-events.png" alt="Visualization for How do events (sporting, concert, and special events contribute to bike usage?">
+        </div>
+        <figcaption>Visualization for "How do events (sporting, concert, and special events contribute to bike usage?"</figcaption>
+      </figure>
+
+	<h3>Graphical Representation</h3>
+	<p>Based on those questions, we could figure out what types of data we wanted to visually represent and how. For example, since we wanted to know which days have more ridership, we would have to deal with quantitative data, specifically, the number of trips per day. From my exploration, I found that the bar chart was appropriate because it allows the viewer to easily compare the bar's height for each day. This same thought process is repeated for the other diagrams. </p>
+
+        <figure>
+            <div class="figure-img">
+              <img src="../dist/images/cb-bar.png" alt="Scatter plot and bar chart">
+            </div>
+            <figcaption>Scatter plot and bar chart</figcaption>
+          </figure>
+
+	<h3>Interaction</h3>
+	<p>Interaction is typically added to data visualizations when the scale is too much for a static version to clearly represent the data. It enables users to explore and learn more about the data. For this set of visualizations, we chose to incorporate brushing because it was effective in highlighting the data in the scatter plot and bar chart to get a closer look. Whatever was highlighted can also be associated with the other diagrams. For example, when the bar chart is brushed to highlight a specific time frame, the scatter plots and map will update to highlight the trips taken and activeness of stations. </p>
+
+        <figure>
+            <div class="figure-img">
+              <img src="../dist/images/cb-interaction.gif" alt="Brushing interaction">
+            </div>
+            <figcaption>Brushing interaction</figcaption>
+          </figure>
+
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+	<p>In the end, we created a set of linked and brushable data visualizations with scatter plots, a bar chart, map and table which represented New York City's Citi Bike and weather data. Our feasibility pilot conducted with someone who works in city planning showed that "it could be useful for Citi Bike planners in determining where they may want to put more stations, or where they may want to increase/decrease their rates depending on the weather, for example." </p>
+	<p>Next time, I would add more information to the map so that the tooltip for every station would show the number of departures and arrivals. Also, add points of interests and public transportation routes to the map so that it could help understand why some stations are still active under certain weather conditions while others see minimal usage. </p>
+	<p>I learned that cleaning and trimming data sets are very important because it improves the performance of data visualizations and makes the creation of them more manageable. This is because only the relevant data points are kept.</p>
+	<p>I will continue to remember the importance of colour choice in data visualization, especially for gradients, so that the colours have a direct connection with the data that is being represented. This means that I would not use a rainbow gradient show visualize data unless it makes sense.</p>
+      </section>
+    </article>
+  </main>
+  <section class="other-projects">
+    <h3>Other Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <a href="../brandesign"><span class="div-link">BranDesign</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/bd-thumbnail.png" alt="BranDesign thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../brandesign" class="project-name" tabindex="-1">BranDesign</a>
+            <p class="type">Creativity Support Tool Prototype</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="project">
+        <a href="../bubbly"><span class="div-link">Bubbly</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../bubbly" class="project-name" tabindex="-1">Bubbly</a>
+            <p class="type">Project Management Web App</p>
+          </div>
+
+        </div>
+      </div>
+        <!-- <div class="project">
+            <a href="../this-is-america-tour"><span class="div-link">This Is America Tour Website Redesign</span></a>
+            <div class="background"></div>
+            <div class="project-info">
+              <div class="project-img">
+                <img src="../src/images/this-is-america-tour-thumbnail.png" alt="This Is America Tour Website Redesign thumbnail">
+              </div>
+              <div class="project-text">
+                <a href="../this-is-america-tour" class="project-name" tabindex="-1">This Is America Tour Website Redesign</a>
+                <p class="type">React Website Redesign</p>
+              </div>
+    
+            </div>
+          </div>
+      <div class="project">
+        <a href="../doot"><span class="div-link">Doot</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/doot-thumbnail.png" alt="Doot thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../doot" class="project-name" tabindex="-1">Doot</a>
+            <p class="type">Web App</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="../eat-ups"><span class="div-link">Eat Ups</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../eat-ups" class="project-name" tabindex="-1">Eat Ups</a>
+            <p class="type">HTML5 Game</p>
+          </div>
+
+        </div>
+      </div> -->
+      
+      <!-- <div class="project">
+        <a href="../housing-101"><span class="div-link">Housing 101</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../housing-101" class="project-name" tabindex="-1">Housing 101</a>
+            <p class="type">Mock Website Redesign</p>
+          </div>
+
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- <footer class="project-footer">
+    <nav>
+      <ul>
+        <li> <a href="../style-guide">Style Guide</a> </li>
+        <li> <a href="../citations">Citations</a> </li>
+        <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
+      </ul>
+    </nav>
+  </footer> -->
+  <script src="../dist/js/main.js"></script>
+</body>
+
+</html>

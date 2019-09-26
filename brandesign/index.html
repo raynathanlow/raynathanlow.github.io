@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BranDesign - Ray Nathan Low</title>
+  <link rel="stylesheet" href="../dist/css/normalize.css">
+  <link rel="stylesheet" href="../dist/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="header-left">
+        <div><span class="name">Ray Nathan Low</span></div>
+        <div><a href="../">Home</a></div>
+        <div><a href="../about">About</a></div>
+        <div><a href="../resume.pdf">Resume</a></div>
+      </div>
+      <div class="back-to-top hidden">
+        <a href="#top">Back to top</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <article>
+      <h1>BranDesign</h1>
+      <div class="type">
+        Creativity Support Tool Prototype
+      </div>
+      <div class="overview">
+        <section>
+          <h2>Languages and Tools</h2>
+          <ul>
+            <li>Draw.io</li>
+            <li>Sketch</li>
+            <li>Flinto</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Teammates</h2>
+          <ul>
+            <li>Kiki Zhang</li>
+            <li>Zoe Zhang</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Duration</h2>
+          <div>January - April 2019</div>
+        </section>
+        <!--<section>
+          <h2>Live Demo</h2>
+          <a href="https://observablehq.com/@yoshijl/final-project/4" target="_blank">View Data Visualization Set</a> 
+	</section> -->
+      </div>
+
+      <!-- <figure>
+        <div class="figure-img">
+          <img src="../dist/images/cb-overall.png" alt="Final set of linked and interactive data visualizations">
+        </div>
+        <figcaption>Final set of linked and interactive data visualizations</figcaption>
+      </figure> -->
+
+      <section>
+        <h2>Overview</h2>
+	<p>I was assigned to design a creativity support tool prototype with my two teammates, Kiki Zhang and Zoe Zhang. We decided to design a tool to support the ideation of branding packages because we saw an inefficiency with how designers created them with existing software. </p>
+	<p>Branding packages are a combination of digital or physical items where a brand is applied to it, typically a logo or company name. They may include business cards, letterhead, flyers, and email templates. Products like t-shirts and hats as well because they may be included in goodie bags companies give away at conventions or similar events.</p>
+	<p>An inefficiency we noticed with existing software was the separation between the design process of products and branding packages. For example, a product can be designed in Photoshop first and then the packages in Illustrator. When products are imported into Illustrator, it would be tedious to duplicate and reposition the products to design and compare the branding packages</p>
+
+      </section>
+
+      <section>
+        <h2>Contributions</h2>
+	<p>I researched the branding domain to discover any problems we can solve through designing a creativity support tool prototype. I helped come up with the tool we proposed to design and then wrote and diagrammed its use cases.</p>
+	<p>These use cases are to show how users interact with the system in a black box manner. This means that there are no details about how the user interface looks like and what the system does before it responds to the user's actions. </p>
+
+	<figure>
+        <div class="figure-img">
+          <img src="../dist/images/bd-use-case.png" alt="Use case example">
+        </div>
+        <figcaption>Use case example</figcaption>
+      </figure>
+
+	<p>Diagramming use cases involved activity diagrams and sequence diagrams. I also contributed in the development of the tool's class diagram, user interface, and evaluation of the tool. </p>
+
+	<figure>
+        <div class="figure-img">
+          <img src="../dist/images/bd-class-diagram.png" alt="Class diagram">
+        </div>
+        <figcaption>Class diagram</figcaption>
+      </figure>
+
+      </section>
+
+      <section>
+        <h2>Challenge</h2>
+
+	<h3>Designing Branding Products</h3>
+	<p>We noticed that each product type has a common position and size for the brand's logo. If designers use software like Photoshop to design their products, it would take a significant amount of time to manually position and size the logo onto each product. </p>
+
+	<p>To expedite that process, we designed a feature that generates products quickly. The designer must first import a logo and then the system will generate a colour palette based on it. They can then choose some product prototypes from the tool's library and choose which logos to apply to them. Each product prototype will have a pre-set space for the logo to be in, so when the system generates the products, the chosen logos will be applied there. If the product prototype has any colour accents, colours from the palette will be applied there. If the designer is not satisfied with the logo's position, size, or colours, they can edit the product prototype within the tool itself. </p>
+
+      <figure>
+        <div class="figure-img">
+          <img src="../dist/images/bd-generation.gif" alt="Generating a t-shirt product prototype with combination logo">
+        </div>
+        <figcaption>Generating a t-shirt product prototype with combination logo</figcaption>
+      </figure>
+
+	<h3>Branding Package Creation</h3>
+	<p>A similar inefficiency with software designers use is evident when creating branding packages. Designers must duplicate products and drag them near each other to represent a package. We believed that there was a quicker way to create them.</p>
+	<p>Our solution involves the branding products designed in the previous step. An overview of all those products is provided for the designer to scroll through and choose which ones should be a part of a branding package. They can repeat this until they are satisfied. The created branding packages are recorded in the system's storage and shown at the bottom of the user interface. </p>
+
+        <figure>
+            <div class="figure-img">
+              <img src="../dist/images/bd-overview.gif" alt="Creating branding package">
+            </div>
+            <figcaption>Creating branding package</figcaption>
+          </figure>
+
+	  <p>There is another more detailed view in which they can choose products in a different manner. There are openings for product categories where they can choose whichever products they designed previously. This view allows designers to get a closer look at the combination of products for each branding package.</p>
+
+<figure>
+        <div class="figure-img">
+          <img src="../dist/images/bd-replace.gif" alt="Detailed view for creating branding package">
+        </div>
+        <figcaption>Detailed view for creating branding package</figcaption>
+      </figure>
+
+	<h3>Comparing Branding Packages</h3>
+	<p>Comparison is an important aspect of creativity support tools, but we found that existing software did not support this well in the design of branding packages. Existing software could show the appearance of the products for each branding package and designers can compare them that way. The products would probably not be organized neatly while rapidly prototyping. We believed that more details such as colours, weight and materials, should be also available to aid in the comparison. </p>
+
+	<p>To that end, our creativity support tool organizes products by category and lists details below each thumbnail. The products of each branding package are listed in a column, which aligns with products of the same type in the other packages adjacent. The designer can remove branding packages to help finalize the ones they want to order. </p>
+
+        <figure>
+            <div class="figure-img">
+              <img src="../dist/images/bd-comparison.gif" alt="Comparing branding packages">
+            </div>
+            <figcaption>Comparing branding packages</figcaption>
+          </figure>
+
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+	<p>We received feedback that our tool's features would also be useful in shopping websites. For example, customers can personalize multiple products rapidly, create packages of them, if necessary, and then compare them to see which ones they want to purchase.</p>
+	<p>Our design was based on our research of what tools are available and how they can be used to create branding packages. So if I could do this again, I would get feedback from professional designers who create branding packages to make our tool more viable to them.</p>
+	<p>I learned about what creativity support tools are and how beneficial they can be. For example, creativity support tools should help users collaborate and branch their work into many paths and styles. I plan to continue using that knowledge to incorporate into any tools I design in the future.</p>
+      </section>
+    </article>
+  </main>
+  <section class="other-projects">
+    <h3>Other Projects</h3>
+    <div class="projects">
+        <div class="project">
+            <a href="../citi-bike"><span class="div-link">Citi Bike</span></a>
+            <div class="background"></div>
+            <div class="project-info">
+              <div class="project-img">
+                <img src="../src/images/cb-thumbnail.png" alt="Citi Bike thumbnail">
+              </div>
+              <div class="project-text">
+                <a href="../citi-bike" class="project-name" tabindex="-1">Citi Bike</a>
+                <p class="type">Data Visualization</p>
+              </div>
+    
+            </div>
+          </div>
+      <div class="project">
+        <a href="../bubbly"><span class="div-link">Bubbly</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../bubbly" class="project-name" tabindex="-1">Bubbly</a>
+            <p class="type">Project Management Web App</p>
+          </div>
+
+        </div>
+      </div>
+        <!-- <div class="project">
+            <a href="../this-is-america-tour"><span class="div-link">This Is America Tour Website Redesign</span></a>
+            <div class="background"></div>
+            <div class="project-info">
+              <div class="project-img">
+                <img src="../src/images/this-is-america-tour-thumbnail.png" alt="This Is America Tour Website Redesign thumbnail">
+              </div>
+              <div class="project-text">
+                <a href="../this-is-america-tour" class="project-name" tabindex="-1">This Is America Tour Website Redesign</a>
+                <p class="type">React Website Redesign</p>
+              </div>
+    
+            </div>
+          </div>
+      <div class="project">
+        <a href="../doot"><span class="div-link">Doot</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/doot-thumbnail.png" alt="Doot thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../doot" class="project-name" tabindex="-1">Doot</a>
+            <p class="type">Web App</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="../eat-ups"><span class="div-link">Eat Ups</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../eat-ups" class="project-name" tabindex="-1">Eat Ups</a>
+            <p class="type">HTML5 Game</p>
+          </div>
+
+        </div>
+      </div> -->
+      
+      <!-- <div class="project">
+        <a href="../housing-101"><span class="div-link">Housing 101</span></a>
+        <div class="background"></div>
+        <div class="project-info">
+          <div class="project-img">
+            <img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail">
+          </div>
+          <div class="project-text">
+            <a href="../housing-101" class="project-name" tabindex="-1">Housing 101</a>
+            <p class="type">Mock Website Redesign</p>
+          </div>
+
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- <footer class="project-footer">
+    <nav>
+      <ul>
+        <li> <a href="../style-guide">Style Guide</a> </li>
+        <li> <a href="../citations">Citations</a> </li>
+        <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
+      </ul>
+    </nav>
+  </footer> -->
+  <script src="../dist/js/main.js"></script>
+</body>
+
+</html>
