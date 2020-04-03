@@ -342,6 +342,7 @@ figure {
 
 figure img {
   border: solid 1px black;
+  margin: 0 auto;
 }
 
 .no-border {
@@ -400,6 +401,10 @@ figcaption, .caption {
 
 .side-by-side img {
   float: left;
+  width: 50%;
+}
+
+.width-50 img {
   width: 50%;
 }
 
