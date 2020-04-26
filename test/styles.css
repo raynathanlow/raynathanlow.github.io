@@ -1,5 +1,9 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  color: #0047AB;
 }
 
 p,
@@ -14,6 +18,7 @@ h2,
 h3 {
   max-width: 45rem;
   margin: 1rem auto;
+  color: #0047AB;
 }
 
 h1 {
@@ -57,6 +62,8 @@ th, tr, td {
 
 .subtitle {
   margin-top: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .links {
