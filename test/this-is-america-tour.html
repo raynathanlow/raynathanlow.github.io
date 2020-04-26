@@ -37,7 +37,7 @@
             <p>React, JavaScript, CSS, Photoshop</p>
 
             <h2>Motivation</h2>
-            <p>I noticed that the poster depicting all the tour dates lacked the alt attribute which describes it for
+            <p>I noticed that the poster depicting all the tour dates lacked the <code>alt</code> attribute which describes it for
                 those
                 who
                 rely on screen readers. It wasn't particularly necessary because they could find the same information by
@@ -45,12 +45,10 @@
                 poster
                 and wanted to make it more interactive by showing information when a user interacts with each date.</p>
 
-            <div>
-                <p>Screen readers tells those who are visually impaired, illiterate, or have a learning disability what
-                    is
-                    on
-                    the screen through speech or braille.</p>
-            </div>
+            <p class="definition">Screen readers tells those who are visually impaired, illiterate, or have a learning disability what
+                is
+                on
+                the screen through speech or braille.</p>
 
             <h2>Contributions</h2>
             <ul>
@@ -65,12 +63,13 @@
             <h3>Design</h3>
             <p>To make the poster interactive, I decided that more information shows up when a fan clicks or taps each
                 date. They wouldn't need to leave the site unless they wanted to buy tickets, which I provide a direct
-                link to. Originally, fans can go to the Ticketmaster at the bottom of the page and then they find the
-                show they want to go to. Some fans may see the city closest to them on the poster already, so my
+                link to. Originally, fans can go to Ticketmaster at the bottom of the page and then they find the
+                show they want to go to. However, some fans may see the city closest to them on the poster already, so my
                 redesign gives them a quick way to buy those tickets.</p>
 
             <figure>
-                <img class="this-is-america-tour-small " src="this-is-america-tour-sketch.png" alt="Planning redesign and React structure">
+                <img class="this-is-america-tour-small " src="this-is-america-tour-sketch.png"
+                    alt="Planning redesign and React structure">
                 <figcaption>Planning redesign and React structure</figcaption>
             </figure>
 
@@ -79,7 +78,8 @@
                 from the poster to be separated into multiple image files, which I did with Photoshop's slice tool.</p>
 
             <figure>
-                <img class="this-is-america-tour-small " src="this-is-america-tour-slice.png" alt="Shows sliced with Photoshop">
+                <img class="this-is-america-tour-small " src="this-is-america-tour-slice.png"
+                    alt="Shows sliced with Photoshop">
                 <figcaption>Shows sliced with Photoshop</figcaption>
             </figure>
 
@@ -95,8 +95,8 @@
             </h3>
             <p>After writing most of the React code, each show can be clicked or tapped on to reveal more information
                 about the show, but it wasn't quite accessible yet. Some elements of the site can't be interacted with
-                the keyboard by default, so I had to add the tabindex attribute to indicate that it is able to be
-                interacted with the keyboard. I also added the alt and title attributes to images and interactable
+                the keyboard by default, so I had to add the <code>tabindex</code> attribute to indicate that it is able to be
+                interacted with the keyboard. I also added the <code>alt</code> and <code>title</code> attributes to images and interactable
                 elements such as links. They provide screen readers with a description to read out since some links
                 aren't easily understandable.</p>
 
@@ -146,7 +146,7 @@
                     in JavaScript, just written differently. HTTP requests are used to get data from other websites,
                     like
                     Ticketmaster.</li>
-                <li><span class="bold">Making sites more accessible: </span>I only knew about the alt attribute for
+                <li><span class="bold">Making sites more accessible: </span>I only knew about the <code>alt</code> attribute for
                     images and using semantic HTML
                     before
                     this project. Now, I know how to add descriptions to links and make certain elements able to be
