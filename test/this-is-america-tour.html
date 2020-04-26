@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../dist/css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>This Is America Tour - Ray Nathan Low</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>This Is America Tour</h1>
+            <p class="subtitle">Website redesign</p>
+
+            <p>This is my redesign of Childish Gambino's This Is America Tour website where my goal was to make it more
+                accessible and make the poster interactive.</p>
+
+            <figure>
+                <img class="overview" src="this-is-america-tour-after.png" alt="Final product">
+                <figcaption>Final product</figcaption>
+            </figure>
+
+            <ul class="links">
+                <li><a href="https://github.com/raynathanlow/this-is-america-tour-website-redesign">GitHub
+                        repository</a>
+                </li>
+            </ul>
+
+            <p><span class="bold">Time Frame</span></p>
+            <p>September 28 - October 7, 2018</p>
+
+            <p><span class="bold">Languages and Tools</span></p>
+            <p>React, JavaScript, CSS, Photoshop</p>
+
+            <h2>Motivation</h2>
+            <p>I noticed that the poster depicting all the tour dates lacked the alt attribute which describes it for
+                those
+                who
+                rely on screen readers. It wasn't particularly necessary because they could find the same information by
+                visiting the link to Ticketmaster at the bottom of the page. However, I liked the typography used in the
+                poster
+                and wanted to make it more interactive by showing information when a user interacts with each date.</p>
+
+            <div>
+                <p>Screen readers tells those who are visually impaired, illiterate, or have a learning disability what
+                    is
+                    on
+                    the screen through speech or braille.</p>
+            </div>
+
+            <h2>Contributions</h2>
+            <ul>
+                <li><span class="bold">Design: </span>I designed the user experience and interface with sketching and
+                    Photoshop.</li>
+                <li><span class="bold">Development: </span>I wrote the user interface code with React, JavaScript, and
+                    CSS.</li>
+                <li><span class="bold">Host: </span>I hosted this redesign on GitHub Pages.</li>
+            </ul>
+
+            <h2>Redesign Process</h2>
+            <h3>Design</h3>
+            <p>To make the poster interactive, I decided that more information shows up when a fan clicks or taps each
+                date. They wouldn't need to leave the site unless they wanted to buy tickets, which I provide a direct
+                link to. Originally, fans can go to the Ticketmaster at the bottom of the page and then they find the
+                show they want to go to. Some fans may see the city closest to them on the poster already, so my
+                redesign gives them a quick way to buy those tickets.</p>
+
+            <figure>
+                <img class="this-is-america-tour-small " src="this-is-america-tour-sketch.png" alt="Planning redesign and React structure">
+                <figcaption>Planning redesign and React structure</figcaption>
+            </figure>
+
+            <h3>Slice Shows with Photoshop</h3>
+            <p>To make it simpler to implement, I designed the shows to be laid out in a grid. This required each show
+                from the poster to be separated into multiple image files, which I did with Photoshop's slice tool.</p>
+
+            <figure>
+                <img class="this-is-america-tour-small " src="this-is-america-tour-slice.png" alt="Shows sliced with Photoshop">
+                <figcaption>Shows sliced with Photoshop</figcaption>
+            </figure>
+
+            <h3>Display Shows in Original Order</h3>
+            <p>With the images ready, I was able to write the React code to display the shows in a grid. I planned to
+                use the data from Ticketmaster to determine the order of the shows, but Childish Gambino suffered a leg
+                injury midway through the tour. The remaining shows were rescheduled, but not in the same order. There
+                was no updated poster at the time, so I chose to display the shows in the original order while
+                indicating that they have been rescheduled. I was able to sort the data from Ticketmaster by the
+                original order of shows by modifying JavaScript's sort function.</p>
+
+            <h3>Make Site Accessible
+            </h3>
+            <p>After writing most of the React code, each show can be clicked or tapped on to reveal more information
+                about the show, but it wasn't quite accessible yet. Some elements of the site can't be interacted with
+                the keyboard by default, so I had to add the tabindex attribute to indicate that it is able to be
+                interacted with the keyboard. I also added the alt and title attributes to images and interactable
+                elements such as links. They provide screen readers with a description to read out since some links
+                aren't easily understandable.</p>
+
+            <figure>
+                <video autoplay muted loop class="this-is-america-tour">
+                    <source src="this-is-america-tour-keyboard-navigation.m4v" type="video/mp4">
+
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <figcaption>Navigating final site with keyboard</figcaption>
+            </figure>
+
+            <h2>Results</h2>
+            <p>My redesign of Childish Gambino's This Is America Tour website makes it more accessible and makes the
+                poster
+                interactive by enabling users to navigate with the keyboard and adding descriptions to images and
+                interactable
+                elements for screen readers. Clicking or tapping on the shows in the poster displays more information
+                about
+                it
+                without having to go to Ticketmaster.</p>
+
+            <h2>Reflection</h2>
+
+            <p>My redesign was somewhat successful because it is more accessible than the original website and the
+                poster is
+                interactive now, but it might have been unnecessary to do. Fans could directly visit Ticketmaster at the
+                bottom
+                of the original site to get tickets, which is accessible to those who rely on screen readers. However, I
+                wanted
+                to try something different and learn more about React and making websites accessible, which I
+                accomplished.
+            </p>
+
+            <p>If I could redo this redesign, I would learn more about what can be done to make websites more accessible
+                because I don't think I did enough.</p>
+
+            <p>I learned more about:</p>
+            <ul>
+                <li><span class="bold">React: </span>I had no experience with React prior to this redesign, so I was
+                    able to learn and practice
+                    its
+                    basics.</li>
+                <li><span class="bold">HTTP requests: </span>My previous experience with HTTP requests were only with
+                    PHP, which turns out to be
+                    similar
+                    in JavaScript, just written differently. HTTP requests are used to get data from other websites,
+                    like
+                    Ticketmaster.</li>
+                <li><span class="bold">Making sites more accessible: </span>I only knew about the alt attribute for
+                    images and using semantic HTML
+                    before
+                    this project. Now, I know how to add descriptions to links and make certain elements able to be
+                    navigated
+                    with the keyboard.</li>
+            </ul>
+        </article>
+    </main>
+</body>
+
+</html>

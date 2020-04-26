@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+}
+
+p,
+ul {
+  max-width: 45rem;
+  line-height: 1.5;
+  margin: 1rem auto;
+}
+
+h1,
+h2,
+h3 {
+  max-width: 45rem;
+  margin: 1rem auto;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.definition {
+  font-style: italic;
+}
+
+@media (min-width: 128px) {
+  main {
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 360px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 430px) {
+  #inferhythm-android-demo {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 510px) {
+  #sort-plus-change-status {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 745px) {
+  .this-is-america-tour-small {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 922px) {
+  .this-is-america-tour {
+    max-width: 55rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .overview {
+    max-width: 67rem;
+  }
+}
+
+/* desktop 74rem */
+/* android 25rem */
