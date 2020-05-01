@@ -1,399 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../dist/css/normalize.css">
+    <link rel="stylesheet" href="../dist/css/new.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
     <title>Inferhythm - Ray Nathan Low</title>
-    <link rel="stylesheet" href="../dist/css/normalize.css" />
-    <link rel="stylesheet" href="../dist/css/custom.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon-16x16.png"
-    />
-    <link rel="manifest" href="../site.webmanifest" />
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="header-left">
-          <div><span class="name">Ray Nathan Low</span></div>
-          <div><a href="../">Home</a></div>
-          <div><a href="../about">About</a></div>
-          <div><a href="../resume.pdf">Resume</a></div>
-        </div>
-        <div class="back-to-top hidden">
-          <a href="#top">Back to top</a>
-        </div>
-      </nav>
-    </header>
+<body>
+    <main>
+        <article>
+            <h1>Inferhythm</h1>
+            <p class="subtitle">Browser extension</p>
 
-    <main id="top">
-      <article>
-        <h1>Inferhythm</h1>
-        <div class="type">
-          Browser Extension
-        </div>
-        <div class="overview">
-          <section>
-            <h2>Languages and Tools</h2>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+            <p>Inferhythm is a Google Chrome extension created on my own that helps users find lyrics from the website
+                Genius for the track they are currently listening to on Spotify.</p>
+
+            <p class="definition">Lyrics from Genius typically also have annotations and interpretations submitted by
+                contributors, editors, musicians, and fans.</p>
+
+            <figure>
+                <video autoplay muted loop class="overview">
+                    <source src="../dist/images/inferhythm-demo.m4v" type="video/mp4">
+
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <figcaption>Demonstration</figcaption>
+            </figure>
+
+            <ul class="links">
+                <li><a href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Inferhythm
+                        on Chrome Web Store</a></li>
+                <li><a href="https://github.com/raynathanlow/inferhythm" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
             </ul>
-          </section>
-          <section>
-            <h2>Duration</h2>
-            <div>September - October 2019</div>
-          </section>
-          <section>
-            <a
-              href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid"
-              target="_blank"
-              >View Inferhythm on Chrome Web Store</a
-            >
-          </section>
-        </div>
 
-        <section>
-          <p>
-            Inferhythm is a Google Chrome extension that helps users find lyrics
-            from the website Genius for the track they are currently listening
-            to on Spotify. These lyrics typically also have annotations and
-            interpretations submitted by contributors, editors, musicians, and
-            fans. It was created on my own and it is published in the Chrome Web
-            Store.
-          </p>
+            <p><span class="bold">Time Frame</span></p>
+            <p>September - October 2019</p>
 
-          <figure>
-            <div class="figure-img width-50">
-              <img
-                src="../dist/images/inferhythm-popup.gif"
-                alt="Inferhythm demo"
-              />
-            </div>
-            <figcaption>
-              Clicking on Inferhythm's toolbar icon searches for Genius lyrics
-              for the currently playing track on Spotify
-            </figcaption>
-          </figure>
-        </section>
+            <p><span class="bold">Languages and Tools</span></p>
+            <p>HTML, CSS, JavaScript, Git</p>
 
-        <section>
-          <h2>Motivation</h2>
-          <p>
-            Sometimes I read lyrics on Genius to help me understand what the
-            artist was singing or rapping. I can conveniently get the lyrics
-            while listening to music on my Android smartphone if the Genius app
-            was installed. A notification appears that I can tap to open the
-            lyrics in the app. However, this functionality isn't available on
-            desktop operating systems (Windows, macOS, Linux) where I also spend
-            time listening to music. I wanted that same convenience while using
-            a desktop operating system, which is why I created Inferhythm.
-          </p>
+            <h2>Motivation</h2>
+            <p>I wanted a convenient way to get lyrics for the track I'm listening to on Spotify, similar to Genius'
+                Android app, but on desktop operating systems (Windows, macOS, Linux). While a track is playing, the app
+                creates a notification that opens the lyrics in the app upon being tapped.
+            </p>
 
-          <figure>
-            <div class="figure-img width-50">
-              <img
-                src="../dist/images/inferhythm-android-genius.jpg"
-                alt="Genius' Android app provides lyrics for the currently playing track in the notification tray"
-              />
-            </div>
-            <figcaption>
-              Genius' Android app provides lyrics for the currently playing
-              track in the notification tray
-            </figcaption>
-          </figure>
-        </section>
+            <figure>
+                <video autoplay muted loop id="inferhythm-android-demo">
+                    <source src="../dist/images/inferhythm-android-demo.m4v" type="video/mp4">
 
-        <section>
-          <h2>Contributions</h2>
-          <p>
-            I was responsible for the research, design, development, and testing
-            in the solo creation of Inferhythm. I had to research so that I
-            could avoid remaking what has already been done, which involved me
-            downloading similar browser extensions and see how they functioned.
-            I designed the user experience, interface, and icon where my goal
-            was to adapt the style of the Genius website as best I could. This
-            was so that it's clear that there is a connection between Inferhythm
-            and Genius. I developed with HTML, CSS, and JavaScript which
-            receives data from the Spotify and Genius through their APIs. An API
-            enables the communication between applications. Testing was done
-            with Jest, a JavaScript testing framework, where I wrote unit and
-            integration tests.
-          </p>
-        </section>
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <figcaption>Demonstration of Genius' Android app</figcaption>
+            </figure>
 
-        <section>
-          <h2>Challenge: Get Lyrics in One Click</h2>
-          <p>
-            Inferhythm's purpose is to get the lyrics from Genius for the track
-            the user is currently listening to. I had to program it to open the
-            lyrics in a new tab upon the user clicking Inferhythm's button.
-          </p>
+            <h2>Contributions</h2>
+            <ul>
+                <li><span class="bold">Research: </span>I tried similar browser extensions to avoid remaking any.</li>
+                <li><span class="bold">Design: </span> I designed the user experience, user interface, and icon.</li>
+                <li><span class="bold">Development: </span> I wrote HTML, CSS, and JavaScript to present data requested
+                    and received from Spotify and Genius APIs. </li>
+                <li><span class="bold">Testing: </span> I wrote tests with Jest, a JavaScript testing framework.</li>
+            </ul>
 
-          <figure>
-            <div class="figure-img">
-              <img
-                src="../dist/images/inferhythm-toolbar-icon.png"
-                alt="Inferhythm's button"
-              />
-            </div>
-            <figcaption>
-              Inferhythm's button
-            </figcaption>
-          </figure>
+            <p class="definition">API stands for Application Programming Interface which enables the communication
+                between applications like Inferhythm and Genius.</p>
 
-          <h3>Manually Creating Links</h3>
-          <p>
-            I noticed in my experience with Genius was that the link was
-            something like genius.com/artist-name-track-title-lyrics, so I
-            thought I do the same, but found that it wasn't very reliable. The
-            tracks on Spotify that indicated features, remixes, or remasters in
-            their title typically resulted in invalid links. Similarly, some
-            artists had symbols like a dollar sign in their names resulted in
-            invalid links because they weren't consistently handled on Genius.
-            For example, the links for A$AP Rocky tracks become a-ap-rocky,
-            while for Ty Dolla $ign's tracks become ty-dolla-sign. I considered
-            adding a feature where users can report tracks that caused problems
-            and I could update the code accordingly, but I opted to find a
-            different solution first.
-          </p>
-          <h3>Researching Projects Related to Genius</h3>
-          <p>
-            I went on GitHub and analyzed the code for applications that had
-            some connection to Genius to help me find a solution to getting a
-            valid link. After analyzing over fifteen repositories, I found that
-            some applications manually created links like I tried before, but
-            other ones made use of the Genius API. As a result, I tried using
-            the Genius API's query function on their website and found that it
-            was much more reliable in getting a valid link. The query didn't
-            have to be as precise as the manually created links, so I added it
-            in to Inferhythm.
-          </p>
+            <h2>Challenge: Get Lyrics in One Click</h2>
+            <p>Inferhythm's purpose is to get the lyrics from Genius for the track the user is currently listening to.
+                My
+                design is for the lyrics to open in a new tab when the user clicks Inferhythm's button. I had to write
+                the HTML, CSS, and JavaScript that follows the design.</p>
 
-          <figure>
-            <div class="figure-img">
-              <img
-                src="../dist/images/inferhythm-github-research.png"
-                alt="My GitHub research"
-              />
-            </div>
-            <figcaption>
-              My GitHub research
-            </figcaption>
-          </figure>
+            <h3>Unsuccessfully Manipulate Text to Create Link</h3>
+            <p>I noticed in my experience with Genius was that the links were structured like
+                genius.com/artist-name-track-title-lyrics. I naively thought I could similarly manipulate the text of
+                the track's data to create a link, but found that it wasn't very reliable.
+            </p>
+            <p>For example, some artists had symbols like a dollar sign in their names resulted in invalid links because
+                they weren't consistently handled on Genius.
+            </p>
 
-          <h3>Merging Results from Two Queries</h3>
-          <p>
-            My solution for opening the lyrics in a new tab when the user clicks
-            Inferhythm's button was to use the first result from the query using
-            the Genius API. Unfortunately, like with any search engine, the
-            first result may not always be what you're looking for. I decided to
-            show a subset of the results in a popup, but that didn't work
-            because a single query sometimes doesn't produce any results that I
-            was looking for either.
-          </p>
-          <!-- <Figure></Figure> -->
-          <p>
-            As a result, I used two queries, merged their results, and showed
-            them in the popup. I also added two links that searched for the
-            track's lyrics on Genius and just plain lyrics on Google in case
-            none of the results met the user's needs. Finally, the user can
-            click on Inferhythm's button which will show a list of results that
-            they can click to open lyrics on Genius in a new tab.
-          </p>
-        </section>
+            <figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Artist name</th>
+                            <th>After text manipulation</th>
+                            <th>Genius</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A$AP Rocky</td>
+                            <td>asap-rocky</td>
+                            <td>a-ap-rocky</td>
+                        </tr>
+                        <tr>
+                            <td>Ty Dolla $ign</td>
+                            <td>ty-dolla-sign</td>
+                            <td>ty-dolla-sign</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
 
-        <section>
-          <h2>Results</h2>
-          <p>
-            Inferhythm was successful because reading lyrics on Genius on a
-            desktop operating system more convenient, which matches the
-            convenience of their Android app.
-          </p>
-          <h3>Process Without Inferhythm</h3>
-          <ol>
-            <li>Open Spotify</li>
-            <li>Remember track title and artist</li>
-            <li>Open browser</li>
-            <li>Enter in search query</li>
-            <li>Click search result that matches what I'm looking for</li>
-            <li>Read lyrics</li>
-          </ol>
-          <h3>Process With Inferhythm</h3>
-          <ol>
-            <li>Open browser</li>
-            <li>Click Inferhythm's button</li>
-            <li>Click result that matches what I'm looking for</li>
-            <li>Read lyrics</li>
-          </ol>
-        </section>
 
-        <section>
-          <h2>Reflection</h2>
-          <p>
-            Successfully completing Inferhythm is quite meaningful because it is
-            the first project I developed that is personally useful to use more
-            than once. I was able to learn new concepts and practice ones I've
-            learned in school along the way, such as cookies, asynchronous
-            programming, and testing.
-          </p>
-          <p>
-            I had to learn about cookies so that I could keep the user's
-            information after closing Google Chrome so that they wouldn't need
-            to authorize Inferhythm every time they wanted to use it. This led
-            me to learn about the security flags I can add to make sure that the
-            data within the cookies are safe from malicious activity.
-          </p>
-          <p>
-            I learned about asynchronous programming while I had to make
-            requests to the Spotify and Genius APIs. This involved using
-            callback functions and promises because they will be automatically
-            called when a request completes. This is helpful when making
-            multiple requests that depend on each other, which means that they
-            must be done in a specific order. I tried using async/await with
-            promises too just to learn how to use them.
-          </p>
-          <p>
-            Testing is important in the process, but I hadn't done it much with
-            my academic projects, so this was a great opportunity to practice
-            it. I don't want bugs to hinder the user experience, so I learned
-            Jest to write my unit and integration testing.
-          </p>
-        </section>
-      </article>
+            <p>Similarly, some tracks on Spotify indicated features, remixes, or remasters in their title typically
+                resulted in invalid links because the link would be different on Genius.
+            </p>
+            <p>I considered adding a feature where users can report tracks that caused problems and I could update the
+                code accordingly, but I opted to find a different solution first.
+            </p>
+
+            <h3>Research for Solution</h3>
+            <p>I went on GitHub and analyzed the code for applications that had some connection to Genius to help me
+                find a solution to getting a valid link. After analyzing over fifteen repositories, I found that some
+                applications manipulated text like I tried before, but other ones made use of the Genius API. There is
+                function in this API that searches Genius' database by taking text as input and outputs a list of
+                results, like Google. I tried it and found that it was more reliable in getting a valid link. The search
+                query didn't have to be as precise as creating a link myself, so I added it in to Inferhythm.
+            </p>
+
+            <h3>Merge Genius API Results</h3>
+            <p>My original solution was to open the first result from the list outputted from the Genius API whenever
+                the user clicks Inferhythm's button. Unfortunately, like with any search engine, the first result may
+                not always be what you're looking for. I then decided to show a subset of the results in a popup, but
+                that didn't work because a single query sometimes doesn't produce any results that I was looking for
+                either.
+            </p>
+            <p>As a result, I used two queries, merged their results, and showed them in the popup. I also added two
+                links that searched for the track's lyrics on Genius and just plain lyrics on Google in case none of the
+                results met the user's needs.
+            </p>
+
+            <figure>
+                <img src="../dist/images/inferhythm-merged-results.png" alt="Results from query 1 and 2 merged">
+                <figcaption>Results from query 1 and 2 merged</figcaption>
+            </figure>
+
+            <p>Finally, the user can click on Inferhythm's button which will show a list of results that they can click
+                to open lyrics on Genius in a new tab.
+            </p>
+
+
+            <h2>Results</h2>
+            <p>I published Inferhythm to the <a
+                    href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Chrome
+                    Web Store</a> where anyone can add it to Chrome for free. After adding
+                it, users must log in with Spotify to give access Inferhythm to their currently playing track. Now
+                whenever a track is playing, the user can click Inferhythm's button to get a list of links to the
+                track's lyrics. Clicking on a link opens the lyrics in a new tab.
+            </p>
+
+            <h2>Reflection</h2>
+
+            <h3>Measuring Success</h3>
+            <p>Inferhythm was successful because it does what I designed it to do with one slight difference. Instead of
+                opening the lyrics in a new tab upon clicking Inferhythm's button, a popup with a list of results
+                appears. The user can click a result to open in a new tab. I had to adapt because I wasn't able to
+                consistently get the lyrics that accurately matched the currently playing track to do what I planned.
+
+            </p>
+
+            <h3>If I Could Redo Inferhythm</h3>
+            <p>If I could redo Inferhythm, I would write and run tests earlier while the code is less complex and not when it
+                was close to completion. This is so that I can run more tests to give me confidence that the code works
+                without any errors as I work towards fully implementing my design.
+            </p>
+
+            <h3>What I Learned:</h3>
+            <ul>
+                <li><span class="bold">Cookies: </span> I used them to keep the user's session so that they wouldn't
+                    need to log in with Spotify again after reopening Google Chrome. This involved learning the security
+                    flags cookies use to prevent malicious activity.</li>
+                <li><span class="bold">Asynchronous programming: </span>I used this to make requests to the Spotify and
+                    Genius APIs. This involved callback functions and promises, which perform specific actions
+                    automatically after another function, such as a request to an API, finishes. This is helpful when
+                    making multiple requests that depend on each other, which means that they must be done in a specific
+                    order. I tried using async/await with promises too just to learn how to use them. Async/await makes
+                    promises easier to read.</li>
+            </ul>
+        </article>
     </main>
-    <!-- <section class="other-projects">
-      <h3>Other Projects</h3>
-      <div class="projects">
-        <div class="project">
-          <a href="../brandesign"><span class="div-link">BranDesign</span></a>
-          <div class="background"></div>
-          <div class="project-info">
-            <div class="project-img">
-              <img
-                src="../dist/images/bd-thumbnail.png"
-                alt="BranDesign thumbnail"
-              />
-            </div>
-            <div class="project-text">
-              <a href="../brandesign" class="project-name" tabindex="-1"
-                >BranDesign</a
-              >
-              <p class="type">Creativity Support Tool Prototype</p>
-            </div>
-          </div>
-        </div>
+</body>
 
-        <div class="project">
-          <a href="../citi-bike"><span class="div-link">Citi Bike</span></a>
-          <div class="background"></div>
-          <div class="project-info">
-            <div class="project-img">
-              <img
-                src="../src/images/cb-thumbnail.png"
-                alt="Citi Bike thumbnail"
-              />
-            </div>
-            <div class="project-text">
-              <a href="../citi-bike" class="project-name" tabindex="-1"
-                >Citi Bike</a
-              >
-              <p class="type">Data Visualization</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="project">
-            <a href="../this-is-america-tour"><span class="div-link">This Is America Tour Website Redesign</span></a>
-            <div class="background"></div>
-            <div class="project-info">
-              <div class="project-img">
-                <img src="../src/images/this-is-america-tour-thumbnail.png" alt="This Is America Tour Website Redesign thumbnail">
-              </div>
-              <div class="project-text">
-                <a href="../this-is-america-tour" class="project-name" tabindex="-1">This Is America Tour Website Redesign</a>
-                <p class="type">React Website Redesign</p>
-              </div>
-    
-            </div>
-          </div>
-      <div class="project">
-        <a href="../doot"><span class="div-link">Doot</span></a>
-        <div class="background"></div>
-        <div class="project-info">
-          <div class="project-img">
-            <img src="../dist/images/doot-thumbnail.png" alt="Doot thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="../doot" class="project-name" tabindex="-1">Doot</a>
-            <p class="type">Web App</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="project">
-        <a href="../eat-ups"><span class="div-link">Eat Ups</span></a>
-        <div class="background"></div>
-        <div class="project-info">
-          <div class="project-img">
-            <img src="../dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="../eat-ups" class="project-name" tabindex="-1">Eat Ups</a>
-            <p class="type">HTML5 Game</p>
-          </div>
-
-        </div>
-      </div> -->
-
-        <!-- <div class="project">
-        <a href="../housing-101"><span class="div-link">Housing 101</span></a>
-        <div class="background"></div>
-        <div class="project-info">
-          <div class="project-img">
-            <img src="../dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="../housing-101" class="project-name" tabindex="-1">Housing 101</a>
-            <p class="type">Mock Website Redesign</p>
-          </div>
-
-        </div>
-      </div> -->
-      </div>
-    </section> -->
-    <!-- <footer class="project-footer">
-    <nav>
-      <ul>
-        <li> <a href="../style-guide">Style Guide</a> </li>
-        <li> <a href="../citations">Citations</a> </li>
-        <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
-      </ul>
-    </nav>
-  </footer> -->
-    <script src="../dist/js/main.js"></script>
-  </body>
 </html>
