@@ -1,126 +1,375 @@
+$color1: #1C4AA6;
+$color2: #061F40;
+$color3: #295FA6;
+$color4: #36ABD9;
+$color5: #38D0F2;
+$color6: #A67B1C;
+$color7: #f0f5f5;
+$link: #8E6A18;
+
+$spacing: 0.5rem;
+$readLength: 45rem;
+$border: 0.4rem;
+
 body {
-  font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
+    background-color: $color1;
 }
 
 a {
-  color: #0047AB;
+    color: $color5;
 }
 
-p,
-li {
-  max-width: 45rem;
-  line-height: 1.5;
-  margin: 1rem auto;
+a:hover {
+    color: white;
 }
 
-h1,
-h2,
-h3 {
-  max-width: 45rem;
-  margin: 1rem auto;
-  color: #0047AB;
+p, li, h1, h2, h3 {
+    line-height: 1.5;
+    color: white;
 }
 
 h1 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 h2 {
-  margin-top: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 h3 {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
-figure {
-  margin: 2.5rem 0;
-  text-align: center;
+main {
+    background-color: $color7;
+    padding: 0rem 1rem 2rem;
 }
 
-figcaption {
-  font-style: italic;
-  margin: 1rem 0;
+h1, h2, h3, p, li {
+    width: 100%;
+    max-width: $readLength;
+    margin: 1rem auto;
 }
 
-img,
-video {
-  max-width: 100%;
+main {
+    display: block;
 }
 
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: solid thin;
+main a {
+    color: $color1;
 }
 
-th, tr, td {
-  padding: 0.5rem;
-  text-align: center;
-  border: solid thin;
+main h1, main h2, main h3 {
+    color: $color1;
+}
+
+main p, main li {
+    color: $color2;
+}
+
+header {
+    background-color: $color7;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0 ;
+}
+
+header p {
+    color: $color1;
+}
+
+nav {
+    padding: 1.5rem;
+}
+
+nav a {
+    display: inline-block;
+}
+
+.name {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 1rem;
 }
 
 .subtitle {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  font-style: italic;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-.links {
-  list-style-type: none;
-  padding: 0;
+.summary {
+    font-weight: 500;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figcaption {
+    margin: 1.5rem 0;
+}
+
+img, video {
+    width: 100%;
+    max-width: 100%;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: solid thin;
+}
+
+th, tr, td {
+    padding: 0.5rem;
+    text-align: center;
+    border: solid thin;
+}
+
+#intro {
+    width: 100%;
+    max-width: $readLength;
+    margin: 0 auto;
+    background-color: $color1;
+}
+
+#intro p {
+    color: white;
+}
+
+#links {
+    margin-top: 1.5rem;
+    color: white;
+}
+
+#links > * {
+    display: inline-block;
+    padding: 0.25rem 0;
+}
+
+#projects {
+    margin: 2rem auto;
+    background-color: $color7;
+    padding: 1rem;
+}
+
+.project {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    border-left: solid 0.4rem transparent;
+    width: 100%;
+}
+
+.project:hover {   
+    border-left: solid 0.4rem $color4;
+}
+
+.project-info {
+    padding: $spacing;
+    background-color: $color1;
+}
+
+.project p {
+    margin: 0;
+    color: white;
+}
+
+.project img {
+    display: block;
+    width: initial;
+}
+
+.project-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-name-subtitle {
+    margin-bottom: $spacing;
+}
+
+.project-small {
+    font-size: 0.8rem;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+.links a {
+    color: $color1;
+}
+
+.quick-heading {
+    margin: 1rem auto;
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .definition {
-  font-style: italic;
-  color: #737373;
+    font-style: italic;
+    color: #6f6f6f;
+    font-weight: 300;
 }
 
-@media (min-width: 128px) {
-  main {
-    padding: 0.25rem;
-  }
+@media (min-width: 100px) {
+    #intro, #about {
+	padding: $spacing;
+    }
+}
+
+@media (min-width: 140px) {
+    #links > *{
+	padding-right: 0.25rem;
+    }
+}
+
+@media (min-width: 255px) {
+    .project {
+	width: 18rem;
+	width: min-content;
+    }
+    .project img {
+	max-width: none;
+    }
+}
+
+@media (min-width: 332px) {
+    #inferhythm-merged-results {
+	width: 17rem;
+    }
 }
 
 @media (min-width: 360px) {
-  main {
-    padding: 0 1rem;
-  }
+    #intro, #about {
+	padding: 1rem;
+    }
+    #intro h1 {
+	font-size: 2.5rem;
+    }
 }
 
 @media (min-width: 430px) {
-  #inferhythm-android-demo {
-    max-width: 25rem;
-  }
+    #inferhythm-android-demo {
+	width: 25rem;
+    }
 }
 
 @media (min-width: 510px) {
-  #sort-plus-change-status {
-    max-width: 30rem;
-  }
+    #sort-plus-change-status {
+	width: 30rem;
+    }
+}
+
+@media (min-width: 555px) {
+    #intro h1 {
+	font-size: 3rem;
+    }
+    .project {
+	width: 518px;
+	height: 225px;
+    }
+    .project img {
+	width: 225px;
+	margin: 0;
+	clear: left;
+	float: left;
+    }
+    .project p {
+	width: 100%;
+    }
+    .project-info {
+	height: 193px;
+	margin-left: 225px;
+    }
+    
+    @supports (display: grid) {
+	.project {
+	    display: grid;
+	    grid-template-columns: 1fr 28ch;
+	    margin: 1rem auto;
+	    width: min-content;
+	}
+	.project img {
+	    width: initial;
+	    margin: 0;
+	}
+	
+	.project-info {
+	    margin: 0;
+	}
+    }
+    .project-info {
+	padding: 1rem;
+    }
+    #sort-plus-modify-api {
+	width: 32rem;
+    }
+}
+
+@media (min-width: 572px) {
+    #sort-plus-calendar {
+	width: 33rem;
+    }
 }
 
 @media (min-width: 745px) {
-  .this-is-america-tour-small {
-    max-width: 45rem;
-  }
+    .this-is-america-tour-small {
+	width: $readLength;
+    }
+    .project {
+	margin: 3rem auto;
+    }
+}
+
+@media (min-width: 780px) {
+    h1, h2, h3, p, li {
+	width: $readLength;
+    }
+    #intro {
+	width: $readLength;
+    }
+}
+
+@media (min-width: 850px) {
+    #intro, #about {
+	padding: 2rem;
+    }
+    #intro h1 {
+	font-size: 3.25rem;
+    }
+    main figure {
+	margin: 3rem 0;
+    }
 }
 
 @media (min-width: 922px) {
-  .this-is-america-tour {
-    max-width: 55rem;
-  }
+    .this-is-america-tour {
+	width: 55rem;
+    }
 }
 
 @media (min-width: 1250px) {
-  .overview {
-    max-width: 67rem;
-  }
+    .overview {
+	width: 67rem;
+    }
 }
-
-/* desktop 74rem */
-/* android 25rem */

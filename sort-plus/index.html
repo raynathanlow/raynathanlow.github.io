@@ -1,147 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../dist/css/normalize.css">
     <link rel="stylesheet" href="../dist/css/new.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
+
     <title>Sort Plus - Ray Nathan Low</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav>
+      <a href="../" class="name">Ray Nathan Low</a>
+      <a href="../">Home</a>
+    </nav>
     <main>
-        <article>
-            <h1>Sort Plus</h1>
-            <p class="subtitle">Spotify companion app</p>
+      <header>
+	<h1>Sort Plus</h1>
+	<p class="subtitle">Spotify companion app</p>
 
-            <p>Sort Plus is a progressive web app (PWA) created on my own that provides alternative sorting options to
-                Spotify. Currently, it can sort by duration or release year.</p>
+	<p class="summary">Sort Plus is a progressive web app (PWA) created on my own that provides alternative sorting options to
+          Spotify. Currently, it can sort by duration or release year.</p>
 
-            <p class="definition"> Progressive web apps enhance regular web apps so that they can make use of both web
-                and native
-                app features. This means that they can be accessed with a link on a web browser because it is a website
-                and it can be installed like an app on mobile and desktop devices so that it works offline.</p>
+	<p class="definition"><dfn>Progressive web apps</dfn> enhance regular web apps so that they can make use of both web
+          and native
+          app features. This means that they can be accessed with a link on a web browser because it is a website
+          and it can be installed like an app on mobile and desktop devices so that it works offline.</p>
 
-            <figure>
-                <img class="overview" src="../dist/images/sort-plus-overview.png" alt="My saved albums with duration of 39 minutes">
-                <figcaption>My saved albums with duration of 39 minutes</figcaption>
-            </figure>
+	<figure>
+          <img class="overview" src="../dist/images/sort-plus-overview.png" alt="My saved albums with duration of 39 minutes">
+          <figcaption>My saved albums with duration of 39 minutes</figcaption>
+	</figure>
+      </header>
+      
+      <section>
+	<h2>Links</h2>
+        <ul class="links">
+          <li><a href="https://sort-plus.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live site</a></li>
+          <li><a href="https://github.com/raynathanlow/sort-plus" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
+        </ul>
+      </section>
 
-            <ul class="links">
-                <li><a href="https://sort-plus.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live site</a></li>
-                <li><a href="https://github.com/raynathanlow/sort-plus" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
-            </ul>
+      <section>
+	<h2>Time Frame</h2>
+        <p>November 2019 - February 2020</p>
+      </section>
 
-            <p><span class="bold">Time Frame</span></p>
-            <p>November 2019 - February 2020</p>
+      <section>
+	<h2>Languages and Tools</h2>
+        <p>MERN (MongoDB, Express, React, Node.js), JavaScript, CSS, Mongoose, Git, Heroku, Figma</p>
+      </section>
 
-            <p><span class="bold">Languages and Tools</span></p>
-            <p>MERN (MongoDB, Express, React, Node.js), JavaScript, CSS, Mongoose, Git, Heroku, Figma</p>
+      <section>
+        <h2>Motivation</h2>
+        <p>I wanted to find an album saved in my Spotify's library that I can listen to its entirety within the
+          amount of time I had. My solution had to be accessible on both mobile and desktop, and it had to work
+          offline because I don't have data on my phone.</p>
 
-            <h2>Motivation</h2>
-            <p>I wanted to find an album saved in my Spotify's library that I can listen to its entirety within the
-                amount of time I had. My solution had to be accessible on both mobile and desktop, and it had to work
-                offline because I don't have data on my phone.</p>
+        <figure>
+          <img src="../dist/images/sort-plus-calendar.png"
+	       alt="Example where I have one hour to listen to music before my next obligation"
+	       id="sort-plus-calendar">
+          <figcaption>Example where I have one hour to listen to music before my next obligation</figcaption>
+        </figure>
+      </section>
 
-            <figure>
-                <img src="../dist/images/sort-plus-calendar.png"
-                    alt="Example where I have one hour to listen to music before my next obligation">
-                <figcaption>Example where I have one hour to listen to music before my next obligation</figcaption>
-            </figure>
+      <section>
+        <h2>Contributions</h2>
+        <ul>
+          <li><span class="bold">Research: </span>I looked into what data was available through the Spotify API to
+            sort my saved albums by. I also went through the Sonos and Spotify forums to see what similar
+            features users requested.</li>
+          <li><span class="bold">Design: </span>I designed the user experience, user interface, and icon. </li>
+          <li><span class="bold">Development: </span>I designed the database and API with MongoDB and Express
+            respectively. I wrote the front-end (user interface) code with React.</li>
+          <li><span class="bold">Deployment: </span>I deployed Sort Plus to Heroku.</li>
+        </ul>
 
-            <h2>Contributions</h2>
-            <ul>
-                <li><span class="bold">Research: </span>I looked into what data was available through the Spotify API to
-                    sort my saved albums by. I also went through the Sonos and Spotify forums to see what similar
-                    features users requested.</li>
-                <li><span class="bold">Design: </span>I designed the user experience, user interface, and icon. </li>
-                <li><span class="bold">Development: </span>I designed the database and API with MongoDB and Express
-                    respectively. I wrote the front-end (user interface) code with React.</li>
-                <li><span class="bold">Deployment: </span>I deployed Sort Plus to Heroku.</li>
-            </ul>
+        <p class="definition"><dfn>API</dfn> stands for Application Programming Interface which enables the communication
+          between applications like Sort Plus and Spotify.</p>
+      </section>
 
-            <p class="definition">API stands for Application Programming Interface which enables the communication
-                between applications like Sort Plus and Spotify.</p>
+      <section>
+        <h2>Challenge: Make it Work Offline</h2>
+        <p>Sort Plus is designed to work offline which means that it should cache the data necessary for offline
+          usage. When data is cached, it remains on the device for future use. I had to program it so that it
+          caches the necessary data, which includes all the user's saved albums from their Spotify library among
+          other data.
+        </p>
 
-            <h2>Challenge: Make it Work Offline</h2>
-            <p>Sort Plus is designed to work offline which means that it should cache the data necessary for offline
-                usage. When data is cached, it remains on the device for future use. I had to program it so that it
-                caches the necessary data, which includes all the user's saved albums from their Spotify library among
-                other data.
-            </p>
+        <h3>Attempt to Configure Cache</h3>
+        <p>Progressive web apps have a special script (code) called a service worker which is used to configure what
+          data is cached, for how long, and when to update it, among other things. I used Create React App to
+          quickly get started with React, but it generates an unconfigurable service worker. Fortunately, I was
+          able to follow a tutorial that helped me generate a new service worker and tell Sort Plus to use that
+          instead. This allowed me to choose what data to cache, but it didn't work well with the API I designed.
+          This API communicates with Spotify and with the front-end.</p>
 
-            <h3>Attempt to Configure Cache</h3>
-            <p>Progressive web apps have a special script (code) called a service worker which is used to configure what
-                data is cached, for how long, and when to update it, among other things. I used Create React App to
-                quickly get started with React, but it generates an unconfigurable service worker. Fortunately, I was
-                able to follow a tutorial that helped me generate a new service worker and tell Sort Plus to use that
-                instead. This allowed me to choose what data to cache, but it didn't work well with the API I designed.
-                This API communicates with Spotify and with the front-end.</p>
+        <h3>Modify API to Cache More Efficiently</h3>
+        <p>The problem with the API I designed was that one request responds with all saved albums in the user's
+          library. The service worker caches per request so any updates to the library forces a recache of
+          everything, wasting the user's bandwidth. As a result, I had to modify the API so that one request
+          responds with only one saved album's worth of data. Sort Plus can still get the user's library, but one
+          saved album at a time. The service worker can then be configured so that only saved albums not already
+          cached will be cached.</p>
 
-            <h3>Modify API to Cache More Efficiently</h3>
-            <p>The problem with the API I designed was that one request responds with all saved albums in the user's
-                library. The service worker caches per request so any updates to the library forces a recache of
-                everything, wasting the user's bandwidth. As a result, I had to modify the API so that one request
-                responds with only one saved album's worth of data. Sort Plus can still get the user's library, but one
-                saved album at a time. The service worker can then be configured so that only saved albums not already
-                cached will be cached.</p>
+        <figure>
+          <img src="../dist/images/sort-plus-modify-api.png" alt="How API works before and after modifications" id="sort-plus-modify-api">
+          <figcaption>How API works before and after modifications</figcaption>
+        </figure>
 
-            <figure>
-                <img src="../dist/images/sort-plus-modify-api.png" alt="How API works before and after modifications">
-                <figcaption>How API works before and after modifications</figcaption>
-            </figure>
+        <h3>Write Front End</h3>
+        <p>The missing piece to make Sort Plus work offline is the user interface which I wrote using React. I wrote
+          a component for the button that updates its appearance depending on what is happening the background to
+          determine whether the user can cache all the data for offline use. </p>
+        <p>When Sort Plus is connected to the Internet, it synchronizes the database with the user's current data on
+          Spotify, and then compares that the cache on their device. If there are any discrepancies, then the user
+          can click the button to update their cache to match their current data. After caching, the user can use
+          Sort Plus offline.</p>
 
-            <h3>Write Front End</h3>
-            <p>The missing piece to make Sort Plus work offline is the user interface which I wrote using React. I wrote
-                a component for the button that updates its appearance depending on what is happening the background to
-                determine whether the user can cache all the data for offline use. </p>
-            <p>When Sort Plus is connected to the Internet, it synchronizes the database with the user's current data on
-                Spotify, and then compares that the cache on their device. If there are any discrepancies, then the user
-                can click the button to update their cache to match their current data. After caching, the user can use
-                Sort Plus offline.</p>
+        <figure>
+          <video autoplay muted loop id="sort-plus-change-status">
+            <source src="../dist/images/sort-plus-change-status.m4v" type="video/mp4">
 
-            <figure>
-                <video autoplay muted loop id="sort-plus-change-status">
-                    <source src="../dist/images/sort-plus-change-status.m4v" type="video/mp4">
+	      Sorry, your browser doesn't support embedded videos.
+          </video>
+          <figcaption>Sort Plus syncs database with user's Spotify library then provides option to download for
+            offline use</figcaption>
+        </figure>
+      </section>
 
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <figcaption>Sort Plus syncs database with user's Spotify library then provides option to download for
-                    offline use</figcaption>
-            </figure>
+      <section>
+        <h2>Results</h2>
+        <p>I deployed Sort Plus to <a href="https://sort-plus.herokuapp.com/" target="_blank" rel="noopener noreferrer">Heroku</a> where anyone with a Spotify account can use for free. It is a progressive
+          web app
+          so it can it is accessible with a typical web address. Its offline capabilities only work on some web
+          browsers, versions, and operating systems due to the technology being relatively new.</p>
+      </section>
 
-            <h2>Results</h2>
-            <p>I deployed Sort Plus to <a href="https://sort-plus.herokuapp.com/" target="_blank" rel="noopener noreferrer">Heroku</a> where anyone with a Spotify account can use for free. It is a progressive
-                web app
-                so it can it is accessible with a typical web address. Its offline capabilities only work on some web
-                browsers, versions, and operating systems due to the technology being relatively new.</p>
+      <section>
+        <h2>Reflection</h2>
 
-            <h2>Reflection</h2>
+        <h3>Measuring Success</h3>
+        <p>Sort Plus was successful because it functions the way I designed it to. Unfortunately, I don't find
+          myself wanting to use it as much as I thought, but it may be due to a change in my listening habits.
+        </p>
 
-            <h3>Measuring Success</h3>
-            <p>Sort Plus was successful because it functions the way I designed it to. Unfortunately, I don't find
-                myself wanting to use it as much as I thought, but it may be due to a change in my listening habits.
-            </p>
+        <h3>If I Could Redo Sort Plus</h3>
+        <p>If I could redo Sort Plus, I would reduce the scope of the minimum viable product so that I could test its
+          usefulness before committing a lot of time into a project that may not be successful. Fortunately, Sort
+          Plus was successful, and I was able to learn a lot.</p>
 
-            <h3>If I Could Redo Sort Plus</h3>
-            <p>If I could redo Sort Plus, I would reduce the scope of the minimum viable product so that I could test its
-                usefulness before committing a lot of time into a project that may not be successful. Fortunately, Sort
-                Plus was successful, and I was able to learn a lot.</p>
-
-            <h3>What I Learned:</h3>
-            <ul>
-                <li><span class="bold">MERN stack (MongoDB, Express, React, Node.js): </span>Prior to this project, I
-                    only had experience with React and some backend (server and database) experience with PHP and MySQL.
-                    I learned how to write the backend with Express, which connects to MongoDB with Mongoose.</li>
-                <li><span class="bold">PWA (Progressive Web App): </span>I learned more about progressive web apps so
-                    that I could make Sort Plus work offline. They can be accessible across different platforms and can
-                    be made to work offline for users who don't always have access to the Internet.</li>
-            </ul>
-        </article>
+        <h3>What I Learned:</h3>
+        <ul>
+          <li><span class="bold">MERN stack (MongoDB, Express, React, Node.js): </span>Prior to this project, I
+            only had experience with React and some backend (server and database) experience with PHP and MySQL.
+            I learned how to write the backend with Express, which connects to MongoDB with Mongoose.</li>
+          <li><span class="bold">PWA (Progressive Web App): </span>I learned more about progressive web apps so
+            that I could make Sort Plus work offline. They can be accessible across different platforms and can
+            be made to work offline for users who don't always have access to the Internet.</li>
+        </ul>
+      </section>
     </main>
-</body>
+  </body>
 
 </html>

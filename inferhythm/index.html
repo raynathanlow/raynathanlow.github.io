@@ -1,193 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../dist/css/normalize.css">
     <link rel="stylesheet" href="../dist/css/new.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
+
     <title>Inferhythm - Ray Nathan Low</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <article>
-            <h1>Inferhythm</h1>
-            <p class="subtitle">Browser extension</p>
+      <header>
+        <h1>Inferhythm</h1>
+        <p class="subtitle">Browser extension</p>
 
-            <p>Inferhythm is a Google Chrome extension created on my own that helps users find lyrics from the website
-                Genius for the track they are currently listening to on Spotify.</p>
+        <p class="summary">Inferhythm is a Google Chrome extension created on my own that helps users find lyrics from the website
+          Genius for the track they are currently listening to on Spotify.</p>
 
-            <p class="definition">Lyrics from Genius typically also have annotations and interpretations submitted by
-                contributors, editors, musicians, and fans.</p>
+        <p class="definition">Lyrics from Genius typically also have annotations and interpretations submitted by
+          contributors, editors, musicians, and fans.</p>
 
-            <figure>
-                <video autoplay muted loop class="overview">
-                    <source src="../dist/images/inferhythm-demo.m4v" type="video/mp4">
+        <figure>
+          <video autoplay muted loop class="overview">
+            <source src="../dist/images/inferhythm-demo.m4v" type="video/mp4">
 
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <figcaption>Demonstration</figcaption>
-            </figure>
+	      Sorry, your browser doesn't support embedded videos.
+          </video>
+          <figcaption>Demonstration</figcaption>
+        </figure>
+      </header>
 
-            <ul class="links">
-                <li><a href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Inferhythm
-                        on Chrome Web Store</a></li>
-                <li><a href="https://github.com/raynathanlow/inferhythm" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
-            </ul>
+      <section>
+	<h2>Links</h2>
+        <ul class="links">
+          <li><a href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Inferhythm
+	      on Chrome Web Store</a></li>
+          <li><a href="https://github.com/raynathanlow/inferhythm" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
+        </ul>
+      </section>
 
-            <p><span class="bold">Time Frame</span></p>
-            <p>September - October 2019</p>
+      <section>
+	<h2>Time Frame</h2>
+        <p>September - October 2019</p>
+      </section>
 
-            <p><span class="bold">Languages and Tools</span></p>
-            <p>HTML, CSS, JavaScript, Git</p>
+      <section>
+	<h2>Languages and Tools</h2>
+        <p>HTML, CSS, JavaScript, Git</p>	  
+      </section>
+      
 
-            <h2>Motivation</h2>
-            <p>I wanted a convenient way to get lyrics for the track I'm listening to on Spotify, similar to Genius'
-                Android app, but on desktop operating systems (Windows, macOS, Linux). While a track is playing, the app
-                creates a notification that opens the lyrics in the app upon being tapped.
-            </p>
+      <section>
+	<h2>Motivation</h2>
+        <p>I wanted a convenient way to get lyrics for the track I'm listening to on Spotify, similar to Genius'
+          Android app, but on desktop operating systems (Windows, macOS, Linux). While a track is playing, the app
+          creates a notification that opens the lyrics in the app upon being tapped.
+        </p>
 
-            <figure>
-                <video autoplay muted loop id="inferhythm-android-demo">
-                    <source src="../dist/images/inferhythm-android-demo.m4v" type="video/mp4">
+        <figure>
+          <video autoplay muted loop id="inferhythm-android-demo">
+            <source src="../dist/images/inferhythm-android-demo.m4v" type="video/mp4">
 
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <figcaption>Demonstration of Genius' Android app</figcaption>
-            </figure>
+	      Sorry, your browser doesn't support embedded videos.
+          </video>
+          <figcaption>Demonstration of Genius' Android app</figcaption>
+        </figure>	  
+      </section>
+      
+      <section>
+	
+        <h2>Contributions</h2>
+        <ul>
+          <li><span class="bold">Research: </span>I tried similar browser extensions to avoid remaking any.</li>
+          <li><span class="bold">Design: </span> I designed the user experience, user interface, and icon.</li>
+          <li><span class="bold">Development: </span> I wrote HTML, CSS, and JavaScript to present data requested
+            and received from Spotify and Genius APIs. </li>
+          <li><span class="bold">Testing: </span> I wrote tests with Jest, a JavaScript testing framework.</li>
+        </ul>
 
-            <h2>Contributions</h2>
-            <ul>
-                <li><span class="bold">Research: </span>I tried similar browser extensions to avoid remaking any.</li>
-                <li><span class="bold">Design: </span> I designed the user experience, user interface, and icon.</li>
-                <li><span class="bold">Development: </span> I wrote HTML, CSS, and JavaScript to present data requested
-                    and received from Spotify and Genius APIs. </li>
-                <li><span class="bold">Testing: </span> I wrote tests with Jest, a JavaScript testing framework.</li>
-            </ul>
+        <p class="definition"><dfn>API</dfn> stands for Application Programming Interface which enables the communication
+          between applications like Inferhythm and Genius.</p>
+      </section>
 
-            <p class="definition">API stands for Application Programming Interface which enables the communication
-                between applications like Inferhythm and Genius.</p>
+      <section>
+        <h2>Challenge: Get Lyrics in One Click</h2>
+        <p>Inferhythm's purpose is to get the lyrics from Genius for the track the user is currently listening to.
+          My
+          design is for the lyrics to open in a new tab when the user clicks Inferhythm's button. I had to write
+          the HTML, CSS, and JavaScript that follows the design.</p>
 
-            <h2>Challenge: Get Lyrics in One Click</h2>
-            <p>Inferhythm's purpose is to get the lyrics from Genius for the track the user is currently listening to.
-                My
-                design is for the lyrics to open in a new tab when the user clicks Inferhythm's button. I had to write
-                the HTML, CSS, and JavaScript that follows the design.</p>
+        <h3>Unsuccessfully Manipulate Text to Create Link</h3>
+        <p>I noticed in my experience with Genius was that the links were structured like
+          genius.com/artist-name-track-title-lyrics. I naively thought I could similarly manipulate the text of
+          the track's data to create a link, but found that it wasn't very reliable.
+        </p>
+        <p>For example, some artists had symbols like a dollar sign in their names resulted in invalid links because
+          they weren't consistently handled on Genius.
+        </p>
 
-            <h3>Unsuccessfully Manipulate Text to Create Link</h3>
-            <p>I noticed in my experience with Genius was that the links were structured like
-                genius.com/artist-name-track-title-lyrics. I naively thought I could similarly manipulate the text of
-                the track's data to create a link, but found that it wasn't very reliable.
-            </p>
-            <p>For example, some artists had symbols like a dollar sign in their names resulted in invalid links because
-                they weren't consistently handled on Genius.
-            </p>
-
-            <figure>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Artist name</th>
-                            <th>After text manipulation</th>
-                            <th>Genius</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A$AP Rocky</td>
-                            <td>asap-rocky</td>
-                            <td>a-ap-rocky</td>
-                        </tr>
-                        <tr>
-                            <td>Ty Dolla $ign</td>
-                            <td>ty-dolla-sign</td>
-                            <td>ty-dolla-sign</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </figure>
-
-
-            <p>Similarly, some tracks on Spotify indicated features, remixes, or remasters in their title typically
-                resulted in invalid links because the link would be different on Genius.
-            </p>
-            <p>I considered adding a feature where users can report tracks that caused problems and I could update the
-                code accordingly, but I opted to find a different solution first.
-            </p>
-
-            <h3>Research for Solution</h3>
-            <p>I went on GitHub and analyzed the code for applications that had some connection to Genius to help me
-                find a solution to getting a valid link. After analyzing over fifteen repositories, I found that some
-                applications manipulated text like I tried before, but other ones made use of the Genius API. There is
-                function in this API that searches Genius' database by taking text as input and outputs a list of
-                results, like Google. I tried it and found that it was more reliable in getting a valid link. The search
-                query didn't have to be as precise as creating a link myself, so I added it in to Inferhythm.
-            </p>
-
-            <h3>Merge Genius API Results</h3>
-            <p>My original solution was to open the first result from the list outputted from the Genius API whenever
-                the user clicks Inferhythm's button. Unfortunately, like with any search engine, the first result may
-                not always be what you're looking for. I then decided to show a subset of the results in a popup, but
-                that didn't work because a single query sometimes doesn't produce any results that I was looking for
-                either.
-            </p>
-            <p>As a result, I used two queries, merged their results, and showed them in the popup. I also added two
-                links that searched for the track's lyrics on Genius and just plain lyrics on Google in case none of the
-                results met the user's needs.
-            </p>
-
-            <figure>
-                <img src="../dist/images/inferhythm-merged-results.png" alt="Results from query 1 and 2 merged">
-                <figcaption>Results from query 1 and 2 merged</figcaption>
-            </figure>
-
-            <p>Finally, the user can click on Inferhythm's button which will show a list of results that they can click
-                to open lyrics on Genius in a new tab.
-            </p>
+        <figure>
+          <table>
+            <thead>
+	      <tr>
+                <th>Artist name</th>
+                <th>After text manipulation</th>
+                <th>Genius</th>
+	      </tr>
+            </thead>
+            <tbody>
+	      <tr>
+                <td>A$AP Rocky</td>
+                <td>asap-rocky</td>
+                <td>a-ap-rocky</td>
+	      </tr>
+	      <tr>
+                <td>Ty Dolla $ign</td>
+                <td>ty-dolla-sign</td>
+                <td>ty-dolla-sign</td>
+	      </tr>
+            </tbody>
+          </table>
+        </figure>
 
 
-            <h2>Results</h2>
-            <p>I published Inferhythm to the <a
-                    href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Chrome
-                    Web Store</a> where anyone can add it to Chrome for free. After adding
-                it, users must log in with Spotify to give access Inferhythm to their currently playing track. Now
-                whenever a track is playing, the user can click Inferhythm's button to get a list of links to the
-                track's lyrics. Clicking on a link opens the lyrics in a new tab.
-            </p>
+        <p>Similarly, some tracks on Spotify indicated features, remixes, or remasters in their title typically
+          resulted in invalid links because the link would be different on Genius.
+        </p>
+        <p>I considered adding a feature where users can report tracks that caused problems and I could update the
+          code accordingly, but I opted to find a different solution first.
+        </p>
 
-            <h2>Reflection</h2>
+        <h3>Research for Solution</h3>
+        <p>I went on GitHub and analyzed the code for applications that had some connection to Genius to help me
+          find a solution to getting a valid link. After analyzing over fifteen repositories, I found that some
+          applications manipulated text like I tried before, but other ones made use of the Genius API. There is
+          function in this API that searches Genius' database by taking text as input and outputs a list of
+          results, like Google. I tried it and found that it was more reliable in getting a valid link. The search
+          query didn't have to be as precise as creating a link myself, so I added it in to Inferhythm.
+        </p>
 
-            <h3>Measuring Success</h3>
-            <p>Inferhythm was successful because it does what I designed it to do with one slight difference. Instead of
-                opening the lyrics in a new tab upon clicking Inferhythm's button, a popup with a list of results
-                appears. The user can click a result to open in a new tab. I had to adapt because I wasn't able to
-                consistently get the lyrics that accurately matched the currently playing track to do what I planned.
+        <h3>Merge Genius API Results</h3>
+        <p>My original solution was to open the first result from the list outputted from the Genius API whenever
+          the user clicks Inferhythm's button. Unfortunately, like with any search engine, the first result may
+          not always be what you're looking for. I then decided to show a subset of the results in a popup, but
+          that didn't work because a single query sometimes doesn't produce any results that I was looking for
+          either.
+        </p>
+        <p>As a result, I used two queries, merged their results, and showed them in the popup. I also added two
+          links that searched for the track's lyrics on Genius and just plain lyrics on Google in case none of the
+          results met the user's needs.
+        </p>
 
-            </p>
+        <figure>
+          <img src="../dist/images/inferhythm-merged-results.png" alt="Results from query 1 and 2 merged" id="inferhythm-merged-results">
+          <figcaption>Results from query 1 and 2 merged</figcaption>
+        </figure>
 
-            <h3>If I Could Redo Inferhythm</h3>
-            <p>If I could redo Inferhythm, I would write and run tests earlier while the code is less complex and not when it
-                was close to completion. This is so that I can run more tests to give me confidence that the code works
-                without any errors as I work towards fully implementing my design.
-            </p>
+        <p>Finally, the user can click on Inferhythm's button which will show a list of results that they can click
+          to open lyrics on Genius in a new tab.
+        </p>
 
-            <h3>What I Learned:</h3>
-            <ul>
-                <li><span class="bold">Cookies: </span> I used them to keep the user's session so that they wouldn't
-                    need to log in with Spotify again after reopening Google Chrome. This involved learning the security
-                    flags cookies use to prevent malicious activity.</li>
-                <li><span class="bold">Asynchronous programming: </span>I used this to make requests to the Spotify and
-                    Genius APIs. This involved callback functions and promises, which perform specific actions
-                    automatically after another function, such as a request to an API, finishes. This is helpful when
-                    making multiple requests that depend on each other, which means that they must be done in a specific
-                    order. I tried using async/await with promises too just to learn how to use them. Async/await makes
-                    promises easier to read.</li>
-            </ul>
-        </article>
+      </section>
+
+      <section>
+        <h2>Results</h2>
+        <p>I published Inferhythm to the <a
+					   href="https://chrome.google.com/webstore/detail/inferhythm/oonjmhckklmpaepklgfjlipaoicfcfid" target="_blank" rel="noopener noreferrer">Chrome
+            Web Store</a> where anyone can add it to Chrome for free. After adding
+          it, users must log in with Spotify to give access Inferhythm to their currently playing track. Now
+          whenever a track is playing, the user can click Inferhythm's button to get a list of links to the
+          track's lyrics. Clicking on a link opens the lyrics in a new tab.
+        </p>
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+
+        <h3>Measuring Success</h3>
+        <p>Inferhythm was successful because it does what I designed it to do with one slight difference. Instead of
+          opening the lyrics in a new tab upon clicking Inferhythm's button, a popup with a list of results
+          appears. The user can click a result to open in a new tab. I had to adapt because I wasn't able to
+          consistently get the lyrics that accurately matched the currently playing track to do what I planned.
+
+        </p>
+
+        <h3>If I Could Redo Inferhythm</h3>
+        <p>If I could redo Inferhythm, I would write and run tests earlier while the code is less complex and not when it
+          was close to completion. This is so that I can run more tests to give me confidence that the code works
+          without any errors as I work towards fully implementing my design.
+        </p>
+
+        <h3>What I Learned:</h3>
+        <ul>
+          <li><span class="bold">Cookies: </span> I used them to keep the user's session so that they wouldn't
+            need to log in with Spotify again after reopening Google Chrome. This involved learning the security
+            flags cookies use to prevent malicious activity.</li>
+          <li><span class="bold">Asynchronous programming: </span>I used this to make requests to the Spotify and
+            Genius APIs. This involved callback functions and promises, which perform specific actions
+            automatically after another function, such as a request to an API, finishes. This is helpful when
+            making multiple requests that depend on each other, which means that they must be done in a specific
+            order. I tried using async/await with promises too just to learn how to use them. Async/await makes
+            promises easier to read.</li>
+        </ul>
+      </section>
     </main>
-</body>
+  </body>
 
 </html>
