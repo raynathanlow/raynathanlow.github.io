@@ -1,149 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ray Nathan Low</title>
-  <link rel="stylesheet" href="dist/css/normalize.css">
-  <link rel="stylesheet" href="dist/css/custom.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../dist/css/normalize.css">
+    <link rel="stylesheet" href="../dist/css/new.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+    <title>Ray Nathan Low</title>
+  </head>
 
-<body id="homepage-body">
-  <main id="homepage-main">
-    <div id="intro">
-      <h1 id="name">Ray Nathan <br> Low
-      </h1>
-      <div>UX designer</div>
-      <div id="about">
-        <div><a href="about">About Me</a></div>
-        <div><a href="https://github.com/raynathanlow">GitHub</a></div>
-        <div><a href="resume.pdf">Resume</a></div>
-        <div>Contact me at <span id="email">raynathanlow@gmail.com</span></div>
+  <body>
+    <header id="intro">
+      <h1>Ray Nathan Low</h1>
+      <p>Web developer based in Vancouver, Canada</p>
+
+      <div id="links">
+	<a href="#">Resume</a>
+	<a href="https://github.com/raynathanlow">GitHub</a>
+	<!-- <a href="#">LinkedIn</a> -->
+	<div>raynathanlow@gmail.com</div>
       </div>
+    </header>
+
+    <div id="projects">
+      <a href="sort-plus" class="project">
+	<img src="../src/images/sort-plus-thumbnail.png" alt="">
+	<div class="project-info">
+	  <div class="project-name-subtitle">
+	    <p class="project-name">Sort Plus</p>
+	    <p class="project-small">Spotify companion app</p>
+	  </div>
+	  <p class="project-small">MERN (MongoDB, Express, React, Node.js)</p>
+	</div>  
+      </a>      
+
+      <a href="inferhythm" class="project">
+	<img src="../src/images/inferhythm-thumbnail.png" alt="">
+	<div class="project-info">
+	  <div class="project-name-subtitle">
+	    <p class="project-name">Inferhythm</p>
+	    <p class="project-small">Browser extension</p>
+	  </div>
+	  <p class="project-small">HTML, CSS, JavaScript</p>
+	</div>
+      </a>
+      
+      <a href="this-is-america-tour" class="project">
+	<img src="../src/images/this-is-america-tour-thumbnail.png" alt="">
+	<div class="project-info">
+	  <div class="project-name-subtitle">
+	    <p class="project-name">This Is America Tour</p>
+	    <p class="project-small">Website redesign</p>
+	  </div>
+	  <p class="project-small">React, JavaScript, CSS</p>
+	</div>
+      </a>
+
+      <!-- <a href="github" class="project"> -->
+      <!-- 	<img src="../src/images/this-is-america-tour-thumbnail.png" alt=""> -->
+      <!-- 	<div class="project-info"> -->
+      <!-- 	  <div class="project-name-subtitle"> -->
+      <!-- 	    <p class="project-name">Open Source Contributions</p> -->
+      <!-- 	    <\!-- <p class="project-small">Website redesign</p> -\-> -->
+      <!-- 	  </div> -->
+      <!-- 	  <p class="project-small">HTML, CSS, JavaScript</p> -->
+      <!-- 	</div> -->
+      <!-- </a> -->
     </div>
 
-    <div class="projects">
-      <!-- <div class="project">
-      <a href="eat-ups"><img src="dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail"></a>
-      <a href="eat-ups">Eat Ups</a>
-      <p class="type">HTML5 Game</p>
-    </div> -->
-    <!-- <div class="project">
-    <a href="eat-ups"><span class="div-link">Eat Ups</span></a> -->
-      <!-- <div class="background"></div> -->
-      <!-- <div class="project-info">
-        <div class="project-img">
-          <img src="dist/images/eat-ups-thumbnail.png" alt="Eat Ups thumbnail">
-        </div>
-        <div class="project-text">
-          <a href="eat-ups" class="project-name" tabindex="-1">Eat Ups</a>
-          <p class="type">HTML5 Game</p>
-        </div>
-      </div>
-    </div> -->
-      <div class="project">
-        <a href="brandesign"><span class="div-link">BranDesign</span></a>
-        <!-- <div class="background"></div> -->
-        <div class="project-info">
-          <div class="project-img">
-            <img src="dist/images/bd-thumbnail.png" alt="BranDesign thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="brandesign" class="project-name" tabindex="-1">BranDesign</a>
-            <p class="type">Creativity Support Tool Prototype </p>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <a href="citi-bike"><span class="div-link">Citi Bike</span></a>
-        <!-- <div class="background"></div> -->
-        <div class="project-info">
-          <div class="project-img">
-            <img src="dist/images/cb-thumbnail.png" alt="Citi Bike thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="citi-bike" class="project-name" tabindex="-1">Citi Bike</a>
-            <p class="type">Data Visualization</p>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <a href="bubbly"><span class="div-link">Bubbly</span></a>
-        <!-- <div class="background"></div> -->
-        <div class="project-info">
-          <div class="project-img">
-            <img src="dist/images/bubbly-thumbnail.png" alt="Bubbly thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="bubbly" class="project-name" tabindex="-1">Bubbly</a>
-            <p class="type">Project Management Web App</p>
-          </div>
-        </div>
-      </div>
-      <!--<div class="project">
-      <a href="doot"><span class="div-link">Doot</span></a> -->
-        <!-- <div class="background"></div> -->
-        <!-- <div class="project-info">
-          <div class="project-img">
-            <img src="dist/images/doot-thumbnail.png" alt="Doot">
-          </div>
-          <div class="project-text">
-            <a href="doot" class="project-name" tabindex="-1">Doot</a>
-            <p class="type">Web App</p>
-          </div>
-
-        </div>
-      </div>
-      <div class="project">
-	      <a href="this-is-america-tour"><span class="div-link">This Is America Tour Website Redesign</span></a> -->
-        <!-- <div class="background"></div> -->
-        <!-- <div class="project-info">
-          <div class="project-img">
-            <img src="src/images/this-is-america-tour-thumbnail.png" alt="This Is America Tour Website Redesign Thumbnail">
-          </div>
-          <div class="project-text">
-            <a href="this-is-america-tour" class="project-name" tabindex="-1">This Is America Tour Website Redesign</a>
-            <p class="type">React Website Redesign</p>
-          </div>
-
-        </div>
-      </div> -->
-      <!-- <div class="project">
-      <a href="housing-101"><img src="dist/images/housing-101-thumbnail.png" alt="Housing 101 thumbnail"></a>
-      <a href="housing-101">Housing 101</a>
-      <p class="type">Mock Website Redesign</p>
-    </div> -->
-      <!-- <div class="project">
-      <a href="pharmaquest"><img src="dist/images/pharmaquest-thumbnail.png" alt="PharmaQuest thumbnail"></a>
-      <a href="pharmaquest">PharmaQuest</a>
-      <p class="type">Unity Game</p>
+    <div id="about">
+      <h2>About Me</h2>
+      <p>My web development experience mainly revolves around HTML, CSS, JavaScript, and React, but I'm eager to learn pretty much anything to better develop websites. I want to develop for the web because of how it aims to be accessible to everyone and available on every device.</p>
+      <p>I recently graduated from Simon Fraser University's <a href="https://www.sfu.ca/siat.html" target="_blank">School of Interactive Arts and Technology (SIAT)</a> with a Bachelor of Science.
+</p>
+      <p>When I'm not making websites, I enjoy playing basketball and video games, listening to music, or watching TV. Occasionally, I might explore what's new with Linux, and free and open source software, or develop games.</p>
     </div>
-    <div class="project">
-      <a href="flare"><img src="dist/images/flare-thumbnail.png" alt="Flare thumbnail"></a>
-      <a href="flare">Flare</a>
-      <p class="type">Android App</p>
-    </div> -->
-    </div>
-  </main>
-<!-- <footer class="homepage-footer">
-  <nav>
-    <ul>
-      <li> <a href="style-guide">Style Guide</a> </li>
-      <li> <a href="citations">Citations</a> </li>
-      <li> <a href="https://github.com/rnlow/rnlow.github.io">Git Repository</a> </li>
-    </ul>
-  </nav>
-</footer> -->
-  <script src="dist/js/main.js"></script>
-</body>
+    
+  </body>
 
 </html>
