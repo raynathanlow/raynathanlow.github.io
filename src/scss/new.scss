@@ -2,7 +2,7 @@ $color1: #1C4AA6;
 $color2: #061F40;
 $color3: #295FA6;
 $color4: #36ABD9;
-$color5: #38D0F2;
+$color5: #3FD2F2;
 $color6: #A67B1C;
 $color7: #f0f5f5;
 $link: #8E6A18;
@@ -85,8 +85,8 @@ nav {
     padding: 1.5rem;
 }
 
-nav a {
-    display: inline-block;
+nav p, nav a {
+    display: inline;
 }
 
 .name {
@@ -94,6 +94,7 @@ nav a {
     font-size: 1.5rem;
     text-decoration: none;
     margin-right: 1rem;
+    text-align: center;
 }
 
 .subtitle {
@@ -177,7 +178,7 @@ th, tr, td {
     width: 100%;
 }
 
-.project:hover {   
+.project:hover, .project:focus {   
     border-left: solid 0.4rem $color4;
 }
 

@@ -13,7 +13,7 @@
 
   <body>
     <nav>
-      <a href="../" class="name">Ray Nathan Low</a>
+      <p class="name">Ray Nathan Low</p>
       <a href="../">Home</a>
     </nav>
     <main>
@@ -25,7 +25,14 @@
           accessible and make the poster interactive.</p>
 
         <figure>
-          <img class="overview" src="../dist/images/this-is-america-tour-after.png" alt="Final product">
+	  <video autoplay muted loop class="this-is-america-tour" tabindex="-1">
+            <source src="../dist/images/this-is-america-tour-before-after.m4v" type="video/mp4">
+
+	      <p>Your browser doesn't support HTML5 video. Here is
+		a <a href="../dist/images/this-is-america-tour-before-after.m4v">link to the video</a> instead.</p>
+	      <img class="overview" src="../dist/images/this-is-america-tour-after.png" alt="Final product">
+          </video>
+          
           <figcaption>Final product</figcaption>
         </figure>
       </header>
@@ -33,7 +40,7 @@
       <section>
 	<h2>Links</h2>
         <ul class="links">
-          <li><a href="https://github.com/raynathanlow/this-is-america-tour-website-redesign" target="_blank" rel="noopener noreferrer">GitHub
+          <li><a href="https://github.com/raynathanlow/this-is-america-tour-website-redesign">GitHub
               repository</a>
           </li>
         </ul>
@@ -124,7 +131,7 @@
           aren't easily understandable.</p>
 
         <figure>
-          <video autoplay muted loop class="this-is-america-tour">
+          <video autoplay muted loop class="this-is-america-tour" tabindex="-1">
             <source src="../dist/images/this-is-america-tour-keyboard-navigation.m4v" type="video/mp4">
 
               Sorry, your browser doesn't support embedded videos.
