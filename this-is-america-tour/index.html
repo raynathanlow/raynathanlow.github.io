@@ -25,12 +25,13 @@
           accessible and make the poster interactive.</p>
 
         <figure>
-	  <video autoplay muted loop class="this-is-america-tour" tabindex="-1">
-            <source src="../dist/images/this-is-america-tour-before-after.m4v" type="video/mp4">
+	  <video autoplay muted loop playsinline class="this-is-america-tour" tabindex="-1">
+            <source src="../dist/images/this-is-america-tour-before-after-1.mp4" type="video/mp4" onerror="fallback(parentNode)">
+              <!-- <source src="../dist/images/this-is-america-tour-before-after.mp4" type="video/mp4" onerror="fallback(parentNode)"> -->
 
-	      <p>Your browser doesn't support HTML5 video. Here is
-		a <a href="../dist/images/this-is-america-tour-before-after.m4v">link to the video</a> instead.</p>
-	      <img class="overview" src="../dist/images/this-is-america-tour-after.png" alt="Final product">
+		<p>Your browser doesn't support HTML5 video. Here is
+		  a <a href="../dist/images/this-is-america-tour-before-after.m4v">link to the video</a> instead.</p>
+		<img src="../src/images/this-is-america-tour-before-after.gif">
           </video>
           
           <figcaption>Final product</figcaption>
@@ -90,7 +91,7 @@
         <h3>Design</h3>
         <p>To make the poster interactive, I decided that more information shows up when a fan clicks or taps each
           date. They wouldn't need to leave the site unless they wanted to buy tickets, which I provide a direct
-          link to. Originally, fans can go to Ticketmaster at the bottom of the page and then they find the
+          link to. Originally, fans could go to Ticketmaster at the bottom of the page and then they find the
           show they want to go to. However, some fans may see the city closest to them on the poster already, so
           my
           redesign gives them a quick way to buy those tickets.</p>
@@ -112,17 +113,12 @@
         </figure>
 
         <h3>Display Shows in Original Order</h3>
-        <p>With the images ready, I was able to write the React code to display the shows in a grid. I planned to
-          use the data from Ticketmaster to determine the order of the shows, but Childish Gambino suffered a leg
-          injury midway through the tour. The remaining shows were rescheduled, but not in the same order. There
-          was no updated poster at the time, so I chose to display the shows in the original order while
-          indicating that they have been rescheduled. I was able to sort the data from Ticketmaster by the
-          original order of shows by modifying JavaScript's sort function.</p>
+        <p>With the images ready, I was able to write the React code to display the shows in a grid. I planned to use the data from Ticketmaster to correctly order the shows, but Childish Gambino suffered a leg injury midway through the tour, so the remaining shows were rescheduled in a different order. At the time of development, there was no updated poster so I thought it made sense to display the shows in the original order and indicate that it has been rescheduled. I was able to sort the data from Ticketmaster by the original order of shows by modifying JavaScript's sort function.</p>
 
         <h3>Make Site Accessible
         </h3>
         <p>After writing most of the React code, each show can be clicked or tapped on to reveal more information
-          about the show, but it wasn't quite accessible yet. Some elements of the site can't be interacted with
+          about the show, but it wasn't quite at the level of accessibility I wanted yet. Some elements of the site couldn't be interacted with
           the keyboard by default, so I had to add the <code>tabindex</code> attribute to indicate that it is able
           to be
           interacted with the keyboard. I also added the <code>alt</code> and <code>title</code> attributes to
@@ -167,7 +163,7 @@
         </p>
 
         <h3>If I Could Redo This Redesign</h3>
-        <p>If I could redo this redesign, I would learn more about what can be done to make websites more accessible
+        <p>If I could redo this redesign, I would learn more about what could be done to make websites more accessible
           because I don't think I did enough.</p>
 
         <h3>What I Learned:</h3>
@@ -192,6 +188,8 @@
         </ul>
       </section>
     </main>
+
+    <script src="../../video-fallback.js"></script> 
   </body>
 
 </html>

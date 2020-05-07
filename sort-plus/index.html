@@ -27,8 +27,7 @@
 
 	<p class="definition"><dfn>Progressive web apps</dfn> enhance regular web apps so that they can make use of both web
           and native
-          app features. This means that they can be accessed with a link on a web browser because it is a website
-          and it can be installed like an app on mobile and desktop devices so that it works offline.</p>
+          app features. This means that it can be accessed via a link on web browsers like a typical website, but also can be installed like an app so that it can launched from its home screen.</p>
 
 	<figure>
           <img class="overview" src="../dist/images/sort-plus-overview.png" alt="My saved albums with duration of 39 minutes">
@@ -56,8 +55,7 @@
 
       <section>
         <h2>Motivation</h2>
-        <p>I wanted to find an album saved in my Spotify's library that I can listen to its entirety within the
-          amount of time I had. My solution had to be accessible on both mobile and desktop, and it had to work
+        <p>I wanted to find an album saved in my Spotify library that I could listen to in its entirety within the limited amount of time I had. My solution had to be accessible on both mobile and desktop, and it had to work
           offline because I don't have data on my phone.</p>
 
         <figure>
@@ -104,8 +102,8 @@
         <p>The problem with the API I designed was that one request responds with all saved albums in the user's
           library. The service worker caches per request so any updates to the library forces a recache of
           everything, wasting the user's bandwidth. As a result, I had to modify the API so that one request
-          responds with only one saved album's worth of data. Sort Plus can still get the user's library, but one
-          saved album at a time. The service worker can then be configured so that only saved albums not already
+          responds with only one saved album's worth of data. Sort Plus could still get the user's library, but one
+          saved album at a time. The service worker could then be configured so that only saved albums not already
           cached will be cached.</p>
 
         <figure>
@@ -116,7 +114,7 @@
         <h3>Write Front End</h3>
         <p>The missing piece to make Sort Plus work offline is the user interface which I wrote using React. I wrote
           a component for the button that updates its appearance depending on what is happening the background to
-          determine whether the user can cache all the data for offline use. </p>
+          determine whether the user could cache all the data for offline use. </p>
         <p>When Sort Plus is connected to the Internet, it synchronizes the database with the user's current data on
           Spotify, and then compares that the cache on their device. If there are any discrepancies, then the user
           can click the button to update their cache to match their current data. After caching, the user can use
