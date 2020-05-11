@@ -20,10 +20,6 @@ a {
     color: $color5;
 }
 
-a:hover {
-    color: white;
-}
-
 p, li, h1, h2, h3 {
     line-height: 1.5;
     color: white;
@@ -89,24 +85,7 @@ nav p, nav a {
     display: inline;
 }
 
-.name {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin-right: 1rem;
-    text-align: center;
-}
 
-.subtitle {
-    font-style: italic;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-}
-
-.summary {
-    font-weight: 500;
-}
 
 section {
     padding: 1rem 0;
@@ -123,6 +102,7 @@ figure {
 
 figcaption {
     margin: 1.5rem 0;
+    color: #6f6f6f;
 }
 
 img, video {
@@ -140,6 +120,25 @@ th, tr, td {
     padding: 0.5rem;
     text-align: center;
     border: solid thin;
+}
+
+.name {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.summary {
+    font-weight: 500;
 }
 
 #intro {
@@ -210,6 +209,8 @@ th, tr, td {
     font-size: 0.8rem;
 }
 
+
+
 #about h2 {
     margin-top: 0;
 }
@@ -241,6 +242,12 @@ th, tr, td {
 @media (min-width: 140px) {
     #links > *{
 	padding-right: 0.25rem;
+    }
+}
+
+@media (min-width: 220px) {
+    #sort-plus-before {
+	width: 12rem;
     }
 }
 
@@ -330,6 +337,12 @@ th, tr, td {
 @media (min-width: 572px) {
     #sort-plus-calendar {
 	width: 33rem;
+    }
+}
+
+@media (min-width: 640px) {
+    #sort-plus-after {
+	width: 38rem;
     }
 }
 

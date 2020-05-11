@@ -21,12 +21,13 @@
         <header>
             <h1>Sort Plus</h1>
             <p class="subtitle">Spotify companion app</p>
-            <p class="summary">Sort Plus is a progressive web app (PWA) created on my own that provides alternative
-                sorting options to Spotify. Currently, it can sort by duration or release year.</p>
-            <p class="definition"><dfn>Progressive web apps</dfn> enhance regular web apps so that they can make use of
-                both web and native app features. This means that it can be accessed via a link on web browsers like a
-                typical website, but also can be installed like an app so that it can launched from the device's home
-                screen.</p>
+            <p class="summary">Sort Plus sorts a user's saved albums by duration or release year.</p>
+            <p>It has the following features that makes it a <a href="https://en.wikipedia.org/wiki/Progressive_web_app">progressive web app</a>:</p>
+	    <ul>
+	      <li>Work offline</li>
+	      <li>Accessible via a link like a typical website</li>
+	      <li>Installable like an app so that it can be launched from the device's home screen</li>
+	    </ul>
             <figure> <img class="overview" src="../dist/images/sort-plus-overview.png"
                     alt="My saved albums with duration of 39 minutes">
                 <figcaption>My saved albums with duration of 39 minutes</figcaption>
@@ -50,8 +51,7 @@
         <section>
             <h2>Motivation</h2>
             <p>I wanted to find an album saved in my Spotify library that I could listen to in its entirety within the
-                limited amount of time I had. My solution had to be accessible on both mobile and desktop, and it had to
-                work offline because I don't have data on my phone.</p>
+                limited amount of time I had.</p>
             <figure> <img src="../dist/images/sort-plus-calendar.png"
                     alt="Example where I have one hour to listen to music before my next obligation"
                     id="sort-plus-calendar">
@@ -61,62 +61,51 @@
         <section>
             <h2>Contributions</h2>
             <ul>
-                <li><span class="bold">Research: </span>I looked into what data was available through the Spotify API to
+                <li><span class="bold">Research: </span>I looked into what data was available from Spotify to
                     sort my saved albums by. I also went through the Sonos and Spotify forums to see what similar
                     features users requested.</li>
                 <li><span class="bold">Design: </span>I designed the user experience, user interface, and icon. </li>
-                <li><span class="bold">Development: </span>I designed the database and API with MongoDB and Express,
-                    respectively. I wrote the front-end (user interface) code with React.</li>
-                <li><span class="bold">Deployment: </span>I deployed Sort Plus to Heroku.</li>
+                <li><span class="bold">Development: </span>I wrote the back-end (database and server) code with MongoDB
+		    and Express. I wrote the front-end (user interface) code with React.</li>
+                <li><span class="bold">Deployment: </span>I deployed Sort Plus to Heroku, a cloud platform that lets
+		  users put apps onto the Internet.</li>
             </ul>
-            <p class="definition"><dfn>API</dfn> stands for Application Programming Interface which enables the
-                communication between applications like Sort Plus and Spotify.</p>
         </section>
         <section>
             <h2>Challenge: Make it Work Offline</h2>
-            <p>Sort Plus is designed to work offline which means that it should cache the data necessary for offline
-                usage. When data is cached, it remains on the device for future use. I had to program it so that it
-                caches the necessary data, which includes all the user's saved albums from their Spotify library among
-                other data. </p>
-            <h3>Attempt to Configure Cache</h3>
-            <p>Progressive web apps have a special script (code) called a service worker which is used to configure what
-                data is cached, for how long, and when to update it, among other things. I used Create React App to
-                quickly get started with React, but it generates an unconfigurable service worker. Fortunately, I was
-                able to follow a tutorial that helped me generate a new service worker and tell Sort Plus to use that
-                instead. This allowed me to choose what data to cache, but it didn't work well with the API I designed.
-                This API communicates with Spotify and with the front-end.</p>
-            <h3>Modify API to Cache More Efficiently</h3>
-            <p>The problem with the API I designed was that one request responds with all saved albums in the user's
-                library. The service worker caches per request so any updates to the library forces a recache of
-                everything, wasting the user's bandwidth. As a result, I had to modify the API so that one request
-                responds with only one saved album's worth of data. Sort Plus can still get the user's library, but one
-                saved album at a time. I could then configure the service worker so that it only caches saved albums not
-                already cached.</p>
-            <figure> <img src="../dist/images/sort-plus-modify-api.png"
-                    alt="How API works before and after modifications" id="sort-plus-modify-api">
-                <figcaption>How API works before and after modifications</figcaption>
+            <p>Sort Plus is designed to work offline which means that it must download the necessary data for it to work
+	        offline, which I had to program.</p>
+            <h3>Control Which Data to Download</h3>
+            <p>I can control which data is downloaded and saved on the device through code called <em>service
+	        worker</em>, but it was not configurable with the template I started out with.</p>
+	    <p>Fortunately, I found a tutorial that taught me how me how to generate a new service worker to configure and
+	        use.</p>
+            <h3>Change How Data is Requested and Sent</h3>
+            <p>I wanted the service worker to only download data that is not already on the device, but there was a problem
+	        with how I initially wrote the code to manage how data is requested and sent.</p>
+	    <p>Initially, one request sends all the user's saved albums, which forces them to redownload everything
+	      whenever their library has updated.</p>
+	    <figure> <img src="../src/images/sort-plus-before.png"
+                    alt="How API works before and after modifications" id="sort-plus-before">
+                <figcaption>One request sends all the user's saved albums</figcaption>
             </figure>
-            <h3>Write Front End</h3>
-            <p>The missing piece to make Sort Plus work offline is the user interface which I wrote using React. I wrote
-                a component for the button that updates its appearance depending on what is happening the background to
-                determine whether the user can cache all the data for offline use. </p>
-            <p>When Sort Plus is connected to the Internet, it synchronizes the database with the user's current data on
-                Spotify, and then compares that the cache on their device. If there are any discrepancies, then the user
-                can click the button to update their cache to match their current data. After caching, the user can use
-                Sort Plus offline.</p>
+
+	    <p>Now, one request sends only one saved album, so the service worker knows which data to download
+	        or not.</p>
+
+            <figure> <img src="../src/images/sort-plus-after.png"
+                    alt="How API works before and after modifications" id="sort-plus-after">
+                <figcaption>One request sends only one saved album</figcaption>
+            </figure>
+            <h3>Implement Visual Feedback</h3>
+            <p>Finally, I programmed the component that provides visual feedback as Sort Plus prepares for offline
+	        use and can start the download process, depending on its current state.</p>
             <figure> <video autoplay muted loop id="sort-plus-change-status" tabindex="-1">
                     <source src="../dist/images/sort-plus-change-status.m4v" type="video/mp4"> Sorry, your browser
                     doesn't support embedded videos. </video>
-                <figcaption>Sort Plus syncs database with user's Spotify library then provides option to download for
-                    offline use</figcaption>
+              <figcaption>Sort Plus syncs with user's Spotify library, then provides option to download for offline
+	        use</figcaption>
             </figure>
-        </section>
-        <section>
-            <h2>Results</h2>
-            <p>I deployed Sort Plus to <a href="https://sort-plus.herokuapp.com/">Heroku</a> where anyone with a Spotify
-                account can use for free. It is a progressive web app so it can it is accessible with a typical web
-                address. Its offline capabilities only work on some web browsers, versions, and operating systems due to
-                the technology being relatively new.</p>
         </section>
         <section>
             <h2>Reflection</h2>
