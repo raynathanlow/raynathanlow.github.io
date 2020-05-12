@@ -247,7 +247,7 @@ th, tr, td {
 
 @media (min-width: 220px) {
     #sort-plus-before {
-	width: 12rem;
+	width: auto;
     }
 }
 
@@ -262,8 +262,8 @@ th, tr, td {
 }
 
 @media (min-width: 332px) {
-    #inferhythm-merged-results {
-	width: 17rem;
+    #inferhythm-toolbar {
+	width: auto;
     }
 }
 
@@ -279,6 +279,12 @@ th, tr, td {
 @media (min-width: 430px) {
     #inferhythm-android-demo {
 	width: 25rem;
+    }
+}
+
+@media (min-width: 470px) {
+    #inferhythm-results-merged {
+	width: auto;
     }
 }
 
@@ -329,20 +335,17 @@ th, tr, td {
     .project-info {
 	padding: 1rem;
     }
-    #sort-plus-modify-api {
-	width: 32rem;
-    }
 }
 
 @media (min-width: 572px) {
     #sort-plus-calendar {
-	width: 33rem;
+	width: auto;
     }
 }
 
 @media (min-width: 640px) {
     #sort-plus-after {
-	width: 38rem;
+	width: auto;
     }
 }
 
