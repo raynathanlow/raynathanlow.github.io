@@ -85,8 +85,6 @@ nav p, nav a {
     display: inline;
 }
 
-
-
 section {
     padding: 1rem 0;
 }
@@ -162,8 +160,7 @@ th, tr, td {
     padding: 0.25rem 0;
 }
 
-#projects {
-    margin: 2rem auto;
+.projects {
     background-color: $color7;
     padding: 1rem;
 }
@@ -194,6 +191,7 @@ th, tr, td {
 .project img {
     display: block;
     width: initial;
+    background-color: $color7;
 }
 
 .project-name {
@@ -209,7 +207,17 @@ th, tr, td {
     font-size: 0.8rem;
 }
 
+.other.projects {
+    background-color: $color1;
+}
 
+.other.projects .project-info {
+    background-color: $color7;
+}
+
+.other.projects .project-info p {
+    color: $color1;
+}
 
 #about h2 {
     margin-top: 0;
