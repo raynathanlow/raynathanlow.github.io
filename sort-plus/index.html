@@ -15,21 +15,22 @@
 
   <body>
     <nav>
-      <p class="name">Ray Nathan Low</p> <a href="../">Home</a>
+      <a class="name" href="../">Ray Nathan Low <span class="visually-hidden">home</span></a>
     </nav>
     <main>
       <header>
         <h1>Sort Plus</h1>
         <p class="subtitle">Spotify companion app</p>
         <p class="summary">Sort Plus sorts a user's saved albums by duration or release year.</p>
-        <p>It has the following features that makes it a <a href="https://en.wikipedia.org/wiki/Progressive_web_app">progressive web app</a>:</p>
+        <p>It has the following features that makes it a
+	  <a href="https://en.wikipedia.org/wiki/Progressive_web_app">progressive web app</a>:</p>
 	<ul>
 	  <li>Work offline</li>
 	  <li>Accessible via a link like a typical website</li>
 	  <li>Installable like an app so that it can be launched from the device's home screen</li>
 	</ul>
         <figure> <img class="overview" src="../dist/images/sort-plus-overview.png"
-                      alt="My saved albums with duration of 39 minutes">
+                      alt="Fourteen albums laid out in a grid">
           <figcaption>My saved albums with duration of 39 minutes</figcaption>
         </figure>
       </header>
@@ -53,7 +54,7 @@
         <p>I wanted to find an album saved in my Spotify library that I could listen to in its entirety within the
           limited amount of time I had.</p>
         <figure> <img src="../dist/images/sort-plus-calendar.png"
-                      alt="Example where I have one hour to listen to music before my next obligation"
+                      alt="A calendar with an hour block of free time in between other obligations"
                       id="sort-plus-calendar">
           <figcaption>Example where I have one hour to listen to music before my next obligation</figcaption>
         </figure>
@@ -86,16 +87,16 @@
 	<p>Initially, one request sends all the user's saved albums, which forces them to redownload everything
 	  whenever their library has updated.</p>
 	<figure> <img src="../src/images/sort-plus-before.png"
-                      alt="How API works before and after modifications" id="sort-plus-before">
-          <figcaption>One request sends all the user's saved albums</figcaption>
+                      alt="One request sends all the user's saved albums" id="sort-plus-before">
+          <figcaption>Initially, one request sends all the user's saved albums</figcaption>
         </figure>
 
 	<p>Now, one request sends only one saved album, so the service worker knows which data to download
 	  or not.</p>
 
         <figure> <img src="../src/images/sort-plus-after.png"
-                      alt="How API works before and after modifications" id="sort-plus-after">
-          <figcaption>One request sends only one saved album</figcaption>
+                      alt="Three separate requests where each one sends one saved album" id="sort-plus-after">
+          <figcaption>After some modifications, one request sends only one saved album</figcaption>
         </figure>
         <h3>Implement Visual Feedback</h3>
         <p>Finally, I programmed the component that provides visual feedback as Sort Plus prepares for offline

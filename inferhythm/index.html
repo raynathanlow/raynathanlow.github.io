@@ -15,7 +15,7 @@
 
   <body>
     <nav>
-      <p class="name">Ray Nathan Low</p> <a href="../">Home</a>
+      <a class="name" href="../">Ray Nathan Low <span class="visually-hidden">home</span></a>
     </nav>
     <main>
       <header>
@@ -81,9 +81,10 @@
         <h2>Challenge: Get Lyrics in One Click</h2>
         <p>I had to write HTML, CSS, and JavaScript to implement my design where the lyrics open in a new tab when
 	  the user clicks Inferhythm's button in the toolbar.</p>
-	<figure> <img src="../dist/images/inferhythm-toolbar.png" alt="Inferhythm button in toolbar"
+	<figure> <img src="../dist/images/inferhythm-toolbar.png"
+		      alt="Inferhythm's button containing its logo in Google Chrome's toolbar"
                       id="inferhythm-toolbar">
-          <figcaption>Inferhythm button in toolbar</figcaption>
+          <figcaption>Inferhythm's button in toolbar</figcaption>
         </figure>
         <h3>Manually Create Genius Page Links</h3>
         <p>To open the lyrics in a new tab, I just need a valid link. I noticed that the structure of links to Genius
@@ -93,11 +94,12 @@
 	  which created invalid links because it wasn't consistently handled by Genius.</p>
         <figure>
           <table>
+	    <figcaption>Comparison of links created manually versus actual links used by Genius</figcaption>
             <thead>
               <tr>
-                <th>Artist name</th>
-                <th>After text manipulation</th>
-                <th>Genius</th>
+                <th scope="col">Artist Name</th>
+                <th scope="col">Manually Create Link</th>
+                <th scope="col">Actual Genius Link</th>
               </tr>
             </thead>
             <tbody>
@@ -124,7 +126,8 @@
 	  query which often helps.</p>
         <p>As a result, I merged the results of the two queries which is displayed in the popup when the user clicks
 	  Inferhythm's button in the toolbar.</p>
-        <figure> <img src="../dist/images/inferhythm-results-merged.png" alt="Results from query 1 and 2 merged"
+        <figure> <img src="../dist/images/inferhythm-results-merged.png"
+		      alt="Inferhythm's results for Electric Light Orchestra's Mr.Blue Sky alternately labelled Query 1 and Query 2"
                       id="inferhythm-results-merged">
           <figcaption>Results from query 1 and 2 merged</figcaption>
         </figure>
