@@ -1,411 +1,414 @@
-$cobaltBlue: #0047AB;
-$boxShadow: #00357F;
-$bgTransitionSpeed: 0.3s;
-$background: #cecece;
+$color1: #1C4AA6;
+$color2: #061F40;
+// $color3: #295FA6;
+$color4: #36ABD9;
+$color5: #3FD2F2;
+// $color6: #A67B1C;
+$color7: #f0f5f5;
+// $link: #8E6A18;
 
-/* General */
-
-* {
-  box-sizing: border-box;
-}
+$spacing: 0.5rem;
+$readLength: 45rem;
+$border: 0.4rem;
 
 body {
-  position: relative;
-  min-height: 100%;
-  font-family: 'Rubik', sans-serif;
-  color: #606060;
-  // overflow: auto;
-  // background: center url(../../src/images/diamond.svg);
-  // background-size: 51%;
-  background-color: $background;
-}
-
-html {
-  height: 100%;
+    font-family: "Rubik", sans-serif;
+    background-color: $color1;
 }
 
 a {
-  color: $cobaltBlue;
-  text-decoration: none;
-  border-bottom: solid 1px $cobaltBlue;
+    color: $color5;
 }
 
-a:hover {
-  text-decoration: none;
-  border-bottom: solid 1px transparent;
+p, li, h1, h2, h3 {
+    line-height: 1.5;
+    color: white;
 }
 
-.link-underline-hide {
-  text-decoration: none;
-  border-bottom: solid 1px transparent;
+h1 {
+    margin-bottom: 0;
 }
 
-img {
-  display: block;
-  width: 100%;
+h2 {
+    margin-top: 2.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $cobaltBlue;
-}
-
-header .name {
-  font-size: 1.6rem;
-  color: $cobaltBlue;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: white;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  box-shadow: 2px 2px 5px 0px $boxShadow;
-  align-items: center;
-  padding: 1em 2em;
-  z-index: 3;
-}
-
-footer nav ul {
-  display: flex;
-  padding: 0;
-  list-style-type: none;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-left div {
-  margin-right: 2em;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  background-color: white;
-  bottom: 0;
-}
-
-.homepage-footer {
-  bottom: 0;
-}
-
-footer nav ul {
-  justify-content: flex-end;
-}
-
-.project-footer {
-  position: absolute;
-  bottom: -6em;
-}
-
-header nav li, footer nav li {
-  margin: 0;
-  margin-right: 1.5em;
-}
-
-section, .about {
-  background-color: white;
-  padding: 2em;
-  margin-bottom: 3rem;
-}
-
-p, li {
-  line-height: 1.7rem;
-  margin-bottom: 1.3rem;
-}
-
-article, main:not(#homepage-main) {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 1em 0;
+h3 {
+    margin-top: 2rem;
 }
 
 main {
-  margin-bottom: 4em;
+    background-color: $color7;
+    padding: 0rem 1rem 2rem;
 }
 
-pre {
-  display: block;
-  margin: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+h1, h2, h3, p, li {
+    width: 100%;
+    max-width: $readLength;
+    margin: 1rem auto;
 }
 
-code {
-  display: block;
-  background-color: #F4F4F4;
-  padding: 2em;
+main {
+    display: block;
 }
 
-/* specific */
-
-
-.hidden {
-  display: none;
+main a {
+    color: $color1;
 }
 
-#homepage-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+main h1, main h2, main h3 {
+    color: $color1;
 }
 
-#homepage-body a {
-  font-size: 1.2rem;
+main p, main li {
+    color: $color2;
 }
 
-#homepage-body .homepage-footer a, .project-footer a {
-  font-size: 0.9em;
+header {
+    background-color: $color7;
+    padding: 1rem;
 }
 
-#homepage-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header h1 {
+    margin-bottom: 0 ;
 }
 
-#intro {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-color: white;
-  padding: 3em;
-  box-shadow: -10px 10px 0px 0px $cobaltBlue;
-  // TODO: Use JS to make the same height as projects
+header p {
+    color: $color1;
 }
 
-#name {
-  font-size: 3.25rem;
-  line-height: 4.5rem;
-  color: $cobaltBlue;
-  margin-bottom: 0.5em;
+nav {
+    padding: 1.5rem;
 }
 
-#about {
-  // margin-top: 5em;
+nav p, nav a {
+    display: inline;
 }
 
-#about div {
- margin-top: 1.7em;
+section {
+    padding: 1rem 0;
 }
 
-#email {
-  font-weight: bold;
-}
-
-.projects {
-  display: flex;
-}
-
-#homepage-main .projects {
-  flex: 0 1 30%;
-  flex-wrap: wrap;
-  margin: 0 1em;
-}
-
-.project {
-  position: relative;
-  flex-direction: column;
-  flex: 0 1 40%;
-  padding: 5px;
-  // margin: 5px;
-}
-
-.project .type {
-  font-size: 0.9rem;
-}
-
-.project img {
-  margin-bottom: 1.5em;
-  box-shadow: 2px 2px 5px 0px $boxShadow;
-}
-
-.div-link {
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-  color: transparent;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: $cobaltBlue;
-  top: 0;
-  left: 0;
-  transition: all $bgTransitionSpeed ease;
-}
-
-.project-info {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  border: solid 1em white;
-  background-color: white;
-}
-
-#homepage-main .project .project-name {
-  font-size: 1.5rem;
-}
-
-.project-hover {
-  top: 6px;
-  left: 6px;
-  transition: all $bgTransitionSpeed ease;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-}
-
-.overview {
-  background-color: white;
-  margin: 2em 0;
-  border: solid 5px $cobaltBlue;
-}
-
-.overview h2 {
-  margin: 0;
-  margin-bottom: 5%;
-}
-
-.overview {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.overview section {
-  flex: 0 0 50%;
-  padding: 2em;
-  color: #414141;
-  font-weight: 500;
-  margin: 0;
-}
-
-.overview section:nth-of-type(odd) {
-  border-right: solid 1px $cobaltBlue;
-}
-
-.overview section:nth-of-type(-n+2) {
-  border-bottom: solid 1px $cobaltBlue;
-}
-
-.overview ul {
-  padding: 0 5%;
-  margin: 0;
-}
-
-.overview li {
-  margin: 0;
-}
-
-.links {
-  padding: 0;
-  list-style-type: none;
-}
-
-.smaller {
-  display: block;
-  width: 55%;
-  // padding: 0.5rem;
-  margin: 2em auto;
-}
-
-article h1 {
-  margin-bottom: 0.3em;
-}
-
-article .type {
-  font-style: italic;
-  color: black;
+section h2 {
+    margin-top: 0;
 }
 
 figure {
-  display: block;
-  padding: 0.75em;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px 0px $boxShadow;
-  // width: 100%;
-  margin: 2.5em 0;
+    margin: 2rem 0;
+    text-align: center;
 }
 
-figure img {
-  border: solid 1px black;
-  margin: 0 auto;
+figcaption {
+    margin: 1.5rem 0;
+    color: #6f6f6f;
 }
 
-.no-border {
-  border: none;
+img, video {
+    width: 100%;
+    max-width: 100%;
 }
 
-figcaption, .caption {
-  color: black;
-  padding: 0.5em;
-  // text-align: center;
-  font-size: 0.9rem;
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: solid thin;
 }
 
-.other-projects {
-  max-width: 50rem;
-  margin: 0 auto;
-  margin-bottom: 5em;
+th, tr, td {
+    padding: 0.5rem;
+    text-align: center;
+    border: solid thin;
 }
 
-.other-projects .projects {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.other-projects .project, .other-projects .background, .other-projects .project-info {
-  display: flex;
-}
-.other-projects .project, .other-projects .background {
-  flex: 0 0 50%;
-}
-.other-projects .project-img {
-  display: flex;
-  flex: 0 0 40%;
-  margin-right: 1em;
-  flex-direction: column;
-}
-.other-projects .project-img img {
-  margin: 0;
+.name {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    text-align: center;
 }
 
-.empty {
-  height: 50px;
-  margin-bottom: 0.5rem;
+.name:hover, .name:focus {
+    text-decoration: underline;
 }
 
-.cobalt-blue {
-  background-color: $cobaltBlue;
+.visually-hidden {
+   clip-path: inset(100%);
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
 }
 
-.gray {
-  background-color: #606060;
+.subtitle {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-.white-smoke {
-  background-color: $background;
+.summary {
+    font-weight: 500;
 }
 
-.side-by-side img {
-  float: left;
-  width: 50%;
+#intro {
+    width: 100%;
+    max-width: $readLength;
+    margin: 0 auto;
+    background-color: $color1;
 }
 
-.width-50 img {
-  width: 50%;
+#intro p {
+    color: white;
 }
 
-@import 'responsiveness';
+#links {
+    margin-top: 1.5rem;
+    color: white;
+}
+
+#links > * {
+    display: inline-block;
+    padding: 0.25rem 0;
+}
+
+.projects {
+    background-color: $color7;
+    padding: 1rem;
+}
+
+.project {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    border-left: solid 0.4rem transparent;
+    width: 100%;
+}
+
+.project:hover, .project:focus {   
+    border-left: solid 0.4rem $color4;
+}
+
+.project-info {
+    padding: $spacing;
+    background-color: $color1;
+}
+
+.project p {
+    margin: 0;
+    color: white;
+}
+
+.project img {
+    display: block;
+    width: initial;
+    background-color: $color7;
+}
+
+.project-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-name-subtitle {
+    margin-bottom: $spacing;
+}
+
+.project-small {
+    font-size: 0.8rem;
+}
+
+.other.projects {
+    background-color: $color1;
+}
+
+.other.projects .project-info {
+    background-color: $color7;
+}
+
+.other.projects .project-info p {
+    color: $color1;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+.links a {
+    color: $color1;
+}
+
+.quick-heading {
+    margin: 1rem auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.definition {
+    font-style: italic;
+    color: #6f6f6f;
+    font-weight: 300;
+}
+
+@media (min-width: 100px) {
+    #intro, #about {
+	padding: $spacing;
+    }
+}
+
+@media (min-width: 140px) {
+    #links > *{
+	padding-right: 0.25rem;
+    }
+}
+
+@media (min-width: 220px) {
+    #sort-plus-before {
+	width: auto;
+    }
+}
+
+@media (min-width: 255px) {
+    .project {
+	width: 18rem;
+	width: min-content;
+    }
+    .project img {
+	max-width: none;
+    }
+}
+
+@media (min-width: 332px) {
+    #inferhythm-toolbar {
+	width: auto;
+    }
+}
+
+@media (min-width: 360px) {
+    #intro, #about {
+	padding: 1rem;
+    }
+    #intro h1 {
+	font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 430px) {
+    #inferhythm-android-demo {
+	width: 25rem;
+    }
+}
+
+@media (min-width: 470px) {
+    #inferhythm-results-merged {
+	width: auto;
+    }
+}
+
+@media (min-width: 510px) {
+    #sort-plus-change-status {
+	width: 30rem;
+    }
+}
+
+@media (min-width: 555px) {
+    #intro h1 {
+	font-size: 3rem;
+    }
+    .project {
+	width: 518px;
+	height: 225px;
+    }
+    .project img {
+	width: 225px;
+	margin: 0;
+	clear: left;
+	float: left;
+    }
+    .project p {
+	width: 100%;
+    }
+    .project-info {
+	height: 193px;
+	margin-left: 225px;
+    }
+    
+    @supports (display: grid) {
+	.project {
+	    display: grid;
+	    grid-template-columns: 1fr 28ch;
+	    margin: 1rem auto;
+	    width: min-content;
+	}
+	.project img {
+	    width: initial;
+	    margin: 0;
+	}
+	
+	.project-info {
+	    margin: 0;
+	}
+    }
+    .project-info {
+	padding: 1rem;
+    }
+}
+
+@media (min-width: 572px) {
+    #sort-plus-calendar {
+	width: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    #sort-plus-after {
+	width: auto;
+    }
+}
+
+@media (min-width: 745px) {
+    .this-is-america-tour-small {
+	width: $readLength;
+    }
+    .project {
+	margin: 3rem auto;
+    }
+}
+
+@media (min-width: 780px) {
+    h1, h2, h3, p, li {
+	width: $readLength;
+    }
+    #intro {
+	width: $readLength;
+    }
+}
+
+@media (min-width: 850px) {
+    #intro, #about {
+	padding: 2rem;
+    }
+    #intro h1 {
+	font-size: 3.25rem;
+    }
+    main figure {
+	margin: 3rem 0;
+    }
+}
+
+@media (min-width: 922px) {
+    .this-is-america-tour {
+	width: 55rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .overview {
+	width: 67rem;
+    }
+}
