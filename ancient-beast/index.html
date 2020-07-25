@@ -29,7 +29,7 @@
 
 				<figure> <img class="overview" src="../dist/images/ab-overview.png"
 																			 alt="Two avatars face off against each other who each has summoned 
-																			 two creatures">
+																						two creatures">
 					<figcaption>One versus one gameplay example</figcaption>
 				</figure>
 			</header>
@@ -78,13 +78,13 @@
 				<p>I was able to resolve the issue by modifying its JavaScript code, but I noticed an opportunity to
 				improve it during testing. I noticed that when the player interacts with an ability, the 
 				resource bar could show more information.</p>
-				<p>When the player hovers over an ability that requires more resources than the creature had, the 
-				entire resource bar changes colour and resizes to match the require amount of resources. It no longer 
-				shows the current of amount resources the creature has.</p>
+				<p>Originally, when the player hovers over an ability that requires more resources than the creature 
+				has, the resource bar changes colour and resizes to match the required amount of resources. It no 
+				longer shows the current amount of resources the creature has.</p>
 
 				<figure> <img class="auto" src="../dist/images/ab-bar-unclear.png"
 																	 alt="Resource bar with dark yellow fill and yellow outline">
-					<figcaption>Resource bar's colour and size changes when hovering over an ability that requires more resources than the creature had</figcaption>
+					<figcaption>Resource bar's colour and size changes when hovering over an ability that requires more resources than the creature has</figcaption>
 				</figure>
 
 				<p>Fortunately, the maintainer I discussed with was able to redesign the resource bar that communicates 
@@ -105,8 +105,8 @@
 
 				<figure> <img class="auto" src="../dist/images/ab-final.png"
 																	 alt="One resource bar with top half is yellow and black stripe pattern while 
-																	 bottom half is yellow; Another resource bar with top half is black while 
-																	 bottom half is yellow and black stripe pattern">
+																				bottom half is yellow; Another resource bar with top half is black while 
+																				bottom half is yellow and black stripe pattern">
 					<figcaption>Final iteration of redesign that communicates more about resource usage</figcaption>
 				</figure>
 			</section>
