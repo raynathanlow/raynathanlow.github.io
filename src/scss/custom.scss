@@ -255,6 +255,10 @@ th, tr, td {
     font-weight: 300;
 }
 
+.auto {
+    width: auto;
+}
+
 @media (min-width: 100px) {
     #intro, #about {
 	padding: $spacing;

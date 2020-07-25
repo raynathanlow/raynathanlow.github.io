@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../dist/css/normalize.css">
+		<link rel="stylesheet" href="../dist/css/custom.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+			rel="stylesheet">
+		<title>Ancient Beast - Ray Nathan Low</title>
+	</head>
+
+	<body>
+		<nav>
+			<a class="name" href="../">Ray Nathan Low <span class="visually-hidden">home</span></a>
+		</nav>
+		<main>
+			<header>
+				<h1>Ancient Beast</h1>
+				<p class="subtitle">Open source browser game</p>
+				<p class="summary">An open source turn based strategy browser game where players command an avatar who 
+				can summon creatures to defeat their opponents.</p>
+
+				<p class="summary">I didn't create it, but I contributed in resolving a 
+				couple of issues with its user interface and usability.</p>
+
+				<figure> <img class="overview" src="../dist/images/ab-overview.png"
+																			 alt="Two avatars face off against each other who each has summoned 
+																			 two creatures">
+					<figcaption>One versus one gameplay example</figcaption>
+				</figure>
+			</header>
+			<section>
+				<h2>Links</h2>
+				<ul class="links">
+					<li><a href="https://ancientbeast.com/">Ancient Beast Website</a></li>
+					<li><a href="https://github.com/FreezingMoon/AncientBeast">GitHub repository</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Time Frame</h2>
+				<p>March to April 2020</p>
+			</section>
+
+			<section>
+				<h2>Languages and Tools</h2>
+				<p>Phaser, JavaScript, CSS</p>
+			</section>
+
+			<section>
+				<h2>Motivation</h2>
+				<p>I wanted to gain experience contributing in an open source project, especially one that is relevant 
+				to my interests.</p>
+			</section>
+
+			<section>
+				<h2>Contributions</h2>
+				<ul>
+					<li><span class="bold">Suggested: </span>I suggested improvements to the resource bar design so that 
+						players better understand what actions they can take based on the available amount of resources.</li>
+					<li><span class="bold">Development: </span>I modified the style of the in-game statistics with CSS 
+						to improve visual consistency. I implemented the resource bar improvements with JavaScript and CSS 
+						based on a maintainer's design.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Challenge: Fix and Improve Resource Bar</h2>
+				<p>Players of Ancient Beast materialise and control creatures by casting abilities to defeat the 
+				opponent. I chose to resolve an issue where the resource bar sometimes renders past its bounds when 
+				the player hovers over it.</p>
+
+				<h3>Resolved Issues and Suggested Improvements</h3>
+				<p>I was able to resolve the issue by modifying its JavaScript code, but I noticed an opportunity to
+				improve it during testing. I noticed that when the player interacts with an ability, the 
+				resource bar could show more information.</p>
+				<p>When the player hovers over an ability that requires more resources than the creature had, the 
+				entire resource bar changes colour and resizes to match the require amount of resources. It no longer 
+				shows the current of amount resources the creature has.</p>
+
+				<figure> <img class="auto" src="../dist/images/ab-bar-unclear.png"
+																	 alt="Resource bar with dark yellow fill and yellow outline">
+					<figcaption>Resource bar's colour and size changes when hovering over an ability that requires more resources than the creature had</figcaption>
+				</figure>
+
+				<p>Fortunately, the maintainer I discussed with was able to redesign the resource bar that communicates 
+				more information to the player.</p>
+				<p>For example, a darker yellow indicates how much resources the ability would consume while yellow 
+				indicates how much resources would remain after the ability has casted.</p>
+
+				<figure> <img class="auto" src="../dist/images/ab-redesign-iteration-1.png"
+																	 alt="Resource bar where top half is dark yellow and bottom half is yellow">
+					<figcaption>Redesigned resource bar shows how much resources would be consumed and remain after casting an ability</figcaption>
+				</figure>
+
+				<h3>Modified Preexisting Code to Implement Redesign</h3>
+				<p>My first attempt at implementing the redesign was not very successful because I tried to change 
+				as little code as possible to avoid introducing more bugs. The redesign couldn't really be implemented 
+				because of how the resource bar was initially coded though.</p>
+				<p>After gaining a better understanding of the code, I was eventually able to implement the redesign.</p>
+
+				<figure> <img class="auto" src="../dist/images/ab-final.png"
+																	 alt="One resource bar with top half is yellow and black stripe pattern while 
+																	 bottom half is yellow; Another resource bar with top half is black while 
+																	 bottom half is yellow and black stripe pattern">
+					<figcaption>Final iteration of redesign that communicates more about resource usage</figcaption>
+				</figure>
+			</section>
+
+			<section>
+				<h2>Reflection</h2>
+				<h3>Measuring Success</h3>
+				<p>My contributions to Ancient Beast were successful since I was able to resolve the issues I chose to resolve.
+				I was even rewarded monetarily for my efforts.
+				</p>
+
+				<h3>What I Learned:</h3>
+				<ul>
+					<li><span class="bold">Write better code: </span>I learned how to write better code because it will be 
+						reviewed by the maintainer(s) before they merge it into the project.</li>
+					<li><span class="bold">Work with preexisting codebase: </span>I learned how to work with preexisting codebase,
+						which was different than working with my previous projects since I was usually a part of its creation. The 
+						codebase was also larger than what I had worked with previously.</li>
+					<li><span class="bold">Communication: </span>I also learned how to work and communicate with other programmers,
+						which I didn't have to do while working on my previous two projects that I created on my own.</li>
+				</ul>
+			</section>
+		</main>
+
+		<div class="other projects">
+			<h2>Other Projects</h2>
+			<a href="../sort-plus" class="project">
+				<img src="../src/images/sort-plus-thumbnail.png" alt="">
+				<div class="project-info">
+					<div class="project-name-subtitle">
+						<p class="project-name">Sort Plus</p>
+						<p class="project-small">Spotify companion app</p>
+					</div>
+					<p class="project-small">MERN (MongoDB, Express, React, Node.js)</p>
+				</div>  
+			</a> 
+
+			<a href="../inferhythm" class="project">
+				<img src="../src/images/inferhythm-thumbnail.png" alt="">
+				<div class="project-info">
+					<div class="project-name-subtitle">
+						<p class="project-name">Inferhythm</p>
+						<p class="project-small">Browser extension</p>
+					</div>
+					<p class="project-small">HTML, CSS, JavaScript</p>
+				</div>
+			</a>
+
+			<a href="../this-is-america-tour" class="project">
+				<img src="../src/images/this-is-america-tour-thumbnail.png" alt="">
+				<div class="project-info">
+					<div class="project-name-subtitle">
+						<p class="project-name">This Is America Tour</p>
+						<p class="project-small">Website redesign</p>
+					</div>
+					<p class="project-small">React, JavaScript, CSS</p>
+				</div>
+			</a>
+		</div>
+	</body>
+
+</html>
