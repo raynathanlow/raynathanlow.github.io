@@ -18,12 +18,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "eslint": "^5.2.0",
-    "imagemin-cli": "^4.0.1",
-    "node-sass": "^4.13.1",
+    "imagemin-cli": "^6.0.0",
+    "node-sass": "^4.14.1",
     "parallelshell": "^3.0.1",
-    "postcss-cli": "^6.1.2",
+    "postcss-cli": "^7.1.1",
     "uglify-js": "^3.4.6"
   },
   "dependencies": {
