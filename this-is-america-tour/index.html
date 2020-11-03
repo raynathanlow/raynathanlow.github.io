@@ -1,166 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="../dist/css/normalize.css">
-		<link rel="stylesheet" href="../dist/css/custom.css">
-		<link
-			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
-			rel="stylesheet">
-		<title>This Is America Tour - Ray Nathan Low</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="../dist/css/normalize.css">
+	<link rel="stylesheet" href="../dist/css/custom.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+		rel="stylesheet">
+	<title>This Is America Tour - Ray Nathan Low</title>
+</head>
 
-	<body>
-		<nav>
-			<a class="name" href="../">Ray Nathan Low <span class="visually-hidden">home</span></a>
-		</nav>
-		<main>
-			<header>
-				<h1>This Is America Tour</h1>
-				<p class="subtitle">Website redesign</p>
-				<p class="summary">This is my redesign of Childish Gambino's This Is America Tour website where my goal was
-				to make it more accessible and make the poster interactive.</p>
-				<figure>
-					<video autoplay muted loop playsinline class="this-is-america-tour" tabindex="-1">
-						<source src="../dist/images/this-is-america-tour-before-after.mp4" type="video/mp4">
-						<p>Your browser doesn't support HTML5 video. Here is a
+<body>
+	<nav>
+		<a class="name" href="../">Ray Nathan Low <span class="visually-hidden">home</span></a>
+	</nav>
+	<main>
+		<header>
+			<h1>This Is America Tour</h1>
+			<p class="subtitle">Website redesign</p>
+			<p class="summary">This is my redesign of Childish Gambino's This Is America Tour website where my goal was
+				to make the tour poster interactive.</p>
+			<figure>
+				<video autoplay muted loop playsinline class="this-is-america-tour" tabindex="-1">
+					<source src="../dist/images/this-is-america-tour-before-after.mp4" type="video/mp4">
+					<p>Your browser doesn't support HTML5 video. Here is a
 						<a href="../dist/images/this-is-america-tour-before-after.mp4">link to the video</a> instead.
-						</p>
-						<!-- <img src="../dist/images/this-is-america-tour-before-after.gif"> -->
-					</video>
-					<figcaption>Final product</figcaption>
-				</figure>
-			</header>
-			<section>
-				<h2>Links</h2>
-				<ul class="links">
-					<li><a href="https://github.com/raynathanlow/this-is-america-tour-website-redesign">GitHub
-							repository</a> </li>
-				</ul>
-			</section>
-			<section>
-				<h2>Time Frame</h2>
-				<p>September to October 2018</p>
-			</section>
-			<section>
-				<h2>Languages and Tools</h2>
-				<p>React, JavaScript, CSS, Photoshop</p>
-			</section>
-			<section>
-				<h2>Motivation</h2>
-				<p>I wanted to redesign the website to try to make the poster interactive and more accessible because it
-				originally lacked a description, which is useful for accessibility. I also wanted to try developing a site
-				with React, a JavaScript library for making user interfaces.</p>
+					</p>
+					<!-- <img src="../dist/images/this-is-america-tour-before-after.gif"> -->
+				</video>
+				<figcaption>Final product</figcaption>
+			</figure>
+		</header>
+		<section>
+			<h2>Links</h2>
+			<ul class="links">
+				<li><a href="https://github.com/raynathanlow/this-is-america-tour-website-redesign">GitHub
+						repository</a> </li>
+			</ul>
+		</section>
+		<section>
+			<h2>Time Frame</h2>
+			<p>September to October 2018</p>
+		</section>
+		<section>
+			<h2>Languages and Tools</h2>
+			<p>React, JavaScript, CSS, Photoshop</p>
+		</section>
+		<section>
+			<h2>Motivation</h2>
+			<p>I wanted to redesign the website to try to make the poster interactive and to learn React, a JavaScript
+				library used to make user interfaces.</p>
 
-			</section>
-			<section>
-				<h2>Contributions</h2>
-				<ul>
-					<li><span class="bold">Design: </span>I designed the user experience and interface with sketching and
-						Photoshop.</li>
-					<li><span class="bold">Development: </span>I wrote the user interface code with React, JavaScript, and
-						CSS.</li>
-					<li><span class="bold">Host: </span>I hosted this redesign on GitHub Pages.</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Challenge: Redesign</h2>
-				<h3>Design</h3>
-				<p>I decided to make the poster interactive by displaying a show's details, such as city, venue, and link
-				to buy tickets, when a fan interacts with a date. This accommodated fans who see the poster first to see 
-				if the artist will visit a city near them. They wouldn't need to find the same show again when they visit
-				Ticketmaster.</p>
-				<figure> <img class="this-is-america-tour-small" src="../dist/images/this-is-america-tour-sketch.png"
-																												 alt="Sketch of plan of how to display show information when user interacts with date from poster">
-					<figcaption>Planning redesign and React structure</figcaption>
-				</figure>
-				<h3>Slice Shows with Photoshop</h3>
-				<p>My idea was to lay out the dates in a grid to make it simpler to implement, which means that each date
-				had to be a separate image file. This was made possible using Photoshop's slice tool.</p>
-				<figure> <img class="this-is-america-tour-small" src="../dist/images/this-is-america-tour-slice.png"
-																												 alt="Poster of tour dates where each date is separated">
-					<figcaption>Shows sliced with Photoshop</figcaption>
-				</figure>
-				<h3>Display Shows in Original Order</h3>
-				<p>Originally, I was going to use Ticketmaster data to correctly order the dates, but shows were rescheduled
+		</section>
+		<section>
+			<h2>Contributions</h2>
+			<ul>
+				<li><span class="bold">Design: </span>I designed the user experience and interface with sketching and
+					Photoshop.</li>
+				<li><span class="bold">Development: </span>I wrote the user interface code with React, JavaScript, and
+					CSS.</li>
+				<li><span class="bold">Host: </span>I hosted this redesign on GitHub Pages.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Challenge: Redesign</h2>
+			<h3>Design</h3>
+			<p>My design makes the tour poster interactive by displaying show details, such as city, venue, and a link
+				to buy tickets, when a user interacts with a date. This accommodates customers who see the show they want to
+				see on the poster first. They would not need to find the same show again when they visit Ticketmaster.
+			</p>
+			<figure> <img class="this-is-america-tour-small" src="../dist/images/this-is-america-tour-sketch.png"
+					alt="Sketch of plan of how to display show information when user interacts with date from poster">
+				<figcaption>Planning redesign and React structure</figcaption>
+			</figure>
+			<h3>Slice Shows with Photoshop</h3>
+			<p>I decided to lay out the dates in a grid to make it simpler to implement, which means that each date had
+				to be a separate image file. This was made possible using Photoshop's slice tool.</p>
+			<figure> <img class="this-is-america-tour-small" src="../dist/images/this-is-america-tour-slice.png"
+					alt="Poster of tour dates where each date is separated">
+				<figcaption>Shows sliced with Photoshop</figcaption>
+			</figure>
+			<h3>Display Shows in Original Order</h3>
+			<p>Originally, I was going to use Ticketmaster data to correctly order the dates, but shows were rescheduled
 				in a different order when Childish Gambino suffered a leg injury. There was no updated poster while I
-				was developing the site, so I decided to display the shows in the original order but indicating that
-				they have been rescheduled.</p>
-				<h3>Make Site Accessible </h3>
-				<p>After implementing most of the site, it wasn't quite at the level of accessibility that I wanted yet.
-				I had to add descriptions to the links and images for screen readers users, and make the site accessible 
-				with just the keyboard.</p>
-				<p class="definition"><dfn>Screen readers</dfn> tells those who are visually impaired, illiterate, or have a
+				was developing the site, so I decided to display the shows in the original order and indicate that they
+				have been rescheduled.</p>
+			<h3>Make Site Accessible </h3>
+			<p>After implementing most of the site, it was not quite at the level of accessibility that I wanted.
+				Consequently, I added descriptions to the links and images for screen reader users and make the site
+				accessible with just the keyboard.</p>
+			<p class="definition"><dfn>Screen readers</dfn> tells those who are visually impaired, illiterate, or have a
 				learning disability what is on the screen through speech or braille.</p>
-				<figure>
-					<video autoplay muted loop playsinline class="this-is-america-tour" tabindex="-1">
-						<source src="../dist/images/this-is-america-tour-keyboard-demo.mp4" type="video/mp4">
-						<p>Your browser doesn't support HTML5 video. Here is a
+			<figure>
+				<video autoplay muted loop playsinline class="this-is-america-tour" tabindex="-1">
+					<source src="../dist/images/this-is-america-tour-keyboard-demo.mp4" type="video/mp4">
+					<p>Your browser doesn't support HTML5 video. Here is a
 						<a href="../dist/images/this-is-america-tour-keyboard-demo.mp4">link to the video</a> instead.
-						</p>
-						<!-- <img src="../dist/images/this-is-america-tour-before-after.gif"> -->
-					</video>
-					<figcaption>Navigating final site with keyboard</figcaption>
-				</figure>
-			</section>
-			<section>
-				<h2>Reflection</h2>
-				<h3>Measuring Success</h3>
-				<p>This project was successful because I implemented my redesign of the website which made the poster
-				interactive and more accessible with React. I believe I could have done much more to practice making
-				a website more accessible though.</p>
-				<h3>What I Learned:</h3>
-				<ul>
-					<li><span class="bold">React: </span>I had no experience with React prior to this redesign, so I was
-						able to learn and practice its basics.</li>
-					<li><span class="bold">HTTP requests: </span>My previous experience with HTTP requests were only with
-						PHP, which turns out to be similar in JavaScript, just written differently. HTTP requests are used
-						to get data from other websites, like Ticketmaster.</li>
-					<li><span class="bold">Making sites more accessible: </span>I only knew about the <code>alt</code>
-						attribute for images and using semantic HTML before this project. Now, I know how to add
-						descriptions to links and make certain elements able to be navigated with the keyboard.</li>
-				</ul>
-			</section>
-		</main>
+					</p>
+					<!-- <img src="../dist/images/this-is-america-tour-before-after.gif"> -->
+				</video>
+				<figcaption>Navigating final site with keyboard</figcaption>
+			</figure>
+		</section>
+		<section>
+			<h2>Reflection</h2>
+			<h3>Measuring Success</h3>
+			<p>This project was successful because I implemented my redesign of the website with React and made the
+				poster interactive.</p>
+			<h3>What I Learned:</h3>
+			<ul>
+				<li><span class="bold">React: </span>I had no experience with React prior to this redesign, so I was
+					able to learn and practice it.</li>
+				<li><span class="bold">HTTP requests: </span>My previous experience with HTTP requests were only with
+					PHP, but it turned out to be similar in JavaScript, just in a different syntax.</li>
+				<li><span class="bold">Making sites accessible: </span>I only knew about the <code>alt</code>
+					attribute for images and using semantic HTML before this project. Now, I know how to add
+					descriptions to links and make certain elements able to be navigated with the keyboard.</li>
+			</ul>
+		</section>
+	</main>
 
-		<div class="other projects">
-			<h2>Other Projects</h2>
-			<a href="../ancient-beast" class="project">
-				<img src="../src/images/ab-thumbnail.png" alt="">
-				<div class="project-info">
-					<div class="project-name-subtitle">
-						<p class="project-name">Ancient Beast</p>
-						<p class="project-small">Open source browser game</p>
-					</div>
-					<p class="project-small">Phaser, HTML, CSS, JS</p>
+	<div class="other projects">
+		<h2>Other Projects</h2>
+		<a href="../ancient-beast" class="project">
+			<img src="../src/images/ab-thumbnail.png" alt="">
+			<div class="project-info">
+				<div class="project-name-subtitle">
+					<p class="project-name">Ancient Beast</p>
+					<p class="project-small">Open source browser game</p>
 				</div>
-			</a>
+				<p class="project-small">Phaser, HTML, CSS, JS</p>
+			</div>
+		</a>
 
-			<a href="../sort-plus" class="project">
-				<img src="../src/images/sort-plus-thumbnail.png" alt="">
-				<div class="project-info">
-					<div class="project-name-subtitle">
-						<p class="project-name">Sort Plus</p>
-						<p class="project-small">Spotify companion app</p>
-					</div>
-					<p class="project-small">MERN (MongoDB, Express, React, Node.js)</p>
-				</div>  
-			</a> 
-
-			<a href="../inferhythm" class="project">
-				<img src="../src/images/inferhythm-thumbnail.png" alt="">
-				<div class="project-info">
-					<div class="project-name-subtitle">
-						<p class="project-name">Inferhythm</p>
-						<p class="project-small">Browser extension</p>
-					</div>
-					<p class="project-small">HTML, CSS, JavaScript</p>
+		<a href="../sort-plus" class="project">
+			<img src="../src/images/sort-plus-thumbnail.png" alt="">
+			<div class="project-info">
+				<div class="project-name-subtitle">
+					<p class="project-name">Sort Plus</p>
+					<p class="project-small">Spotify companion web app</p>
 				</div>
-			</a>
-		</div>
-	</body>
+				<p class="project-small">MERN (MongoDB, Express, React, Node.js)</p>
+			</div>
+		</a>
+
+		<a href="../inferhythm" class="project">
+			<img src="../src/images/inferhythm-thumbnail.png" alt="">
+			<div class="project-info">
+				<div class="project-name-subtitle">
+					<p class="project-name">Inferhythm</p>
+					<p class="project-small">Browser extension</p>
+				</div>
+				<p class="project-small">HTML, CSS, JavaScript</p>
+			</div>
+		</a>
+	</div>
+</body>
 
 </html>
